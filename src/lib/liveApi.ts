@@ -2,6 +2,7 @@ import type {
   AskResponse,
   ElsewhereHereApi,
   InterpretResponse,
+  MatchContext,
   MatchResponse,
   PlaceProfile,
   PlaceSummary,
@@ -65,10 +66,10 @@ async function interpret(text: string): Promise<InterpretResponse> {
   })
 }
 
-async function match(preferences: Preference[]): Promise<MatchResponse> {
+async function match(preferences: Preference[], context: MatchContext): Promise<MatchResponse> {
   return request<MatchResponse>('/api/v1/match', {
     method: 'POST',
-    body: JSON.stringify({ preferences }),
+    body: JSON.stringify({ preferences, text: context.text, lat: context.lat, lng: context.lng }),
   })
 }
 

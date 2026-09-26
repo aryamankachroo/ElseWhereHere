@@ -12,6 +12,7 @@ export function MatchingPage() {
   const navigate = useNavigate()
 
   const [phase, setPhase] = useState<ClusterPhase>('pending')
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const requestIdRef = useRef(0)
   const settleTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -19,11 +20,35 @@ export function MatchingPage() {
     if (flow.preferences.length === 0) return
     const requestId = ++requestIdRef.current
     setPhase('pending')
+    setErrorMessage(null)
 
-    api
-      .match(flow.preferences)
+    const pin = new Promise<{ lat: number; lng: number }>((resolve, reject) => {
+      if (!navigator.geolocation) {
+        reject(new Error('This browser cannot read a location, so nearby places cannot be scored.'))
+        return
+      }
+      navigator.geolocation.getCurrentPosition(
+        (position) => resolve({ lat: position.coords.latitude, lng: position.coords.longitude }),
+        () =>
+          reject(
+            new Error(
+              'Location access is needed to score walking distance. Allow it for this site, then try again.',
+            ),
+          ),
+        { enableHighAccuracy: true, timeout: 15000, maximumAge: 20000 },
+      )
+    })
+
+    pin
+      .then((location) =>
+        api.match(flow.preferences, {
+          text: flow.rawMemoryText,
+          lat: location.lat,
+          lng: location.lng,
+        }),
+      )
       .then((result) => {
-        if (requestIdRef.current !== requestId) return // superseded by a newer request
+        if (requestIdRef.current !== requestId) return
         setPhase('settled')
         flow.setMatchResult(result, flow.preferences)
         settleTimeoutRef.current = setTimeout(() => {
@@ -32,12 +57,13 @@ export function MatchingPage() {
           }
         }, SETTLE_DELAY_MS)
       })
-      .catch(() => {
+      .catch((error: unknown) => {
         if (requestIdRef.current !== requestId) return
+        setErrorMessage(error instanceof Error ? error.message : 'The match could not be completed.')
         setPhase('error')
       })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [flow.preferences])
+  }, [flow.preferences, flow.rawMemoryText])
 
   useEffect(() => {
     runMatch()
@@ -58,8 +84,8 @@ export function MatchingPage() {
       </h1>
       <p className="mt-3 max-w-md text-base text-[var(--color-text-secondary)]">
         {phase === 'error'
-          ? 'Your qualities are still saved. You can try again or go back to adjust them.'
-          : 'Bringing together the qualities you chose.'}
+          ? (errorMessage ?? 'Your qualities are still saved. You can try again or go back to adjust them.')
+          : 'Scoring nearby places from your location and what you wrote.'}
       </p>
 
       <div className="mt-10 w-full">

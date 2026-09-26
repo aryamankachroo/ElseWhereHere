@@ -1,15 +1,16 @@
-import { FIXTURE_MATCH_TAGS, PLACE_FIXTURES, getFixtureById, toPlaceSummary } from '@/data/fixtures'
-import { getTagLabel } from '@/data/qualityTags'
+import { PLACE_FIXTURES, getFixtureById, toPlaceSummary } from '@/data/fixtures'
 import type {
   AskResponse,
   ElsewhereHereApi,
   InterpretResponse,
+  MatchContext,
   MatchResponse,
   PlaceProfile,
   PlaceSummary,
   Preference,
 } from '@/types/api'
 import { NotFoundError } from '@/types/api'
+import { SCORE_PLACES, explainScore, rankPlaces, type ScorePlace } from '@/lib/rankPlaces'
 
 /**
  * Mock adapter — fully local, deterministic, and clearly labeled as sample
@@ -105,26 +106,7 @@ async function interpret(text: string): Promise<InterpretResponse> {
 // match
 // ---------------------------------------------------------------------------
 
-const STRONG_MATCH_THRESHOLD = 0.55
-
-function importanceMultiplier(importance: 1 | 2): number {
-  return importance === 2 ? 1.5 : 1
-}
-
-function scoreFixture(preferences: Preference[], placeId: string): number {
-  const weights = FIXTURE_MATCH_TAGS[placeId] ?? []
-  const weightByTag = new Map(weights.map((w) => [w.tag, w.weight]))
-  return preferences.reduce((sum, pref) => {
-    const weight = weightByTag.get(pref.tag) ?? 0
-    return sum + weight * pref.target * importanceMultiplier(pref.importance)
-  }, 0)
-}
-
-function maxPossibleScore(preferences: Preference[]): number {
-  return preferences.reduce((sum, pref) => sum + 1 * pref.target * importanceMultiplier(pref.importance), 0)
-}
-
-async function match(preferences: Preference[]): Promise<MatchResponse> {
+async function match(preferences: Preference[], context: MatchContext): Promise<MatchResponse> {
   await delay(900)
   if (shouldSimulateError()) {
     throw new Error('Simulated match failure for testing.')
@@ -133,50 +115,21 @@ async function match(preferences: Preference[]): Promise<MatchResponse> {
     throw new Error('At least one confirmed quality is required to find a connection.')
   }
 
-  const scored = PLACE_FIXTURES.map((fixture) => ({
-    fixture,
-    score: scoreFixture(preferences, fixture.id),
-  })).sort((a, b) => b.score - a.score)
-
-  const winner = scored[0]
-  const alternatives = scored.slice(1).map((s) => s.fixture.id)
-
-  const possible = maxPossibleScore(preferences)
-  const ratio = possible > 0 ? winner.score / possible : 0
-  const matchLabel = ratio >= STRONG_MATCH_THRESHOLD ? 'strong connection' : 'partial connection'
-
-  const winnerWeights = new Map((FIXTURE_MATCH_TAGS[winner.fixture.id] ?? []).map((w) => [w.tag, w.weight]))
-
-  const contributingTags = [...preferences]
-    .map((pref) => ({ pref, weight: winnerWeights.get(pref.tag) ?? 0 }))
-    .filter((entry) => entry.weight >= 0.4)
-    .sort((a, b) => b.weight * b.pref.target - a.weight * a.pref.target)
-    .slice(0, 3)
-
-  const reasons =
-    contributingTags.length > 0
-      ? contributingTags.map((entry) => {
-          const label = getTagLabel(entry.pref.tag).toLowerCase()
-          return `You mentioned ${label}, and this pocket leans into that too.`
-        })
-      : [`This is the closest available match among three sample pockets in this prototype.`]
-
-  const weakTags = preferences
-    .map((pref) => ({ pref, weight: winnerWeights.get(pref.tag) ?? 0 }))
-    .filter((entry) => entry.weight < 0.3)
-    .map((entry) => getTagLabel(entry.pref.tag).toLowerCase())
-
-  const limitations =
-    weakTags.length > 0
-      ? `This pocket doesn't strongly reflect ${weakTags.join(', ')} — treat this as a partial starting point, not a complete match.`
-      : 'Every confirmed quality shows up here to some degree in this sample profile.'
+  const ranked = rankPlaces({ lat: context.lat, lng: context.lng }, context.text)
+  const winner = ranked[0]
+  if (!winner) {
+    throw new Error('Nothing free in the current list is within a 15-minute walk of you. Mention cheap or paid if a ticket is fine.')
+  }
 
   return {
-    placeId: winner.fixture.id,
-    reasons,
-    limitations,
-    matchLabel,
-    alternatives,
+    placeId: winner.place.id,
+    reasons: [explainScore(winner.user, winner.place), `Similarity score ${winner.score} out of 100.`],
+    limitations:
+      winner.score >= 70
+        ? 'Distance, cost, and localness all counted. A miss on the sentence lowers the score and still leaves the place on the list.'
+        : 'This is the closest place within a 15-minute walk. The sentence did not line up fully, so the score stays partial.',
+    matchLabel: winner.score >= 70 ? 'strong connection' : 'partial connection',
+    alternatives: ranked.slice(1).map((row) => row.place.id),
     citations: [],
   }
 }
@@ -185,12 +138,66 @@ async function match(preferences: Preference[]): Promise<MatchResponse> {
 // listPlaces / getPlace
 // ---------------------------------------------------------------------------
 
+function illustrationFor(place: ScorePlace): PlaceProfile['illustration'] {
+  if (place.tags.includes('food')) return 'street'
+  if (place.tags.includes('culture') || place.tags.includes('history')) return 'gallery'
+  return 'garden'
+}
+
+function profileFromScorePlace(place: ScorePlace): PlaceProfile {
+  return {
+    id: place.id,
+    name: place.name,
+    neighborhood: place.neighborhood ?? 'New York',
+    borough: place.borough ?? 'New York',
+    coordinates: { lat: place.lat, lng: place.lng },
+    illustration: illustrationFor(place),
+    imageAttribution: 'Map location for this prototype. Not a reviewed photograph.',
+    description: place.blurb,
+    differenceNote: place.blurb,
+    entryNodeId: `${place.id}-intro`,
+    storyNodes: [
+      {
+        id: `${place.id}-intro`,
+        kind: 'intro',
+        text: place.blurb,
+        location: {
+          coordinates: { lat: place.lat, lng: place.lng },
+          label: place.name,
+          verified: true,
+        },
+        citationIds: [],
+      },
+    ],
+    citations: [],
+    contentVersion: 'score-v1',
+    isSample: true,
+    suggestedQuestions: [],
+  }
+}
+
+function summaryFromScorePlace(place: ScorePlace): PlaceSummary {
+  return {
+    id: place.id,
+    name: place.name,
+    neighborhood: place.neighborhood,
+    borough: place.borough,
+    illustration: illustrationFor(place),
+    imageAttribution: 'Map location for this prototype. Not a reviewed photograph.',
+    isSample: true,
+  }
+}
+
 async function listPlaces(): Promise<PlaceSummary[]> {
   await delay(300)
   if (shouldSimulateError()) {
     throw new Error('Simulated listPlaces failure for testing.')
   }
-  return PLACE_FIXTURES.map(toPlaceSummary)
+  const known = new Set(PLACE_FIXTURES.map((fixture) => fixture.id))
+  return [
+    ...PLACE_FIXTURES.map(toPlaceSummary),
+    ...SCORE_PLACES.filter((place) => !known.has(place.id)).map(summaryFromScorePlace),
+  ]
 }
 
 async function getPlace(placeId: string): Promise<PlaceProfile> {
@@ -199,10 +206,12 @@ async function getPlace(placeId: string): Promise<PlaceProfile> {
     throw new Error('Simulated getPlace failure for testing.')
   }
   const fixture = getFixtureById(placeId)
-  if (!fixture) {
+  if (fixture) return fixture
+  const scored = SCORE_PLACES.find((place) => place.id === placeId)
+  if (!scored) {
     throw new NotFoundError(`No sample place found for id "${placeId}".`)
   }
-  return fixture
+  return profileFromScorePlace(scored)
 }
 
 // ---------------------------------------------------------------------------

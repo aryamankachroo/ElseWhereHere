@@ -134,10 +134,17 @@ export interface AskResponse {
   message?: string
 }
 
+/** Pin and sentence used by the similarity score. */
+export interface MatchContext {
+  text: string
+  lat: number
+  lng: number
+}
+
 /** The typed service boundary implemented by both the mock and live adapters. */
 export interface ElsewhereHereApi {
   interpret(text: string): Promise<InterpretResponse>
-  match(preferences: Preference[]): Promise<MatchResponse>
+  match(preferences: Preference[], context: MatchContext): Promise<MatchResponse>
   listPlaces(): Promise<PlaceSummary[]>
   getPlace(placeId: string): Promise<PlaceProfile>
   ask(
