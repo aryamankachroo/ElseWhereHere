@@ -117,6 +117,35 @@ def score_place(user: dict, place: dict):
     return int(raw / weight_sum * 100 + 0.5)
 
 
+QUALITY_TO_TAGS = {
+    "calm": ["quiet"],
+    "linger": ["quiet"],
+    "reading": ["quiet"],
+    "greenery": ["outdoors"],
+    "waterfront": ["outdoors"],
+    "small-food-shops": ["food"],
+    "art": ["culture"],
+    "evening-activity": [],
+}
+
+
+def apply_qualities(parsed: dict, preferences: list[dict], dropped_tags: list[str]) -> dict:
+    tags = set(parsed["tags"])
+    for tag in dropped_tags:
+        for score_tag in QUALITY_TO_TAGS.get(tag, []):
+            tags.discard(score_tag)
+    for pref in preferences:
+        for score_tag in QUALITY_TO_TAGS.get(pref.get("tag", ""), []):
+            tags.add(score_tag)
+    window = parsed["window"]
+    if window is None and any(pref.get("tag") == "evening-activity" for pref in preferences):
+        now = datetime.now()
+        start = now.replace(hour=17, minute=0, second=0, microsecond=0)
+        end = now.replace(hour=22, minute=0, second=0, microsecond=0)
+        window = (start, end)
+    return {**parsed, "tags": list(tags), "window": window}
+
+
 def explain_score(user: dict, place: dict) -> str:
     minutes = max(1, int(distance_meters(user, place) / 80 + 0.5))
     parts = [f"About a {minutes}-minute walk."]
@@ -130,14 +159,21 @@ def explain_score(user: dict, place: dict) -> str:
         hit = [tag for tag in user["tags"] if tag in place.get("tags", [])]
         if not hit:
             asked = " and ".join(user["tags"])
-            parts.append(f"The sentence asked for {asked}, and this place misses that, so the score drops.")
+            parts.append(f"Asked for {asked}, and this place misses that, so the score drops.")
         else:
             parts.append(f"Matches {' and '.join(hit)}.")
     return " ".join(parts)
 
 
-def rank_places(pin: dict, prompt: str, places: list[dict] | None = None):
-    user = {"lat": pin["lat"], "lng": pin["lng"], **parse_prompt(prompt)}
+def rank_places(
+    pin: dict,
+    prompt: str,
+    places: list[dict] | None = None,
+    preferences: list[dict] | None = None,
+    dropped_tags: list[str] | None = None,
+):
+    parsed = apply_qualities(parse_prompt(prompt), preferences or [], dropped_tags or [])
+    user = {"lat": pin["lat"], "lng": pin["lng"], **parsed}
     rows = []
     for place in places if places is not None else load_places():
         score = score_place(user, place)

@@ -138,6 +138,44 @@ export function scorePlace(user: PinUser, place: ScorePlace): number | null {
   return Math.round((raw / weightSum) * 100)
 }
 
+/** Confirm-screen qualities, mapped onto the score tags the sentence already uses. */
+const QUALITY_TO_TAGS: Record<string, string[]> = {
+  calm: ['quiet'],
+  linger: ['quiet'],
+  reading: ['quiet'],
+  greenery: ['outdoors'],
+  waterfront: ['outdoors'],
+  'small-food-shops': ['food'],
+  art: ['culture'],
+  'evening-activity': [],
+}
+
+export function applyQualities(
+  parsed: ParsedPrompt,
+  preferences: Array<{ tag: string }>,
+  droppedTags: string[],
+): ParsedPrompt {
+  const tags = new Set(parsed.tags)
+  for (const tag of droppedTags) {
+    for (const scoreTag of QUALITY_TO_TAGS[tag] ?? []) tags.delete(scoreTag)
+  }
+  for (const pref of preferences) {
+    for (const scoreTag of QUALITY_TO_TAGS[pref.tag] ?? []) tags.add(scoreTag)
+  }
+
+  let window = parsed.window
+  if (!window && preferences.some((pref) => pref.tag === 'evening-activity')) {
+    const now = new Date()
+    const start = new Date(now)
+    start.setHours(17, 0, 0, 0)
+    const end = new Date(now)
+    end.setHours(22, 0, 0, 0)
+    window = [start, end]
+  }
+
+  return { ...parsed, tags: [...tags], window }
+}
+
 export function explainScore(user: PinUser, place: ScorePlace): string {
   const minutes = Math.max(1, Math.round(distanceMeters(user, place) / 80))
   const parts = [`About a ${minutes}-minute walk.`]
@@ -145,14 +183,20 @@ export function explainScore(user: PinUser, place: ScorePlace): string {
   if (place.local >= 0.75) parts.push('Neighbors use it more than visitors do.')
   if (user.tags.length) {
     const hit = user.tags.filter((tag) => place.tags.includes(tag))
-    if (hit.length === 0) parts.push(`The sentence asked for ${user.tags.join(' and ')}, and this place misses that, so the score drops.`)
+    if (hit.length === 0) parts.push(`Asked for ${user.tags.join(' and ')}, and this place misses that, so the score drops.`)
     else parts.push(`Matches ${hit.join(' and ')}.`)
   }
   return parts.join(' ')
 }
 
-export function rankPlaces(pin: { lat: number; lng: number }, prompt: string, places: ScorePlace[] = SCORE_PLACES) {
-  const user: PinUser = { lat: pin.lat, lng: pin.lng, ...parsePrompt(prompt) }
+export function rankPlaces(
+  pin: { lat: number; lng: number },
+  prompt: string,
+  places: ScorePlace[] = SCORE_PLACES,
+  qualities?: { preferences?: Array<{ tag: string }>; droppedTags?: string[] },
+) {
+  const parsed = applyQualities(parsePrompt(prompt), qualities?.preferences ?? [], qualities?.droppedTags ?? [])
+  const user: PinUser = { lat: pin.lat, lng: pin.lng, ...parsed }
   return places
     .map((place) => ({ place, score: scorePlace(user, place), user }))
     .filter((row): row is { place: ScorePlace; score: number; user: PinUser } => row.score != null)

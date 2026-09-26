@@ -5,6 +5,7 @@ import type {
   InterpretResponse,
   MatchContext,
   MatchResponse,
+  MatchSuggestion,
   PlaceProfile,
   PlaceSummary,
   Preference,
@@ -115,21 +116,34 @@ async function match(preferences: Preference[], context: MatchContext): Promise<
     throw new Error('At least one confirmed quality is required to find a connection.')
   }
 
-  const ranked = rankPlaces({ lat: context.lat, lng: context.lng }, context.text)
+  const ranked = rankPlaces({ lat: context.lat, lng: context.lng }, context.text, SCORE_PLACES, {
+    preferences,
+    droppedTags: context.droppedTags,
+  })
   const winner = ranked[0]
   if (!winner) {
     throw new Error('Nothing free in the current list is within a 15-minute walk of you. Mention cheap or paid if a ticket is fine.')
   }
 
+  const suggestions: MatchSuggestion[] = ranked.map((row) => ({
+    placeId: row.place.id,
+    name: row.place.name,
+    neighborhood: row.place.neighborhood,
+    borough: row.place.borough,
+    score: row.score,
+    note: explainScore(row.user, row.place),
+  }))
+
   return {
     placeId: winner.place.id,
-    reasons: [explainScore(winner.user, winner.place), `Similarity score ${winner.score} out of 100.`],
+    reasons: [suggestions[0].note, `Similarity score ${winner.score} out of 100.`],
     limitations:
       winner.score >= 70
-        ? 'Distance, cost, and localness all counted. A miss on the sentence lowers the score and still leaves the place on the list.'
-        : 'This is the closest place within a 15-minute walk. The sentence did not line up fully, so the score stays partial.',
+        ? 'Distance, cost, and localness all counted. A miss on a requested quality lowers the score and still leaves the place on the list.'
+        : 'This is the closest place within a 15-minute walk. The request did not line up fully, so the score stays partial.',
     matchLabel: winner.score >= 70 ? 'strong connection' : 'partial connection',
-    alternatives: ranked.slice(1).map((row) => row.place.id),
+    alternatives: suggestions.slice(1).map((row) => row.placeId),
+    suggestions,
     citations: [],
   }
 }

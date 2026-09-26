@@ -18,14 +18,18 @@ export function MatchResultPage() {
   const requestIdRef = useRef(0)
 
   const matchResult = flow.matchResult
-  const placeId = matchResult?.placeId
+  const [selectedId, setSelectedId] = useState(matchResult?.placeId ?? '')
 
   useEffect(() => {
-    if (!placeId) return
+    if (matchResult?.placeId) setSelectedId(matchResult.placeId)
+  }, [matchResult?.placeId])
+
+  useEffect(() => {
+    if (!selectedId) return
     const requestId = ++requestIdRef.current
     setLoadState('loading')
     api
-      .getPlace(placeId)
+      .getPlace(selectedId)
       .then((profile) => {
         if (requestIdRef.current !== requestId) return
         setPlace(profile)
@@ -35,7 +39,7 @@ export function MatchResultPage() {
         if (requestIdRef.current !== requestId) return
         setLoadState(err instanceof NotFoundError ? 'not-found' : 'error')
       })
-  }, [placeId])
+  }, [selectedId])
 
   if (!matchResult || flow.isMatchStale) {
     return <Navigate to="/confirm" replace />
@@ -70,7 +74,13 @@ export function MatchResultPage() {
 
   if (!place) return null
 
-  const isPartial = matchResult.matchLabel === 'partial connection'
+  const suggestions = matchResult.suggestions ?? []
+  const selectedSuggestion = suggestions.find((item) => item.placeId === place.id)
+  const reasons = selectedSuggestion
+    ? [selectedSuggestion.note, `Similarity score ${selectedSuggestion.score} out of 100.`]
+    : matchResult.reasons
+  const isPartial = selectedSuggestion ? selectedSuggestion.score < 70 : matchResult.matchLabel === 'partial connection'
+  const otherSuggestions = suggestions.filter((item) => item.placeId !== place.id)
 
   return (
     <section className="content-max px-4 py-8 sm:px-6 lg:py-12">
@@ -107,7 +117,7 @@ export function MatchResultPage() {
           </h2>
 
           <ul className="mt-3 space-y-2">
-            {matchResult.reasons.map((reason, i) => (
+            {reasons.map((reason, i) => (
               <li key={i} className="flex gap-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                 <span aria-hidden="true" className="mt-1 text-[var(--color-lavender)]">
                   ·
@@ -151,9 +161,30 @@ export function MatchResultPage() {
             </button>
           </div>
 
-          <p className="mt-6 text-xs text-[var(--color-text-muted)]">
-            Exploring three featured NYC places in this prototype.
-          </p>
+          {otherSuggestions.length > 0 && (
+            <div className="mt-8">
+              <h2 className="text-lg font-medium text-[var(--color-text)]">Other places within a 15-minute walk</h2>
+              <ul className="mt-3 space-y-3">
+                {otherSuggestions.map((item) => (
+                  <li key={item.placeId}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedId(item.placeId)}
+                      className="glass w-full rounded-2xl border border-white/15 px-4 py-3 text-left transition hover:border-white/40"
+                    >
+                      <span className="flex items-baseline justify-between gap-3">
+                        <span className="font-medium text-[var(--color-text)]">{item.name}</span>
+                        <span className="text-sm text-[var(--color-text-muted)]">{item.score}</span>
+                      </span>
+                      <span className="mt-1 block text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                        {item.note}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </section>

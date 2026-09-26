@@ -45,6 +45,9 @@ export function MatchingPage() {
           text: flow.rawMemoryText,
           lat: location.lat,
           lng: location.lng,
+          droppedTags: (flow.interpretResult?.preferences ?? [])
+            .map((pref) => pref.tag)
+            .filter((tag) => !flow.preferences.some((pref) => pref.tag === tag)),
         }),
       )
       .then((result) => {
@@ -63,7 +66,7 @@ export function MatchingPage() {
         setPhase('error')
       })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [flow.preferences, flow.rawMemoryText])
+  }, [flow.preferences, flow.rawMemoryText, flow.interpretResult])
 
   useEffect(() => {
     runMatch()

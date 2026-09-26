@@ -43,12 +43,23 @@ export interface Citation {
 
 export type MatchLabel = 'strong connection' | 'partial connection'
 
+/** One scored place. The note explains the score and does not choose the order. */
+export interface MatchSuggestion {
+  placeId: string
+  name: string
+  neighborhood?: string
+  borough?: string
+  score: number
+  note: string
+}
+
 export interface MatchResponse {
   placeId: string
   reasons: string[]
   limitations: string
   matchLabel: MatchLabel
   alternatives: string[]
+  suggestions: MatchSuggestion[]
   citations: Citation[]
 }
 
@@ -139,6 +150,8 @@ export interface MatchContext {
   text: string
   lat: number
   lng: number
+  /** Qualities the user removed on the confirm screen. */
+  droppedTags: string[]
 }
 
 /** The typed service boundary implemented by both the mock and live adapters. */

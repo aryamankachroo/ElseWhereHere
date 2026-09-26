@@ -23,6 +23,7 @@ class Preference(BaseModel):
 
 class MatchBody(BaseModel):
     preferences: list[Preference]
+    droppedTags: list[str] = []
     text: str = ""
     lat: float
     lng: float
@@ -101,7 +102,12 @@ def get_place(place_id: str):
 def match(body: MatchBody):
     if not body.preferences:
         raise HTTPException(status_code=400, detail="At least one confirmed quality is required.")
-    ranked = rank_places({"lat": body.lat, "lng": body.lng}, body.text)
+    ranked = rank_places(
+        {"lat": body.lat, "lng": body.lng},
+        body.text,
+        preferences=[pref.model_dump() for pref in body.preferences],
+        dropped_tags=body.droppedTags,
+    )
     if not ranked:
         raise HTTPException(
             status_code=404,
@@ -109,19 +115,28 @@ def match(body: MatchBody):
         )
     winner = ranked[0]
     score = winner["score"]
+    suggestions = [
+        {
+            "placeId": row["place"]["id"],
+            "name": row["place"]["name"],
+            "neighborhood": row["place"].get("neighborhood"),
+            "borough": row["place"].get("borough"),
+            "score": row["score"],
+            "note": explain_score(row["user"], row["place"]),
+        }
+        for row in ranked
+    ]
     return {
         "placeId": winner["place"]["id"],
-        "reasons": [
-            explain_score(winner["user"], winner["place"]),
-            f"Similarity score {score} out of 100.",
-        ],
+        "reasons": [suggestions[0]["note"], f"Similarity score {score} out of 100."],
         "limitations": (
-            "Distance, cost, and localness all counted. A miss on the sentence lowers the score and still leaves the place on the list."
+            "Distance, cost, and localness all counted. A miss on a requested quality lowers the score and still leaves the place on the list."
             if score >= 70
-            else "This is the closest place within a 15-minute walk. The sentence did not line up fully, so the score stays partial."
+            else "This is the closest place within a 15-minute walk. The request did not line up fully, so the score stays partial."
         ),
         "matchLabel": "strong connection" if score >= 70 else "partial connection",
-        "alternatives": [row["place"]["id"] for row in ranked[1:]],
+        "alternatives": [row["placeId"] for row in suggestions[1:]],
+        "suggestions": suggestions,
         "citations": [],
     }
 
@@ -130,12 +145,16 @@ def match(body: MatchBody):
 def interpret(body: InterpretBody):
     text = body.text.strip().lower()
     rules = [
-        ("calm", ["quiet", "calm", "peaceful", "still"]),
-        ("greenery", ["garden", "green", "park", "tree"]),
-        ("reading", ["read", "book", "library"]),
-        ("lively", ["lively", "busy", "street"]),
-        ("small-food-shops", ["food", "market", "lunch"]),
-        ("art", ["art", "mural", "gallery"]),
+        ("calm", ["quiet", "calm", "peaceful", "still", "tranquil"]),
+        ("greenery", ["garden", "green", "plant", "park", "tree", "nature"]),
+        ("reading", ["read", "book", "browse", "library"]),
+        ("linger", ["linger", "no rush", "in a hurry", "slow pace", "unhurried"]),
+        ("lively", ["lively", "busy", "bustling", "buzzing", "vibrant", "street"]),
+        ("small-food-shops", ["food shop", "food shops", "little food", "small food", "snack", "market", "deli", "bakery"]),
+        ("evening-activity", ["evening", "night", "after dark", "dusk"]),
+        ("art", ["art", "mural", "gallery", "paint", "sculpture"]),
+        ("independent-shops", ["independent shop", "indie shop", "small shop", "boutique", "shops", "corner store"]),
+        ("waterfront", ["water", "river", "waterfront", "harbor", "pier", "sea", "canal"]),
     ]
     tags = [tag for tag, words in rules if any(word in text for word in words)]
     if not tags:

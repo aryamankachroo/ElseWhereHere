@@ -43,7 +43,14 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   }
 
   if (response.status === 404) {
-    throw new NotFoundError(`Resource not found: ${path}`)
+    let message = `Resource not found: ${path}`
+    try {
+      const body = (await response.json()) as { detail?: unknown }
+      if (typeof body.detail === 'string' && body.detail) message = body.detail
+    } catch {
+      // keep the path message
+    }
+    throw new NotFoundError(message)
   }
 
   if (!response.ok) {
@@ -69,7 +76,13 @@ async function interpret(text: string): Promise<InterpretResponse> {
 async function match(preferences: Preference[], context: MatchContext): Promise<MatchResponse> {
   return request<MatchResponse>('/api/v1/match', {
     method: 'POST',
-    body: JSON.stringify({ preferences, text: context.text, lat: context.lat, lng: context.lng }),
+    body: JSON.stringify({
+      preferences,
+      droppedTags: context.droppedTags,
+      text: context.text,
+      lat: context.lat,
+      lng: context.lng,
+    }),
   })
 }
 
