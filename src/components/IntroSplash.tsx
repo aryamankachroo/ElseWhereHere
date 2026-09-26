@@ -1,10 +1,11 @@
+import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
 
 const SESSION_KEY = 'eh:introShown'
-const VISIBLE_MS = 1050
-const EXIT_MS = 450
+const VISIBLE_MS = 2400
+const EXIT_MS = 500
 
 type Phase = 'hidden' | 'visible' | 'exiting'
 
@@ -35,6 +36,7 @@ function markShown(): void {
  * all, and never replays after the first time in a given tab.
  */
 export function IntroSplash() {
+  const reduceMotion = useReducedMotion()
   const [phase, setPhase] = useState<Phase>(() => {
     if (prefersReducedMotion() || alreadyShownThisSession()) return 'hidden'
     return 'visible'
@@ -72,15 +74,32 @@ export function IntroSplash() {
       style={{ opacity: phase === 'exiting' ? 0 : 1, transitionDuration: `${EXIT_MS}ms` }}
       onClick={() => setPhase('exiting')}
     >
-      <NYCSkylineBackdrop className="absolute inset-x-0 bottom-0 h-1/2 w-full opacity-70" />
+      <motion.div
+        className="absolute inset-x-0 bottom-0 h-[58%] w-full opacity-80 sm:h-1/2"
+        initial={reduceMotion ? undefined : { opacity: 0, y: 36, scale: 1.04 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <NYCSkylineBackdrop className="h-full w-full" />
+      </motion.div>
 
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        <p className="animate-[splash-scale-in_0.6s_ease-out_both] text-2xl font-semibold tracking-tight text-[var(--color-text)] sm:text-3xl">
+        <motion.p
+          className="text-2xl font-semibold tracking-tight text-[var(--color-text)] sm:text-3xl"
+          initial={reduceMotion ? undefined : { opacity: 0, y: 14, letterSpacing: '0.06em' }}
+          animate={{ opacity: 1, y: 0, letterSpacing: '0em' }}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
+        >
           Elsewhere Here
-        </p>
-        <p className="mt-2 animate-[fade-up_0.6s_ease-out_0.3s_both] text-sm text-[var(--color-text-muted)]">
+        </motion.p>
+        <motion.p
+          className="mt-2 text-sm text-[var(--color-text-muted)]"
+          initial={reduceMotion ? undefined : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+        >
           Find a familiar feeling in New York.
-        </p>
+        </motion.p>
       </div>
 
       <button

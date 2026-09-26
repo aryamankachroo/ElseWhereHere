@@ -100,6 +100,30 @@
     border: 0;
   }
 
+  .animate-skyline-drift-back {
+    animation: skyline-drift-back 42s ease-in-out infinite;
+  }
+
+  .animate-skyline-drift-front {
+    animation: skyline-drift-front 30s ease-in-out infinite;
+  }
+
+  .animate-window-twinkle {
+    animation: window-twinkle 3.2s ease-in-out infinite;
+  }
+
+  .animate-water-shimmer {
+    animation: water-shimmer 7s linear infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 6s ease-in-out infinite;
+  }
+
+  .animate-beacon-blink {
+    animation: beacon-blink 2.6s ease-in-out infinite;
+  }
+
   .sr-only-focusable:focus {
     position: fixed;
     top: 0.75rem;
@@ -166,14 +190,78 @@
   }
 }
 
-@keyframes splash-scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
+@keyframes skyline-drift-back {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  to {
+  50% {
+    transform: translateX(-1.4%);
+  }
+}
+
+@keyframes skyline-drift-front {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1%);
+  }
+}
+
+@keyframes window-twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes water-shimmer {
+  0% {
+    transform: translateX(-320px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes beacon-blink {
+  0%,
+  30% {
     opacity: 1;
-    transform: scale(1);
+  }
+  35%,
+  65% {
+    opacity: 0.15;
+  }
+  70%,
+  100% {
+    opacity: 1;
   }
 }
 
