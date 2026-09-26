@@ -2,7 +2,6 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-import { PlaceIllustration } from '@/components/PlaceIllustration'
 import { QAPanel } from '@/components/QAPanel'
 import { SourceDrawer } from '@/components/SourceDrawer'
 import { MapView } from '@/components/map/MapView'
@@ -133,14 +132,6 @@ export function StoryMapPage() {
     </div>
   )
 
-  const photoBlock: ReactNode = (
-    <PlaceIllustration
-      variant={activeNode.illustration ?? place.illustration}
-      className="h-36 w-full rounded-xl sm:h-40"
-      label={`Sample illustration for the current story step at ${place.name}`}
-    />
-  )
-
   const storyBlock: ReactNode = (
     <div className="glass rounded-3xl border border-white/20 p-5 sm:p-6">
       <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
@@ -247,7 +238,6 @@ export function StoryMapPage() {
         <div className="grid grid-cols-[1.15fr_0.85fr] items-start gap-8">
           <div className="space-y-6">
             {titleBlock}
-            {photoBlock}
             {storyBlock}
             {qaBlock}
           </div>
@@ -274,7 +264,6 @@ export function StoryMapPage() {
             </button>
           </div>
 
-          {photoBlock}
           {storyBlock}
           {qaBlock}
         </div>

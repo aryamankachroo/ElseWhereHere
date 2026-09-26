@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 
-import { PlaceIllustration } from '@/components/PlaceIllustration'
+import { MapView } from '@/components/map/MapView'
 import { SourceDrawer } from '@/components/SourceDrawer'
 import { useFlow } from '@/context/FlowContext'
 import { api } from '@/lib/api'
@@ -74,16 +74,18 @@ export function MatchResultPage() {
 
   return (
     <section className="content-max px-4 py-8 sm:px-6 lg:py-12">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start lg:gap-12">
-        <div>
-          <PlaceIllustration
-            variant={place.illustration}
-            className="aspect-[4/3] w-full rounded-2xl lg:aspect-square"
-            label={`Sample illustration representing ${place.name}`}
-          />
-          <p className="mt-2 text-xs text-[var(--color-text-muted)]">{place.imageAttribution}</p>
-        </div>
-
+      <MapView
+        key={place.id}
+        placeName={place.name}
+        neighborhood={place.neighborhood}
+        borough={place.borough}
+        coordinates={place.coordinates}
+        storyNodes={place.storyNodes}
+        activeStoryNodeId={place.entryNodeId}
+        onSelectStoryNode={() => {}}
+        heightClassName="h-[320px] lg:h-[420px]"
+      />
+      <div className="mt-8 max-w-2xl">
         <div>
           {isPartial && (
             <p className="mb-3 inline-flex items-center rounded-full border border-[var(--color-rose)]/40 bg-[var(--color-rose)]/10 px-3 py-1 text-xs font-medium text-[var(--color-rose)]">

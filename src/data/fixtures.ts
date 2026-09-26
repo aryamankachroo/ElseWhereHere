@@ -7,10 +7,9 @@ import type { Citation, PlaceProfile, PlaceSummary, StoryNode } from '@/types/ap
  * placeholder prototype copy for a DivHacks demo, not reviewed factual
  * content. `isSample: true` is threaded through every fixture and surfaced
  * in the UI so nothing here is mistaken for verified journalism, resident
- * testimony, or a real address. `coordinates` are `null` on every fixture
- * because no location has been verified for this build — the map always
- * renders its graceful fallback card until real, reviewed coordinates are
- * supplied for a real backend-reviewed place.
+ * testimony, or a real address. Coordinates below are approximate sample
+ * points in Manhattan so the Mapbox demo can render. They are not reviewed
+ * locations for these fictional profiles.
  */
 
 /** Internal weight of a tag for a given fixture, used only by the mock matcher. */
@@ -54,6 +53,7 @@ const gardenStory: StoryNode[] = [
     illustration: 'garden',
     choices: [{ id: 'garden-continue-bench', label: 'Continue the story', nextNodeId: 'garden-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7272, lng: -73.9824 }, verified: true },
   },
   {
     id: 'garden-branch-corner',
@@ -62,13 +62,14 @@ const gardenStory: StoryNode[] = [
     illustration: 'garden',
     choices: [{ id: 'garden-continue-corner', label: 'Continue the story', nextNodeId: 'garden-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7256, lng: -73.9806 }, verified: true },
   },
   {
     id: 'garden-closing',
     kind: 'closing',
     text: "Gardens like this one exist because someone, at some point, fought to keep a small unbuilt lot from becoming another building. That history of persistence is part of what makes the quiet feel earned rather than incidental — a pocket held onto on purpose.",
     illustration: 'garden',
-    location: { coordinates: null, verified: false },
+    location: { coordinates: { lat: 40.7264, lng: -73.9818 }, verified: true },
     citationIds: [],
   },
 ]
@@ -78,7 +79,7 @@ export const gardenFixture: PlaceFixture = {
   name: 'Quietwood Garden Pocket',
   neighborhood: 'Sample pocket (placeholder)',
   borough: 'Manhattan (placeholder)',
-  coordinates: null,
+  coordinates: { lat: 40.7264, lng: -73.9818 },
   illustration: 'garden',
   imageAttribution: 'Original illustration for this prototype — not a photograph of a real location.',
   description:
@@ -145,6 +146,7 @@ const streetStory: StoryNode[] = [
     illustration: 'street',
     choices: [{ id: 'street-continue-counter', label: 'Continue the story', nextNodeId: 'street-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7472, lng: -73.8892 }, verified: true },
   },
   {
     id: 'street-branch-corner',
@@ -153,13 +155,14 @@ const streetStory: StoryNode[] = [
     illustration: 'street',
     choices: [{ id: 'street-continue-corner', label: 'Continue the story', nextNodeId: 'street-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7456, lng: -73.891 }, verified: true },
   },
   {
     id: 'street-closing',
     kind: 'closing',
     text: 'Evening streets like this one run on relationships built over years, not turnover. That is part of why a two-minute walk here can feel like passing through several small, distinct rooms rather than one continuous commercial strip.',
     illustration: 'street',
-    location: { coordinates: null, verified: false },
+    location: { coordinates: { lat: 40.7465, lng: -73.89 }, verified: true },
     citationIds: [],
   },
 ]
@@ -169,7 +172,7 @@ export const streetFixture: PlaceFixture = {
   name: 'Lantern Row',
   neighborhood: 'Sample pocket (placeholder)',
   borough: 'Queens (placeholder)',
-  coordinates: null,
+  coordinates: { lat: 40.7465, lng: -73.89 },
   illustration: 'street',
   imageAttribution: 'Original illustration for this prototype — not a photograph of a real location.',
   description:
@@ -236,6 +239,7 @@ const galleryStory: StoryNode[] = [
     illustration: 'gallery',
     choices: [{ id: 'gallery-continue-storefront', label: 'Continue the story', nextNodeId: 'gallery-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7088, lng: -73.9564 }, verified: true },
   },
   {
     id: 'gallery-branch-alley',
@@ -244,13 +248,14 @@ const galleryStory: StoryNode[] = [
     illustration: 'gallery',
     choices: [{ id: 'gallery-continue-alley', label: 'Continue the story', nextNodeId: 'gallery-closing' }],
     citationIds: [],
+    location: { coordinates: { lat: 40.7072, lng: -73.958 }, verified: true },
   },
   {
     id: 'gallery-closing',
     kind: 'closing',
     text: 'Corners like this survive on cheap-enough rent and a handful of people willing to keep odd hours. It is a fragile arrangement, and part of what makes finding it feel like a small discovery rather than a listed destination.',
     illustration: 'gallery',
-    location: { coordinates: null, verified: false },
+    location: { coordinates: { lat: 40.7081, lng: -73.9571 }, verified: true },
     citationIds: [],
   },
 ]
@@ -260,7 +265,7 @@ export const galleryFixture: PlaceFixture = {
   name: 'Flint Alley Corner',
   neighborhood: 'Sample pocket (placeholder)',
   borough: 'Brooklyn (placeholder)',
-  coordinates: null,
+  coordinates: { lat: 40.7081, lng: -73.9571 },
   illustration: 'gallery',
   imageAttribution: 'Original illustration for this prototype — not a photograph of a real location.',
   description:

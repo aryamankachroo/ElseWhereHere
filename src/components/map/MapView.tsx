@@ -21,6 +21,17 @@ interface MapViewProps {
 const NYC_WIDE_VIEW: [number, number] = [-73.97, 40.72]
 const NYC_WIDE_ZOOM = 10.3
 const PLACE_ZOOM = 15.5
+const REROUTE_METERS = 75
+
+function metersBetween(a: { lat: number; lng: number }, b: { lat: number; lng: number }) {
+  const toRad = (deg: number) => (deg * Math.PI) / 180
+  const dLat = toRad(b.lat - a.lat)
+  const dLng = toRad(b.lng - a.lng)
+  const lat1 = toRad(a.lat)
+  const lat2 = toRad(b.lat)
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2
+  return 2 * 6371000 * Math.asin(Math.sqrt(h))
+}
 
 function useWebGLSupported(): boolean {
   return useMemo(() => {
@@ -59,10 +70,18 @@ export function MapView({
   const placeMarkerRef = useRef<MapboxMarker | null>(null)
   const nodeMarkersRef = useRef<Map<string, MapboxMarker>>(new Map())
   const lastFlownNodeIdRef = useRef<string | null>(null)
+  const userMarkerRef = useRef<MapboxMarker | null>(null)
+  const watchIdRef = useRef<number | null>(null)
+  const lastRoutedRef = useRef<{ lat: number; lng: number } | null>(null)
   const onSelectStoryNodeRef = useRef(onSelectStoryNode)
+  const activeStoryNodeIdRef = useRef(activeStoryNodeId)
   onSelectStoryNodeRef.current = onSelectStoryNode
+  activeStoryNodeIdRef.current = activeStoryNodeId
 
   const [status, setStatus] = useState<'checking' | 'ready' | 'failed'>('checking')
+  const [locationAsk, setLocationAsk] = useState<'prompt' | 'requesting' | 'failed' | 'hidden'>('prompt')
+  const [locationError, setLocationError] = useState<string | null>(null)
+  const [routeNote, setRouteNote] = useState<string | null>(null)
 
   const token = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
   const webglSupported = useWebGLSupported()
@@ -125,6 +144,7 @@ export function MapView({
 
           const marker = new mapboxgl.Marker({ color: '#f5f5f7' }).setLngLat(target).addTo(map)
           placeMarkerRef.current = marker
+          lastFlownNodeIdRef.current = activeStoryNodeIdRef.current
 
           for (const node of verifiedNodeLocations) {
             const nodeMarker = new mapboxgl.Marker({ color: '#8fb4e0', scale: 0.8 })
@@ -162,6 +182,12 @@ export function MapView({
       const placeMarker = placeMarkerRef.current
       placeMarker?.remove()
       placeMarkerRef.current = null
+      userMarkerRef.current?.remove()
+      userMarkerRef.current = null
+      if (watchIdRef.current !== null) {
+        navigator.geolocation.clearWatch(watchIdRef.current)
+        watchIdRef.current = null
+      }
 
       const mapInstance = mapRef.current
       mapInstance?.remove()
@@ -191,6 +217,113 @@ export function MapView({
     // If the active node has no verified location, preserve the current map view.
     lastFlownNodeIdRef.current = activeStoryNodeId
   }, [activeStoryNodeId, status, verifiedNodeLocations, prefersReducedMotion])
+
+  async function allowLocation() {
+    if (!coordinates || !token || !mapRef.current) return
+    if (!navigator.geolocation) {
+      setLocationAsk('hidden')
+      setRouteNote('Directions need location access, and this browser cannot share a location.')
+      return
+    }
+    if (watchIdRef.current !== null) {
+      navigator.geolocation.clearWatch(watchIdRef.current)
+      watchIdRef.current = null
+    }
+    lastRoutedRef.current = null
+    setLocationAsk('requesting')
+
+    const mapboxglPromise = import('mapbox-gl')
+    watchIdRef.current = navigator.geolocation.watchPosition(
+      async (position) => {
+        const origin = { lat: position.coords.latitude, lng: position.coords.longitude }
+        const map = mapRef.current
+        if (!map) return
+        try {
+          const mapboxgl = (await mapboxglPromise).default
+          if (!userMarkerRef.current) {
+            const you = new mapboxgl.Marker({ color: '#111111' }).setLngLat([origin.lng, origin.lat]).addTo(map)
+            you.getElement().setAttribute('aria-label', 'Your location')
+            userMarkerRef.current = you
+          } else {
+            userMarkerRef.current.setLngLat([origin.lng, origin.lat])
+          }
+
+          const last = lastRoutedRef.current
+          const shouldReroute = !last || metersBetween(last, origin) >= REROUTE_METERS
+          if (shouldReroute) {
+            const url =
+              `https://api.mapbox.com/directions/v5/mapbox/walking/` +
+              `${origin.lng},${origin.lat};${coordinates.lng},${coordinates.lat}` +
+              `?geometries=geojson&overview=full&access_token=${encodeURIComponent(token)}`
+            const response = await fetch(url)
+            if (!response.ok) throw new Error('directions failed')
+            const body = (await response.json()) as {
+              routes?: Array<{
+                duration: number
+                distance: number
+                geometry: { type: 'LineString'; coordinates: [number, number][] }
+              }>
+            }
+            const route = body.routes?.[0]
+            if (!route) throw new Error('no route')
+
+            const existing = map.getSource('eh-route') as import('mapbox-gl').GeoJSONSource | undefined
+            const data = {
+              type: 'Feature' as const,
+              properties: {},
+              geometry: route.geometry,
+            }
+            if (existing) {
+              existing.setData(data)
+            } else {
+              map.addSource('eh-route', { type: 'geojson', data })
+              map.addLayer({
+                id: 'eh-route',
+                type: 'line',
+                source: 'eh-route',
+                layout: { 'line-cap': 'round', 'line-join': 'round' },
+                paint: { 'line-color': '#f5f5f7', 'line-width': 4, 'line-opacity': 0.9 },
+              })
+            }
+
+            if (!last) {
+              const bounds = new mapboxgl.LngLatBounds()
+              bounds.extend([origin.lng, origin.lat])
+              bounds.extend([coordinates.lng, coordinates.lat])
+              map.fitBounds(bounds, { padding: 56, duration: prefersReducedMotion ? 0 : 900 })
+            }
+            lastRoutedRef.current = origin
+
+            const minutes = Math.max(1, Math.round(route.duration / 60))
+            const miles = route.distance / 1609.34
+            const distanceLabel = miles < 0.1 ? `${Math.round(route.distance * 3.28084)} ft` : `${miles.toFixed(1)} mi`
+            setRouteNote(`${minutes} min walk · ${distanceLabel}`)
+          } else {
+            const view = map.getBounds()
+            if (view && !view.contains([origin.lng, origin.lat])) {
+              map.panTo([origin.lng, origin.lat], { duration: prefersReducedMotion ? 0 : 600 })
+            }
+          }
+
+          setLocationAsk('hidden')
+        } catch {
+          setLocationAsk('hidden')
+          setRouteNote('Directions could not be loaded. Your location is still updating on the map.')
+        }
+      },
+      (error) => {
+        const message =
+          error.code === error.PERMISSION_DENIED
+            ? 'The browser blocked location. Click the lock icon in the address bar, set Location to Allow, then try again.'
+            : error.code === error.TIMEOUT
+              ? 'Finding your location timed out. Try again. On a Mac, Location Services also has to be on for this browser.'
+              : 'This browser could not find your location. On a Mac, turn on Location Services for this browser in System Settings, then try again.'
+        setLocationError(message)
+        setLocationAsk('failed')
+      },
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 5000 },
+    )
+  }
 
   function handleRecenter() {
     const map = mapRef.current
@@ -225,15 +358,48 @@ export function MapView({
   }
 
   return (
-    <div className={`relative overflow-hidden rounded-2xl border border-[var(--color-border)] ${heightClassName}`}>
-      <div ref={containerRef} className="h-full w-full" />
-      <button
-        type="button"
-        onClick={handleRecenter}
-        className="absolute bottom-3 left-3 rounded-full border border-[var(--color-border-strong)] bg-[var(--color-surface)]/90 px-3 py-1.5 text-xs font-medium text-[var(--color-text-secondary)] backdrop-blur transition hover:text-[var(--color-text)]"
-      >
-        Recenter
-      </button>
+    <div>
+      <div className={`relative overflow-hidden rounded-3xl border border-white/20 ${heightClassName}`}>
+        <div ref={containerRef} className="h-full w-full" />
+        {status === 'ready' && locationAsk !== 'hidden' && (
+          <div
+            role="dialog"
+            aria-labelledby="location-prompt-title"
+            className="glass absolute inset-x-3 bottom-3 z-10 rounded-2xl border border-white/25 p-4 sm:inset-x-auto sm:right-3 sm:w-80"
+          >
+            <p id="location-prompt-title" className="text-sm font-medium text-[var(--color-text)]">
+              {locationAsk === 'failed'
+                ? locationError
+                : 'Use your location to show walking directions to this place?'}
+            </p>
+            <div className="mt-3 flex gap-2">
+              <button
+                type="button"
+                onClick={allowLocation}
+                disabled={locationAsk === 'requesting'}
+                className="glass-button rounded-full border border-white/40 px-4 py-1.5 text-xs font-semibold transition disabled:opacity-60"
+              >
+                {locationAsk === 'requesting' ? 'Asking…' : locationAsk === 'failed' ? 'Try again' : 'Allow'}
+              </button>
+              <button
+                type="button"
+                onClick={() => setLocationAsk('hidden')}
+                className="rounded-full border border-white/20 px-4 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
+              >
+                Not now
+              </button>
+            </div>
+          </div>
+        )}
+        <button
+          type="button"
+          onClick={handleRecenter}
+          className="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-3 py-1.5 text-xs font-medium text-[var(--color-text-secondary)] backdrop-blur transition hover:text-[var(--color-text)]"
+        >
+          Recenter
+        </button>
+      </div>
+      {routeNote && <p className="mt-2 text-sm text-[var(--color-text-secondary)]">{routeNote}</p>}
     </div>
   )
 }
