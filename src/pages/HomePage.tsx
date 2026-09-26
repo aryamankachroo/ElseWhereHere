@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { HomeRingsDesktop, HomeRingsMobile } from '@/components/HomeRings'
+import { IntroSplash } from '@/components/IntroSplash'
+import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
 import { useFlow } from '@/context/FlowContext'
 import { api } from '@/lib/api'
 
@@ -46,8 +48,15 @@ export function HomePage() {
   }
 
   return (
-    <section className="content-max px-4 py-8 sm:px-6 lg:py-14">
-      <HomeRingsMobile />
+    <section className="relative overflow-hidden px-4 py-8 sm:px-6 lg:py-14">
+      <IntroSplash />
+
+      <NYCSkylineBackdrop
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40 w-full opacity-[0.18] lg:h-56"
+      />
+
+      <div className="content-max relative">
+        <HomeRingsMobile />
 
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div className="animate-fade-up">
@@ -124,6 +133,7 @@ export function HomePage() {
         </div>
 
         <HomeRingsDesktop />
+        </div>
       </div>
     </section>
   )
