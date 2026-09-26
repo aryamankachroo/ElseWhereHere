@@ -1,0 +1,100 @@
+{
+  "sources": [
+    {
+      "id": "wiki-jackson-heights",
+      "neighborhoodId": "jackson-heights",
+      "title": "Jackson Heights (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jackson_Heights",
+      "license": "CC BY-SA 4.0",
+      "text": "Jackson Heights is a neighborhood in the northwestern part of the borough of Queens in New York City. It is neighbored by North Corona to the east, Elmhurst to the south, Woodside to the west, and East Elmhurst to the north. The neighborhood is part of Queens Community District 3 and is patrolled by the 115th Precinct of the NYPD. It is often described in public sources as one of the most ethnically and linguistically diverse neighborhoods in New York City and the United States. Jackson Heights was developed as a planned community by the Queensboro Corporation beginning in the 1910s. The corporation built garden-apartment complexes with interior courtyards and marketed the area to middle-class residents after the Queensboro Bridge and later rail connections improved access to Queens. The Jackson Heights Historic District, designated by the New York City Landmarks Preservation Commission in 1993, covers a large concentration of those garden apartments and related buildings. Roosevelt Avenue, with the elevated IRT Flushing Line (7 train), is a major east-west commercial and transit corridor. 37th Avenue is a primary local shopping street. The area around 74th Street and Roosevelt Avenue is a well-known commercial cluster, including South Asian businesses, and includes Diversity Plaza, a public plaza created by closing a segment of 37th Road to traffic. Travers Park, on 34th Avenue, is a neighborhood park with a greenmarket. The neighborhood’s housing is predominantly apartment buildings and co-ops rather than one- and two-family detached houses."
+    },
+    {
+      "id": "lpc-jackson-heights",
+      "neighborhoodId": "jackson-heights",
+      "title": "Jackson Heights Historic District Designation Report (NYC Landmarks Preservation Commission, 1993)",
+      "url": "https://s-media.nyc.gov/agencies/lpc/lp/1831.pdf",
+      "license": "Public city document",
+      "text": "The New York City Landmarks Preservation Commission designated the Jackson Heights Historic District on October 19, 1993 (Designation List 254, LP-1831). The report describes Jackson Heights as a planned community whose development was associated with the Queensboro Corporation and Edward A. MacDougall. Beginning in the 1910s, the corporation constructed garden-apartment buildings arranged around landscaped interior courts, a planning idea intended to bring light, air, and shared green space to apartment living. The designation report identifies the district’s significance in early-twentieth-century urban planning and architecture: blocks of apartment houses, many later operated as cooperatives, with a consistent scale, setbacks, and courtyard gardens. The historic district is residential in character; commercial uses historically concentrated on the avenue frontages rather than inside the garden courts. The courts were planned as amenities for the occupants of the surrounding buildings. The report places the neighborhood in northwestern Queens and relates its growth to transportation improvements that made apartment living in Queens practical for people working in Manhattan. It does not describe the district as a theme park or as a replica of another city; it treats Jackson Heights as a specific Queens planning experiment."
+    },
+    {
+      "id": "wiki-diversity-plaza",
+      "neighborhoodId": "jackson-heights",
+      "title": "Diversity Plaza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diversity_Plaza",
+      "license": "CC BY-SA 4.0",
+      "text": "Diversity Plaza is a public plaza in Jackson Heights, Queens, at 37th Road between 73rd and 74th Streets, adjacent to the 74th Street–Broadway / Roosevelt Avenue transit complex. The city converted a short stretch of street into a pedestrian plaza as part of a Department of Transportation plaza program. The space sits next to intense commercial activity and subway and bus transfers. It functions as open-air public space in a neighborhood where many residents live in apartments without private yards. Reporting and the plaza’s naming emphasize the area’s demographic diversity, but the plaza itself is a piece of street-design infrastructure: seating, paving, and a car-free block rather than a museum of cultures. Nearby 74th Street is a dense retail corridor."
+    },
+    {
+      "id": "travers-park",
+      "neighborhoodId": "jackson-heights",
+      "title": "Travers Park (NYC Parks)",
+      "url": "https://www.nycgovparks.org/parks/travers-park",
+      "license": "NYC Parks public page",
+      "text": "Travers Park is a New York City Parks playground and park in Jackson Heights, Queens, along 34th Avenue between 77th and 78th Streets. NYC Parks’ listing identifies it as a neighborhood park with play equipment, courts, and open space serving the surrounding apartment district. A greenmarket has operated at or next to the park, bringing produce shopping onto 34th Avenue. The park is modest in size compared with large Queens parks such as Flushing Meadows; its role is local recreation for a dense residential area. 34th Avenue in this part of Jackson Heights has also been the site of Open Streets programming, temporarily limiting cars so that park activity can spill onto the roadway."
+    },
+    {
+      "id": "wiki-red-hook",
+      "neighborhoodId": "red-hook",
+      "title": "Red Hook, Brooklyn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Red_Hook,_Brooklyn",
+      "license": "CC BY-SA 4.0",
+      "text": "Red Hook is a neighborhood in western Brooklyn, New York City, on a peninsula projecting into Upper New York Bay. It is bounded by the Gowanus Expressway and Carroll Gardens to the northeast, Buttermilk Channel to the west, and the Gowanus Canal to the east. The name comes from the Dutch Roode Hoek, referring to a red clay or reddish soil at a point of land. In the nineteenth century Red Hook became a major port, with Atlantic Basin and Erie Basin constructed for cargo shipping. The neighborhood includes the Red Hook Houses, a large NYCHA development. Red Hook has no New York City Subway station within the neighborhood; nearby subway service is in adjacent areas, and NYC Ferry has served the waterfront. Hurricane Sandy in October 2012 caused severe flooding in Red Hook because of its low elevation on the bay. Industry, warehouses, a cruise terminal, and residential buildings including public housing share the peninsula. Coffey Park and Red Hook Park (Red Hook Recreation Area) are important local open spaces."
+    },
+    {
+      "id": "nyc-parks-red-hook",
+      "neighborhoodId": "red-hook",
+      "title": "Red Hook Recreation Area (NYC Parks)",
+      "url": "https://www.nycgovparks.org/parks/red-hook-recreation-area",
+      "license": "NYC Parks public page",
+      "text": "Red Hook Recreation Area is a large New York City Parks property in Red Hook, Brooklyn. NYC Parks describes athletic fields, a running track, playgrounds, and the Red Hook Play Center. The Play Center includes a swimming pool complex built in the 1930s with federal Works Progress Administration funding, part of a citywide pool-building program under Robert Moses. The recreation area sits inland from the working waterfront and serves residents of the Red Hook Houses and surrounding blocks. It is a neighborhood sports and swimming facility, not a waterfront tourist overlook. Parks Department pages treat it as parkland with specific named facilities rather than as a scenic replica of another city’s docks."
+    },
+    {
+      "id": "lpc-red-hook-play-center",
+      "neighborhoodId": "red-hook",
+      "title": "Red Hook Play Center (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Red_Hook_Play_Center",
+      "license": "CC BY-SA 4.0",
+      "text": "The Red Hook Play Center, also associated with the Sol Goldman Pool, is a designated New York City Landmark. The Landmarks Preservation Commission has documented it as a 1930s WPA-era bathhouse and pool complex in Red Hook, Brooklyn, designed in a monumental brick style typical of the city’s Depression-era neighborhood pools. These pools were built to serve dense working-class districts with public swimming. The designation treats the play center as civic architecture and social infrastructure. It stands near the Red Hook Houses and the recreation fields. Landmark status covers the historic pool complex; it does not convert the surrounding industrial waterfront into a landmark theme district."
+    },
+    {
+      "id": "sandy-red-hook",
+      "neighborhoodId": "red-hook",
+      "title": "Hurricane Sandy and Red Hook (Wikipedia: Hurricane Sandy)",
+      "url": "https://en.wikipedia.org/wiki/Effects_of_Hurricane_Sandy_in_New_York",
+      "license": "CC BY-SA 4.0",
+      "text": "Hurricane Sandy made landfall in the New York area in October 2012. Low-lying waterfront neighborhoods in Brooklyn, including Red Hook, experienced inundation from storm surge in New York Harbor. Accounts of the storm note flooding of streets, ground-floor apartments, and businesses, and prolonged loss of electricity and heat in some buildings, including public housing. Red Hook’s peninsula geography and elevation made surge waters hard to avoid. Recovery involved city, federal, and local organizations. Sandy is a documented environmental fact of the neighborhood’s recent history and shapes discussions of resiliency, not a metaphor. Sources describe flooding and infrastructure failure; they do not provide star ratings, restaurant rankings, or transit itineraries."
+    },
+    {
+      "id": "wiki-inwood",
+      "neighborhoodId": "inwood",
+      "title": "Inwood, Manhattan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inwood,_Manhattan",
+      "license": "CC BY-SA 4.0",
+      "text": "Inwood is a neighborhood at the northern tip of the borough of Manhattan in New York City. It is bounded by the Hudson River to the west, the Harlem River to the north and east, and Dyckman Street to the south, with some definitions extending slightly differently along the southern edge. Inwood Hill Park occupies the western ridges and Hudson shoreline. Isham Park is another hillside park. The neighborhood is primarily residential, with Dyckman Street and Broadway as commercial streets. The A train terminates at Inwood–207th Street; the 1 train terminates at Van Cortlandt Park–242nd Street in the Bronx but also serves 215th Street and 207th Street on the west side line in Inwood. The Dyckman Farmhouse Museum, a Dutch Colonial house from about 1784, stands on Broadway. Inwood contains apartment buildings and a substantial parklands share compared with most of Manhattan. Public sources note a large Hispanic, including Dominican, population in Inwood and neighboring Washington Heights as a demographic fact of recent decades. That census fact is not a claim that the neighborhood is a substitute for another country or city."
+    },
+    {
+      "id": "nyc-parks-inwood-hill",
+      "neighborhoodId": "inwood",
+      "title": "Inwood Hill Park (NYC Parks)",
+      "url": "https://www.nycgovparks.org/parks/inwood-hill-park",
+      "license": "NYC Parks public page",
+      "text": "Inwood Hill Park is a 196-acre park at the northern end of Manhattan. NYC Parks states that the park contains the last remaining natural forest and salt marsh in Manhattan. The landscape includes ridges, caves, wooded trails, ballfields, and Hudson River shoreline. The caves and archaeological sites are associated with Lenape history; Parks interpretation also mentions a boulder commemorating a traditional story of the sale of Manhattan, which is a memorial inscription rather than an independent legal record of that event. Muscota Marsh is a salt-marsh restoration on the Harlem River side of the park, created as habitat and public walkway. The park is used for walking, athletics, and nature study. NYC Parks presents it as an ecological and historical park specific to this site, not as a generic forest that could stand in for any woodland elsewhere."
+    },
+    {
+      "id": "wiki-inwood-hill",
+      "neighborhoodId": "inwood",
+      "title": "Inwood Hill Park (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inwood_Hill_Park",
+      "license": "CC BY-SA 4.0",
+      "text": "Inwood Hill Park occupies the northwestern corner of Manhattan Island. Wikipedia, citing Parks Department and other references, notes old-growth or long-standing forest, tulip trees, and a salt marsh. The park includes the site known as Shorakkopoch, where a boulder and plaque refer to the legendary purchase of Manhattan. Historians treat that purchase story as tradition with uncertain evidence; the plaque is a twentieth-century commemorative marker. The park’s caves have been linked to Native American use. Forts and later institutions occupied parts of the heights. Unlike Central Park, Inwood Hill Park retains steep natural topography that was not fully reshaped into pastoral design. Adjacent Isham Park was assembled from gifts of the Isham family and connects to the same hillside neighborhood."
+    },
+    {
+      "id": "dyckman-farmhouse",
+      "neighborhoodId": "inwood",
+      "title": "Dyckman Farmhouse Museum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dyckman_House",
+      "license": "CC BY-SA 4.0",
+      "text": "The Dyckman House, also called the Dyckman Farmhouse Museum, is a Dutch Colonial style farmhouse at 4881 Broadway, at 204th Street, in Inwood, Manhattan. It was built around 1784 by William Dyckman and is Manhattan’s oldest remaining farmhouse. It is a New York City Landmark and a National Historic Landmark, operated as a museum interpreting rural life in northern Manhattan. The house originally stood on a large farm; the surrounding land was later subdivided into streets and apartment buildings. Visiting the farmhouse is a historical interpretation of an earlier landscape, not a claim that Inwood remains agricultural. The museum sits on a busy stretch of Broadway near the subway."
+    }
+  ]
+}

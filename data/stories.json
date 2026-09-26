@@ -1,0 +1,67 @@
+{
+  "stories": {
+    "jackson-heights": {
+      "minutes": 2,
+      "start": {
+        "visual": "/photos/jackson-heights.jpg",
+        "visualAlt": "74th Street storefronts in Jackson Heights.",
+        "passage": "You come up into daylight on 74th Street. Shop windows stack scripts and merchandise in a tight line. One block north, 37th Avenue keeps going with bakeries, banks, and carts. Turn the other way and the commercial noise drops: garden-apartment blocks hide interior lawns behind iron gates. The neighborhood holds both at once—errand street and courtyard—on a grid laid out as a planned community more than a century ago.",
+        "choices": [
+          {
+            "id": "courtyard",
+            "label": "Step through to a courtyard block",
+            "reveal": "Jackson Heights was developed by the Queensboro Corporation beginning in the 1910s as a garden-apartment district: apartment buildings arranged around interior gardens rather than lining every lot with a shallow yard. New York City’s Landmarks Preservation Commission designated the Jackson Heights Historic District in 1993, citing that planned layout. The gardens were designed as shared amenities for residents of each block, not as a public botanic garden you wander from the subway."
+          },
+          {
+            "id": "avenue",
+            "label": "Stay on the commercial avenue",
+            "reveal": "The 74th Street–Broadway station and Roosevelt Avenue concentrate through-traffic under the elevated tracks, while 37th Avenue works as a more local shopping street. Wikipedia’s neighborhood article and city planning descriptions note overlapping commercial strips where South Asian businesses on and near 74th Street sit close to Latin American, Jewish, and other storefronts that have shifted over decades. Diversity Plaza, at 37th Road and 73rd Street, was rebuilt as public open space beside that transit hub—an outdoor room on the sidewalk’s terms."
+          }
+        ]
+      },
+      "closingQuestion": "What is actually public on these blocks—the plaza, the sidewalk, the historic gardens—and what is reserved for residents?"
+    },
+    "red-hook": {
+      "minutes": 2,
+      "start": {
+        "visual": "/photos/red-hook.jpg",
+        "visualAlt": "The Red Hook Houses in evening light.",
+        "passage": "The Gowanus Expressway is a wall at your back. Ahead, the streets flatten toward water. Brick warehouses and NYCHA towers share the same peninsula. You can smell the bay before you see it. Red Hook is not a shortcut to anywhere else in Brooklyn: the canal, the expressway, and the missing subway mean you arrived on purpose. The sky is suddenly large.",
+        "choices": [
+          {
+            "id": "piers",
+            "label": "Walk toward the basins and piers",
+            "reveal": "Red Hook projects into Upper New York Bay. Buttermilk Channel separates it from Governors Island; the Gowanus Canal marks another edge. Dutch colonists called the point Roode Hoek—a red-hued corner of land. In the nineteenth and twentieth centuries Atlantic Basin and Erie Basin made this a cargo port. Those basins, and later a cruise terminal, keep the shoreline in the neighborhood’s work history. Hurricane Sandy in 2012 flooded low blocks here; city and federal accounts treat Red Hook as a place where storm surge is not theoretical."
+          },
+          {
+            "id": "rec",
+            "label": "Cut inland to the recreation area",
+            "reveal": "NYC Parks’ Red Hook Recreation Area includes ballfields, a track, and the Red Hook Play Center—a WPA-era pool and bathhouse complex. Coffey Park sits closer to the Houses. The Red Hook Houses, among the largest NYCHA developments in Brooklyn, are a central residential fact of the peninsula, not a backdrop. Parks and housing together are how many people actually use this neighborhood day to day, even as warehouse blocks closer to the water change tenants."
+          }
+        ]
+      },
+      "closingQuestion": "If the subway never came, what did parks, ferries, and the Houses have to carry instead?"
+    },
+    "inwood": {
+      "minutes": 2,
+      "start": {
+        "visual": "/photos/inwood.jpg",
+        "visualAlt": "Tree canopy and apartment roofs at Manhattan’s northern tip.",
+        "passage": "Manhattan has almost run out of island. Dyckman Street still does the work of a main street—fruit stands, buses, apartment lobbies—but west and north the grid loses to steep woods. Two rivers bound the tip. If you follow the shade, pavement gives way to a park that is not a lawn with a name: it is forest, cave, and marsh on the same walk.",
+        "choices": [
+          {
+            "id": "park",
+            "label": "Enter Inwood Hill Park",
+            "reveal": "NYC Parks describes Inwood Hill Park as home to the last natural forest and salt marsh in Manhattan. The park covers the ridges and Hudson shoreline at the island’s northern end and includes caves in the rock that have archaeological significance tied to Lenape use of the area. Muscota Marsh, a later restoration on the Harlem River side, is a tidal wetland you can walk beside. A boulder in the park is linked to a commemorative story about the purchase of Manhattan—an inscribed memory, not a substitute for the living ecology around it."
+          },
+          {
+            "id": "farmhouse",
+            "label": "Find the surviving farmhouse",
+            "reveal": "The Dyckman Farmhouse, on Broadway at 204th Street, is a Dutch Colonial house dated to about 1784 and operated as a museum. It is Manhattan’s oldest remaining farmhouse, a remnant of an estate landscape that once covered this end of the island. Isham Park, given to the city in the nineteenth and early twentieth centuries, adds another hillside green beside Inwood Hill. The farmhouse does not make Inwood rural now; it sits among apartment buildings and a busy Broadway, which is the point: the neighborhood stacks centuries in a few blocks."
+          }
+        ]
+      },
+      "closingQuestion": "In the park, what is still growing or flooding with the tide—and what is only a plaque’s version of history?"
+    }
+  }
+}

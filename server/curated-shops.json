@@ -1,0 +1,112 @@
+[
+  {
+    "id": "strand-bookstore",
+    "title": "Strand Bookstore",
+    "borough": "Manhattan",
+    "lat": 40.73326,
+    "lon": -73.99081,
+    "detail": "Independent bookstore listed here because DCWP licenses do not cover ordinary bookstores. This is not a claim about crowds, hours, or authenticity.",
+    "sourceUrl": "https://www.strandbooks.com/",
+    "interestHints": ["shops", "history"]
+  },
+  {
+    "id": "mcnally-jackson-nolita",
+    "title": "McNally Jackson (Nolita)",
+    "borough": "Manhattan",
+    "lat": 40.72355,
+    "lon": -73.99605,
+    "detail": "Independent bookstore filling a gap in DCWP license categories. Hours are not inferred from city tables.",
+    "sourceUrl": "https://www.mcnallyjackson.com/",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "housing-works-bookstore",
+    "title": "Housing Works Bookstore",
+    "borough": "Manhattan",
+    "lat": 40.72455,
+    "lon": -73.9959,
+    "detail": "Nonprofit bookstore and cafe. Curated gap filler, not a DCWP license row.",
+    "sourceUrl": "https://www.housingworks.org/locations/bookstore-cafe",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "kalustyans",
+    "title": "Kalustyan’s",
+    "borough": "Manhattan",
+    "lat": 40.7424,
+    "lon": -73.9822,
+    "detail": "Specialty grocery. Not in the DCWP electronics/newsstand/secondhand license slice.",
+    "sourceUrl": "https://www.kalustyans.com/",
+    "interestHints": ["shops", "food"]
+  },
+  {
+    "id": "greenlight-fort-greene",
+    "title": "Greenlight Bookstore (Fort Greene)",
+    "borough": "Brooklyn",
+    "lat": 40.6869,
+    "lon": -73.9748,
+    "detail": "Independent bookstore. Curated because bookstores are mostly absent from DCWP Issued Licenses.",
+    "sourceUrl": "https://www.greenlightbookstore.com/",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "books-are-magic",
+    "title": "Books Are Magic",
+    "borough": "Brooklyn",
+    "lat": 40.6839,
+    "lon": -73.9931,
+    "detail": "Independent bookstore filling a DCWP coverage gap. Not a live open-now listing.",
+    "sourceUrl": "https://www.booksmagic.com/",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "sahadis",
+    "title": "Sahadi’s",
+    "borough": "Brooklyn",
+    "lat": 40.6903,
+    "lon": -73.9954,
+    "detail": "Specialty food shop. Curated gap filler, not a health-inspection grade or popularity score.",
+    "sourceUrl": "https://www.sahadis.com/",
+    "interestHints": ["shops", "food"]
+  },
+  {
+    "id": "city-reliquary",
+    "title": "The City Reliquary",
+    "borough": "Brooklyn",
+    "lat": 40.7143,
+    "lon": -73.9554,
+    "detail": "Neighborhood museum shop / civic collection. Curated for local history browsing, not a claim of cultural authenticity.",
+    "sourceUrl": "https://www.cityreliquary.org/",
+    "interestHints": ["shops", "history"]
+  },
+  {
+    "id": "spoonbill-sugartown",
+    "title": "Spoonbill",
+    "borough": "Brooklyn",
+    "lat": 40.7142,
+    "lon": -73.9573,
+    "detail": "Independent bookstore. Curated because DCWP does not inventory bookstores.",
+    "sourceUrl": "https://www.spoonbillbooks.com/",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "astoria-bookshop",
+    "title": "Astoria Bookshop",
+    "borough": "Queens",
+    "lat": 40.7747,
+    "lon": -73.9129,
+    "detail": "Independent bookstore filling a DCWP license gap in Queens.",
+    "sourceUrl": "https://www.astoriabookshop.com/",
+    "interestHints": ["shops"]
+  },
+  {
+    "id": "queen-books",
+    "title": "Queen Books",
+    "borough": "Brooklyn",
+    "lat": 40.6653,
+    "lon": -73.9876,
+    "detail": "Independent bookstore. Not a complete city shop directory entry.",
+    "sourceUrl": "https://www.queenbooksnyc.com/",
+    "interestHints": ["shops"]
+  }
+]

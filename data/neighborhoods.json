@@ -1,0 +1,345 @@
+{
+  "neighborhoods": [
+    {
+      "id": "jackson-heights",
+      "name": "Jackson Heights",
+      "borough": "Queens",
+      "latitude": 40.7553,
+      "longitude": -73.883,
+      "shortLine": "Garden-apartment courtyards behind a stacked, multilingual commercial street.",
+      "photo": {
+        "src": "/photos/jackson-heights.jpg",
+        "alt": "Storefronts and pedestrians along 74th Street in Jackson Heights, Queens.",
+        "credit": "Jim.henderson, Wikimedia Commons (CC0 / public domain dedication).",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:74th_St_shopping_Jax_Hts_jeh.jpg"
+      },
+      "tags": [
+        { "id": "dense-street-life", "weight": 1.2 },
+        { "id": "food-markets", "weight": 1.3 },
+        { "id": "multilingual", "weight": 1.4 },
+        { "id": "apartment-living", "weight": 1.1 },
+        { "id": "garden-courtyards", "weight": 1.5 },
+        { "id": "everyday-errands", "weight": 1.1 },
+        { "id": "bustling", "weight": 1.1 },
+        { "id": "communal-sidewalks", "weight": 1.0 }
+      ],
+      "reasonByTag": {
+        "dense-street-life": "Commercial corridors such as 37th Avenue and 74th Street keep sidewalks in daily use, with storefronts packed close together rather than set behind parking lots.",
+        "food-markets": "The neighborhood is known for overlapping food businesses along Roosevelt Avenue and 74th Street, where several kitchens and grocers share a single stretch of street.",
+        "multilingual": "Shop signs, newspapers, and spoken language shift block by block; Wikipedia and local reporting describe Jackson Heights as among the most linguistically mixed places in the city.",
+        "apartment-living": "The historic core is a planned garden-apartment district: people live stacked in co-ops and rentals, not in detached houses.",
+        "garden-courtyards": "The 1910s–1920s Queensboro Corporation blocks were designed around interior gardens—green space you enter from the street, not a public park lawn.",
+        "everyday-errands": "Banking, produce, religious spaces, and dinner sit on the same walks; the match is about a complete daily circuit, not a destination strip.",
+        "bustling": "Roosevelt Avenue under the elevated tracks and the 74th Street station area stay loud with trains, vendors, and through-traffic.",
+        "communal-sidewalks": "Diversity Plaza and the sidewalks around it function as gathering space in the open, not only as a path between destinations."
+      },
+      "difference": "Unlike a low-rise market town or a single-language high street, Jackson Heights’ historic blocks are purpose-built garden apartments in a dense Queens street grid, with an elevated train running along Roosevelt Avenue.",
+      "tagRationale": "Tags emphasize courtyard apartment planning, stacked everyday commerce, and multilingual street life because those are documented, place-specific patterns (LPC historic district; commercial corridors). They do not treat any one culture as interchangeable with the neighborhood.",
+      "explorePrompt": "What still happens in the interior gardens of the historic co-ops—and who is allowed to use them?",
+      "vibeScores": {
+        "energy": 4,
+        "food": 4,
+        "greenery": 2,
+        "arts": 2,
+        "gathering": 4,
+        "smallShops": 4
+      },
+      "vibeScoreNotes": {
+        "energy": "Commercial corridors such as 37th Avenue, 74th Street, and Roosevelt Avenue under the el keep sidewalks in constant daily use.",
+        "food": "Overlapping kitchens and grocers along Roosevelt Avenue and 74th Street make food a primary street texture.",
+        "greenery": "Green space here is often the interior courtyard of a garden-apartment block, not a large public park lawn.",
+        "arts": "The documented character of this profile is stacked commerce and housing more than a gallery or performance district.",
+        "gathering": "Diversity Plaza and the sidewalks around it work as gathering space in the open, not only as a path between stores.",
+        "smallShops": "Storefronts sit close together for banking, produce, and dinner on the same walk, rather than behind parking lots."
+      },
+      "visitGuide": {
+        "duration": "3–4 hours",
+        "bestTime": "Late morning through dinner, when 74th Street and 37th Avenue are doing ordinary errands—not a weekend-only show.",
+        "worthTheTrip": "Skip another Midtown loop. This visit is for a stacked commercial street and a planned garden-apartment district you can only understand on foot.",
+        "skipIf": "You have under 90 minutes south of Central Park, or you only want a photo of a “Little India” sign without walking the mixed blocks around it.",
+        "arrive": {
+          "summary": "Ride the 7, E, F, M, or R to the Jackson Heights–Roosevelt Avenue / 74 St–Broadway complex. Come up toward 74th Street.",
+          "station": "Jackson Heights–Roosevelt Av / 74 St–Broadway",
+          "fromMidtownMinutes": 25,
+          "caution": "The station is a large transfer hub under the el. Follow 74th Street / Roosevelt Avenue exits, not a random mezzanine door."
+        },
+        "groundRules": [
+          "Interior gardens of the historic co-ops are for residents. Look from the sidewalk and gates—do not walk in.",
+          "This is a living errand neighborhood. If you linger in a shop, buy something small.",
+          "Do not treat 74th Street as a stand-in for one country. Languages and businesses shift block by block."
+        ],
+        "stops": [
+          {
+            "id": "jh-arrive",
+            "title": "Come up on 74th Street",
+            "minutes": 25,
+            "lat": 40.7467,
+            "lon": -73.8914,
+            "isArrival": true,
+            "emphasizes": ["energy", "food", "smallShops"],
+            "do": "Walk 74th Street between Roosevelt Avenue and 37th Avenue. Count how many daily needs—produce, jewelry, tickets, a meal—sit on one tight block.",
+            "lookFor": "Shop signs in several scripts, grocers next to jewelers, and the noise of the elevated train as you near Roosevelt."
+          },
+          {
+            "id": "jh-plaza",
+            "title": "Diversity Plaza",
+            "minutes": 20,
+            "lat": 40.7472,
+            "lon": -73.8899,
+            "emphasizes": ["gathering", "energy"],
+            "do": "Stand in Diversity Plaza (37th Road and 73rd Street). Notice who is waiting, shopping, or talking—this is a public outdoor room next to the transit hub.",
+            "lookFor": "What is actually public (the plaza, the sidewalk) versus what is just a path between stores."
+          },
+          {
+            "id": "jh-avenue",
+            "title": "37th Avenue errands",
+            "minutes": 35,
+            "lat": 40.7499,
+            "lon": -73.888,
+            "emphasizes": ["smallShops", "food", "gathering"],
+            "do": "Walk 37th Avenue as a local shopping street. This is where banking, bakeries, and carts keep going when the station crowd thins.",
+            "lookFor": "A complete daily circuit—not a destination strip with one kind of souvenir."
+          },
+          {
+            "id": "jh-courtyards",
+            "title": "Garden-apartment blocks from the sidewalk",
+            "minutes": 30,
+            "lat": 40.7518,
+            "lon": -73.8905,
+            "emphasizes": ["greenery", "gathering"],
+            "do": "Turn off the commercial street into the historic district. Look through gates at interior gardens. Stay on the public sidewalk.",
+            "lookFor": "Apartment buildings arranged around shared lawns—the 1910s Queensboro Corporation plan—not a public botanic garden."
+          }
+        ]
+      }
+    },
+    {
+      "id": "red-hook",
+      "name": "Red Hook",
+      "borough": "Brooklyn",
+      "latitude": 40.6743,
+      "longitude": -74.0086,
+      "shortLine": "A working peninsula: warehouses, wide sky, and a waterfront that still feels cut off.",
+      "photo": {
+        "src": "/photos/red-hook.jpg",
+        "alt": "Evening light on the Red Hook Houses along Lorraine Street in Brooklyn.",
+        "credit": "Jim.henderson, Wikimedia Commons (CC BY 3.0 or later).",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:RH_Houses_East_Lorraine_eve_jeh.jpg"
+      },
+      "tags": [
+        { "id": "waterfront", "weight": 1.5 },
+        { "id": "industrial", "weight": 1.4 },
+        { "id": "slower-pace", "weight": 1.2 },
+        { "id": "maritime", "weight": 1.4 },
+        { "id": "warehouse", "weight": 1.2 },
+        { "id": "open-sky", "weight": 1.1 },
+        { "id": "isolated-enclave", "weight": 1.3 },
+        { "id": "community-spaces", "weight": 1.0 },
+        { "id": "working-waterfront", "weight": 1.3 }
+      ],
+      "reasonByTag": {
+        "waterfront": "Red Hook sits on a peninsula in Upper New York Bay, bounded by Buttermilk Channel and the Gowanus Canal, so water is a daily edge, not a distant view.",
+        "industrial": "Atlantic Basin, Erie Basin, and surviving warehouse blocks record a port landscape of cargo, not a decorative harbor promenade.",
+        "slower-pace": "With no subway station inside the neighborhood, walking distances stretch and street traffic thins compared with brownstone Brooklyn next door.",
+        "maritime": "The name itself is Dutch for a red point of land; shipping, dry docks, and later a cruise terminal keep the bay in the neighborhood’s work history.",
+        "warehouse": "Beard Street and nearby brick warehouses still read as storage and industry, even where uses have changed.",
+        "open-sky": "Low-rise building and the open bay make the sky feel larger than in inland Brooklyn.",
+        "isolated-enclave": "The Gowanus Expressway and the canal pinch the peninsula; people describe having to intend to go to Red Hook, not pass through it.",
+        "community-spaces": "Red Hook Recreation Area, Coffey Park, and the NYCHA Red Hook Houses are large, local gathering grounds rather than tourist stages.",
+        "working-waterfront": "Cargo history, a cruise terminal, and industrial water lots mean the shoreline is still tied to labor and flooding risk, especially after Hurricane Sandy."
+      },
+      "difference": "Red Hook is a peninsula with a documented flood history and no subway of its own. A beloved port town elsewhere may feel maritime; this place is specifically shaped by Upper New York Bay, NYCHA housing, and the expressway that cuts it off.",
+      "tagRationale": "Tags come from geography (peninsula, basins), transportation isolation, industrial building stock, and Parks Department recreation sites—not from ranking attractions or calling it a stand-in for another harbor city.",
+      "explorePrompt": "How did Hurricane Sandy change what this waterfront has to plan for?",
+      "vibeScores": {
+        "energy": 1,
+        "food": 2,
+        "greenery": 2,
+        "arts": 3,
+        "gathering": 3,
+        "smallShops": 2
+      },
+      "vibeScoreNotes": {
+        "energy": "With no subway station inside the neighborhood, walking distances stretch and street traffic thins compared with inland Brooklyn.",
+        "food": "Food is part of daily life here, but the editorial profile is a working peninsula more than a stacked market street.",
+        "greenery": "Coffey Park and Red Hook Recreation Area are local grounds set inside an industrial waterfront, not a forested park system.",
+        "arts": "Warehouse blocks and changing uses give the peninsula a strong industrial-arts fabric.",
+        "gathering": "The recreation area, Coffey Park, and the Red Hook Houses are large local gathering grounds rather than tourist stages.",
+        "smallShops": "Brick warehouses and basins still read as storage and industry more than a tight row of everyday storefronts."
+      },
+      "visitGuide": {
+        "duration": "3–4 hours, plus extra transit",
+        "bestTime": "Daylight, especially a weekend afternoon. Budget the trip so you are not hunting the waterfront after dark on a first visit.",
+        "worthTheTrip": "Leave brownstone Brooklyn and the subway map. This visit is for a working peninsula: warehouses, NYCHA housing, parks, and a bay edge you have to intend to reach.",
+        "skipIf": "You will not spend 30–45 minutes each way from downtown Brooklyn, or you expected a subway station inside the neighborhood.",
+        "arrive": {
+          "summary": "There is no subway in Red Hook. Take the B61 bus (from Smith–9 Streets F/G or downtown Brooklyn) or NYC Ferry to the Atlantic Basin / IKEA landing, then walk.",
+          "station": "No subway in Red Hook — B61 bus or NYC Ferry (Atlantic Basin)",
+          "fromMidtownMinutes": 55,
+          "caution": "The Gowanus Expressway and canal pinch the peninsula. You arrived on purpose; there is no casual transfer. Check ferry hours before you go."
+        },
+        "groundRules": [
+          "Blocks are long and the sky is large. Wear shoes you can walk in; do not expect a dense café grid between stops.",
+          "Coffey Park, the recreation area, and the Red Hook Houses are local grounds—not a waterfront stage set.",
+          "Low blocks flooded in Hurricane Sandy. Read the waterfront as working infrastructure and flood edge, not a decorative harbor."
+        ],
+        "stops": [
+          {
+            "id": "rh-arrive",
+            "title": "Arrive on the peninsula",
+            "minutes": 15,
+            "lat": 40.6783,
+            "lon": -74.0119,
+            "isArrival": true,
+            "emphasizes": ["energy"],
+            "do": "Get off the bus or ferry and orient: expressway behind you, water ahead. Confirm you can get back (bus stop or ferry clock) before you wander.",
+            "lookFor": "How cut-off the place feels compared with the subway neighborhoods you left."
+          },
+          {
+            "id": "rh-basins",
+            "title": "Atlantic and Erie basins",
+            "minutes": 40,
+            "lat": 40.6736,
+            "lon": -74.0165,
+            "emphasizes": ["arts", "energy"],
+            "do": "Walk toward the basins and Beard Street warehouses. Keep the bay in view. This shoreline still reads as cargo and industry, even where uses have changed.",
+            "lookFor": "Brick storage, open water, and a cruise terminal in the work history—not a marina promenade."
+          },
+          {
+            "id": "rh-rec",
+            "title": "Red Hook Recreation Area or Coffey Park",
+            "minutes": 35,
+            "lat": 40.6728,
+            "lon": -74.0084,
+            "emphasizes": ["gathering", "greenery"],
+            "do": "Cut inland to the Parks Department recreation area (track, fields, WPA-era play center) or Coffey Park beside the Houses.",
+            "lookFor": "Who actually uses the peninsula day to day: ballfields and housing, not only waterfront visitors."
+          },
+          {
+            "id": "rh-houses",
+            "title": "Lorraine Street edge of the Houses",
+            "minutes": 20,
+            "lat": 40.6754,
+            "lon": -74.0048,
+            "emphasizes": ["gathering"],
+            "do": "Walk the public streets along the Red Hook Houses. They are among Brooklyn’s largest NYCHA developments—a central residential fact, not a backdrop for warehouse photos.",
+            "lookFor": "The scale of local housing next to industrial blocks. Stay on public sidewalks."
+          }
+        ]
+      }
+    },
+    {
+      "id": "inwood",
+      "name": "Inwood",
+      "borough": "Manhattan",
+      "latitude": 40.8677,
+      "longitude": -73.9212,
+      "shortLine": "Manhattan’s northern tip, where the street grid meets forest, marsh, and two rivers.",
+      "photo": {
+        "src": "/photos/inwood.jpg",
+        "alt": "Looking north from Fort Tryon Park toward Inwood, the Harlem River, and the Bronx.",
+        "credit": "Ajay Suresh, Wikimedia Commons (CC BY 2.0).",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:2018_Fort_Tryon_Park_-_view_of_Inwood_and_the_Bronx.jpg"
+      },
+      "tags": [
+        { "id": "parks-nature", "weight": 1.5 },
+        { "id": "forest", "weight": 1.5 },
+        { "id": "hilly", "weight": 1.3 },
+        { "id": "residential-quiet", "weight": 1.2 },
+        { "id": "river-views", "weight": 1.2 },
+        { "id": "end-of-the-line", "weight": 1.1 },
+        { "id": "weekend-in-the-park", "weight": 1.1 },
+        { "id": "neighborhood-scale", "weight": 1.0 }
+      ],
+      "reasonByTag": {
+        "parks-nature": "Inwood Hill Park and Isham Park sit inside the neighborhood, so green space is a local room, not a trip downtown.",
+        "forest": "NYC Parks describes Inwood Hill Park as containing the last natural forest and salt marsh in Manhattan—woods and tidal wetland, not only lawn.",
+        "hilly": "Ridges, caves, and steep paths in the park, plus streets that drop toward the Harlem and Hudson Rivers, give the place a vertical walk.",
+        "residential-quiet": "North of Dyckman Street the grid is more residential; the match is evening walks and apartment windows over trees, not midtown pace.",
+        "river-views": "The Hudson and Harlem Rivers bound the tip of the island; bridges and shore paths keep water in view.",
+        "end-of-the-line": "The neighborhood occupies Manhattan’s northern tip, where subway lines terminate and the island physically runs out.",
+        "weekend-in-the-park": "Ballfields, marsh boardwalks, and wooded trails are used as neighborhood commons, especially on weekends.",
+        "neighborhood-scale": "Dyckman Street and nearby blocks serve daily shopping at a local scale beside very large parks."
+      },
+      "difference": "Inwood is still Manhattan: apartment buildings, a busy Dyckman Street, and subway termini sit next to the woods. A hillside town elsewhere may share the quiet; it does not sit on the last salt marsh on this island.",
+      "tagRationale": "Tags follow Parks Department ecology (forest, marsh), topography, and the geography of the island tip. They do not reduce the neighborhood to a stand-in for another country’s landscape or culture.",
+      "explorePrompt": "What in Inwood Hill Park is still a living forest or marsh—and what is a commemorative story about the past?",
+      "vibeScores": {
+        "energy": 2,
+        "food": 2,
+        "greenery": 4,
+        "arts": 2,
+        "gathering": 3,
+        "smallShops": 3
+      },
+      "vibeScoreNotes": {
+        "energy": "North of Dyckman Street the grid is more residential; Dyckman itself is busy, but this is not a midtown pace.",
+        "food": "Local streets serve daily meals at neighborhood scale rather than a citywide market identity.",
+        "greenery": "Inwood Hill Park’s forest and salt marsh sit inside the neighborhood, so woods and wetland are a local room.",
+        "arts": "The editorial profile leans on ecology and the island tip more than on a concentrated arts strip.",
+        "gathering": "Ballfields, marsh boardwalks, and wooded trails are used as neighborhood commons, especially on weekends.",
+        "smallShops": "Dyckman Street and nearby blocks handle daily shopping beside very large parks."
+      },
+      "visitGuide": {
+        "duration": "3–5 hours",
+        "bestTime": "Daylight for trails and marsh paths. Weekends show the parks as neighborhood commons; weekdays are quieter on residential streets.",
+        "worthTheTrip": "Leave Central Park and The Cloisters. This visit is Manhattan’s northern tip: a busy Dyckman Street beside the last forest and salt marsh on the island.",
+        "skipIf": "You only wanted The Cloisters or Fort Tryon Park (those are Washington Heights, one neighborhood south) or you cannot walk hills and unpaved paths.",
+        "arrive": {
+          "summary": "Take the A to Inwood–207 Street or Dyckman Street, or the 1 to 215 Street or 207 Street. Dyckman is the main street; the woods are west and north.",
+          "station": "Inwood–207 St (A) or Dyckman St (A) / 215 St or 207 St (1)",
+          "fromMidtownMinutes": 35,
+          "caution": "The island runs out here. Trails can be muddy and steep. Give yourself daylight to walk back to the subway."
+        },
+        "groundRules": [
+          "Inwood Hill Park is forest, cave, and marsh—not a lawn with a famous museum. Stay on paths; the woods are a living park.",
+          "The Dyckman Farmhouse is a museum remnant among apartment buildings, not proof that Inwood is still rural.",
+          "A boulder and plaques tell commemorative stories. Separate those from the tide and the trees still in front of you."
+        ],
+        "stops": [
+          {
+            "id": "in-arrive",
+            "title": "Dyckman Street",
+            "minutes": 25,
+            "lat": 40.8654,
+            "lon": -73.927,
+            "isArrival": true,
+            "emphasizes": ["energy", "food", "smallShops"],
+            "do": "Walk Dyckman as a working main street: fruit stands, buses, lobbies. Eat here if you need a meal before the park.",
+            "lookFor": "Neighborhood-scale shopping that is still Manhattan, not a village high street."
+          },
+          {
+            "id": "in-park",
+            "title": "Inwood Hill Park woods and marsh",
+            "minutes": 70,
+            "lat": 40.872,
+            "lon": -73.9225,
+            "emphasizes": ["greenery", "gathering"],
+            "do": "Enter Inwood Hill Park. Follow a trail onto the ridge, then toward the salt marsh / Muscota Marsh on the Harlem River side if you have time.",
+            "lookFor": "Last natural forest and tidal wetland in Manhattan—woods you can walk, not a commemorative plaque alone."
+          },
+          {
+            "id": "in-isham",
+            "title": "Isham Park hillside",
+            "minutes": 20,
+            "lat": 40.8693,
+            "lon": -73.9194,
+            "emphasizes": ["greenery"],
+            "do": "Cut through Isham Park, the hillside green given to the city beside Inwood Hill. Notice how fast apartment windows meet tree canopy.",
+            "lookFor": "Residential quiet on the grid’s edge, with two rivers still bounding the tip."
+          },
+          {
+            "id": "in-farmhouse",
+            "title": "Dyckman Farmhouse",
+            "minutes": 25,
+            "lat": 40.8653,
+            "lon": -73.9212,
+            "emphasizes": ["arts", "gathering"],
+            "do": "Find the Dutch Colonial farmhouse on Broadway at 204th Street (museum hours vary—check before you go). Then look at the apartments around it.",
+            "lookFor": "Manhattan’s oldest remaining farmhouse stacked against a busy Broadway. The point is the contrast, not a rural fantasy."
+          }
+        ]
+      }
+    }
+  ]
+}

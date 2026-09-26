@@ -1,0 +1,121 @@
+{
+  "examples": [
+    {
+      "id": "markets",
+      "label": "Evening markets",
+      "text": "I love a place where the evening markets stay crowded, vendors call over the smell of grilled food, and you can hear several languages on one block. The streets feel like the living room."
+    },
+    {
+      "id": "hill-park",
+      "label": "Hillside after dinner",
+      "text": "I miss a quieter hillside neighborhood where people walk to the park after dinner. You hear leaves and distant trains more than horns, and the streets climb toward woods and a river."
+    },
+    {
+      "id": "port",
+      "label": "Slow port streets",
+      "text": "The place I love is a working waterfront town: brick warehouses, a wide sky, cobbles or broken industrial streets, and a slower pace because you have to mean to go there. The water is always at the end of the block."
+    }
+  ],
+  "keywords": [
+    {
+      "tag": "dense-street-life",
+      "words": ["crowded", "busy", "bustling", "sidewalk", "street life", "streetlife", "vendors", "night market", "after dark", "packed", "throng", "living room"]
+    },
+    {
+      "tag": "food-markets",
+      "words": ["market", "markets", "food", "grilled", "spice", "spices", "kitchen", "kitchens", "eat", "vendor", "grocers", "bakery", "smell", "dinner"]
+    },
+    {
+      "tag": "multilingual",
+      "words": ["languages", "language", "multilingual", "signs", "several languages", "many languages", "accent", "bilingual"]
+    },
+    {
+      "tag": "apartment-living",
+      "words": ["apartment", "apartments", "walk-up", "walkup", "stacked", "rental", "co-op", "coop", "flat", "flats"]
+    },
+    {
+      "tag": "garden-courtyards",
+      "words": ["courtyard", "courtyards", "garden apartment", "interior garden", "laundry lines", "shared garden"]
+    },
+    {
+      "tag": "everyday-errands",
+      "words": ["errands", "daily", "everyday", "buy dinner", "one block", "around the corner", "complete"]
+    },
+    {
+      "tag": "bustling",
+      "words": ["loud", "noise", "noisy", "trains", "elevated", "honk", "shout", "busy"]
+    },
+    {
+      "tag": "communal-sidewalks",
+      "words": ["plaza", "gather", "stoop", "spill", "open air", "street as living room"]
+    },
+    {
+      "tag": "waterfront",
+      "words": ["waterfront", "harbor", "harbour", "water", "bay", "pier", "piers", "shore", "docks", "dock"]
+    },
+    {
+      "tag": "industrial",
+      "words": ["industrial", "warehouse", "warehouses", "factory", "cargo", "working", "brick"]
+    },
+    {
+      "tag": "slower-pace",
+      "words": ["slow", "slower", "quiet pace", "unhurried", "sleepy", "mean to go", "cut off", "isolated"]
+    },
+    {
+      "tag": "maritime",
+      "words": ["port", "maritime", "ship", "ships", "boat", "ferry", "dry dock", "channel"]
+    },
+    {
+      "tag": "warehouse",
+      "words": ["warehouse", "warehouses", "loft", "loading"]
+    },
+    {
+      "tag": "open-sky",
+      "words": ["wide sky", "big sky", "horizon", "open sky", "low-rise"]
+    },
+    {
+      "tag": "isolated-enclave",
+      "words": ["peninsula", "cut off", "have to mean", "enclave", "end of the road", "not pass through"]
+    },
+    {
+      "tag": "community-spaces",
+      "words": ["community", "neighbors", "recreation", "ballfield", "local park"]
+    },
+    {
+      "tag": "working-waterfront",
+      "words": ["working waterfront", "cargo", "flood", "flooding", "sandy", "labor"]
+    },
+    {
+      "tag": "parks-nature",
+      "words": ["park", "parks", "nature", "green", "trees", "leaves", "woods", "wooded"]
+    },
+    {
+      "tag": "forest",
+      "words": ["forest", "woods", "woodland", "old growth", "trees", "leaves"]
+    },
+    {
+      "tag": "hilly",
+      "words": ["hill", "hills", "hillside", "climb", "steep", "ridge", "slope"]
+    },
+    {
+      "tag": "residential-quiet",
+      "words": ["quiet", "quieter", "calm", "after dinner", "residential", "peaceful", "stroll"]
+    },
+    {
+      "tag": "river-views",
+      "words": ["river", "rivers", "hudson", "creek", "marsh", "wetland"]
+    },
+    {
+      "tag": "end-of-the-line",
+      "words": ["last stop", "end of the line", "tip", "edge of the island", "runs out"]
+    },
+    {
+      "tag": "weekend-in-the-park",
+      "words": ["weekend", "picnic", "trail", "trails", "walk to the park"]
+    },
+    {
+      "tag": "neighborhood-scale",
+      "words": ["small scale", "local shops", "village", "neighborhood shops"]
+    }
+  ]
+}
