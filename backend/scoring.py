@@ -2,13 +2,21 @@
 
 from __future__ import annotations
 
-import json
+import csv
 import math
 import re
 from datetime import datetime, timedelta
 from pathlib import Path
 
-PLACES_PATH = Path(__file__).resolve().parents[1] / "src" / "data" / "places.json"
+PLACES_PATH = Path(__file__).resolve().parents[1] / "data" / "places.csv"
+# clean and shade are unknown in this file. 0.5 keeps them neutral when the sentence asks.
+TYPE_RULES = {
+    "garden": {"tags": ["outdoors", "quiet"], "local": 0.9, "free": True, "allDay": True},
+    "farmers_market": {"tags": ["food"], "local": 0.75, "free": True, "allDay": True},
+    "pops": {"tags": ["outdoors"], "local": 0.85, "free": True, "allDay": True},
+    "public_art": {"tags": ["culture"], "local": 0.7, "free": True, "allDay": True},
+    "restaurant": {"tags": ["food"], "local": 0.6, "free": False, "allDay": False},
+}
 TAG_WORDS = {
     "outdoors": ["outdoor", "park", "garden", "outside", "walk"],
     "food": ["food", "market", "eat", "lunch", "farmers"],
@@ -19,8 +27,81 @@ TAG_WORDS = {
 }
 
 
+def _slug(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", (value or "").lower()).strip("-")
+    return slug or "place"
+
+
+def _blurb(kind: str, detail: str, neighborhood: str) -> str:
+    where = f" in {neighborhood}" if neighborhood else ""
+    if kind == "garden":
+        return f"A community garden{where}."
+    if kind == "farmers_market":
+        text = f"A farmers market{where}."
+        if detail:
+            text += f" Open {detail}."
+        return text
+    if kind == "pops":
+        text = f"A public open space{where}."
+        if detail:
+            text += f" {detail}."
+        return text
+    if kind == "public_art":
+        text = f"Public art{where}."
+        if detail:
+            text += f" {detail}."
+        return text
+    if kind == "restaurant":
+        label = f"{detail} restaurant" if detail else "A restaurant"
+        return f"{label}{where}."
+    return ""
+
+
+def _read_places() -> list[dict]:
+    places = []
+    with PLACES_PATH.open(newline="") as handle:
+        for row in csv.DictReader(handle):
+            rule = TYPE_RULES.get(row.get("type", ""))
+            if rule is None:
+                continue
+            try:
+                lat = float(row["latitude"])
+                lng = float(row["longitude"])
+            except (TypeError, ValueError):
+                continue
+            name = (row.get("name") or "").strip()
+            if not name:
+                continue
+            detail = (row.get("detail") or "").strip()
+            neighborhood = (row.get("neighborhood") or "").strip()
+            places.append(
+                {
+                    "id": f"{row['type']}-{_slug(name)}-{lat:.5f}-{lng:.5f}",
+                    "name": name,
+                    "neighborhood": neighborhood,
+                    "borough": (row.get("borough") or "").strip(),
+                    "lat": lat,
+                    "lng": lng,
+                    "tags": list(rule["tags"]),
+                    "free": rule["free"],
+                    "allDay": rule["allDay"],
+                    "clean": 0.5,
+                    "shade": 0.5,
+                    "local": rule["local"],
+                    "blurb": _blurb(row["type"], detail, neighborhood),
+                }
+            )
+    return places
+
+
+_PLACES: list[dict] | None = None
+
+
 def load_places() -> list[dict]:
-    return json.loads(PLACES_PATH.read_text())
+    global _PLACES
+    if _PLACES is None:
+        _PLACES = _read_places()
+    return _PLACES
 
 
 def parse_prompt(text: str) -> dict:

@@ -1,0 +1,1048 @@
+type,name,detail,neighborhood,borough,nta2020,latitude,longitude
+farmers_market,Staten Island Mall Greenmarket,Saturday,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.583804,-74.161245
+farmers_market,St. George Greenmarket,Saturday,St. George-New Brighton,Staten Island,SI0101,40.641586,-74.0779
+garden,South Beach Community Garden - South Beach Houses (NYCHA),,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.595335,-74.0793
+garden,Joe Holzka Community Garden,,Port Richmond,Staten Island,SI0106,40.633896,-74.121457
+garden,West Brighton Community Garden,,Port Richmond,Staten Island,SI0106,40.637128,-74.119827
+garden,Skyline Community Garden,,St. George-New Brighton,Staten Island,SI0101,40.640021,-74.089489
+garden,Westervelt Community Garden,,St. George-New Brighton,Staten Island,SI0101,40.644304,-74.084497
+garden,Hill Street Community Garden,,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.621465,-74.079872
+garden,Roots of Peace Community Garden,,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.617666,-74.084888
+garden,Olivet Heavenly Harvest,,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.630199,-74.115963
+pops,NY Wheel,,St. George-New Brighton,Staten Island,SI0101,40.647158,-74.078641
+pops,Landmark Colony,Publicly Accessible Open Space,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.59183,-74.13974
+public_art,Annadale Memorial,Plaque,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.541282,-74.17771
+public_art,Battle of the Bulge,"Column, decorative pavement",Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.518769,-74.187677
+public_art,New York City Sewer Covers,Manhole covers,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.514145,-74.196691
+public_art,Pleasant Plains Memorial,Sculpture,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.523889,-74.216111
+public_art,Working in the Same Direction,Sculpture,Arden Heights-Rossville,Staten Island,SI0303,40.554096,-74.213048
+public_art,Cespino-Russo Post Plaque,"Plaque, plinth",Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.590085,-74.066233
+public_art,Concord World War II Memorial,"Stele, plaque",Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.607958,-74.089614
+public_art,Father Capodanno Memorial,Stele,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.590078,-74.066657
+public_art,Fountain of the Dolphins,Fountain,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.590225,-74.066428
+public_art,Michael J. Leonard Memorial Plaza,Plaque,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.598761,-74.081518
+public_art,Private Frederick Staats,Plaque,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59925,-74.072306
+public_art,Frank and Constantine Busso,Plaque,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.625768,-74.176608
+public_art,Gill and Bloom Plaques,Plaque,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.625985,-74.177735
+public_art,Joseph Manna,Plaque,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.625768,-74.176608
+public_art,Port Authority World War II Honor Roll,Plaque,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.625869,-74.176152
+public_art,New Dorp World War I Memorial,"Plaque, stele",New Dorp-Midland Beach,Staten Island,SI0202,40.575641,-74.120082
+public_art,Rose and Crown Tavern Marker,Plaque,New Dorp-Midland Beach,Staten Island,SI0202,40.575682,-74.120016
+public_art,Schmul Memorial,Plaque,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.590571,-74.188355
+public_art,Captain Roald Amundsen Plaque,Plaque,Oakwood-Richmondtown,Staten Island,SI0301,40.564654,-74.130971
+public_art,Egbertville World War Memorial,Stele,Oakwood-Richmondtown,Staten Island,SI0301,40.576227,-74.126905
+public_art,Egbert Memorial,"Stone monument, plaque",Port Richmond,Staten Island,SI0106,40.625372,-74.144332
+public_art,Eugene G. Putnam,Fountain,Port Richmond,Staten Island,SI0106,40.636838,-74.131655
+public_art,Sullivan's Attack,Plaque,Port Richmond,Staten Island,SI0106,40.63737,-74.132206
+public_art,Sundial,Sculpture,Port Richmond,Staten Island,SI0106,40.634662,-74.141901
+public_art,Washington Kill Von Kull Monument,Plaque,Port Richmond,Staten Island,SI0106,40.640563,-74.135497
+public_art,Luis R. Lopez Memorial Flagstaff,"Flagstaff base, plaque",Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.611668,-74.084995
+public_art,Matthew J. Buono Memorial Fountain,Fountain,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.616302,-74.063596
+public_art,Reinhard E. Kaltenmeier,Plaque,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.614861,-74.068583
+public_art,9/11 First Responders Memorial,"Railing, marker",St. George-New Brighton,Staten Island,SI0101,40.646881,-74.076421
+public_art,Baker Monument,"Plaque, plinth",St. George-New Brighton,Staten Island,SI0101,40.642145,-74.076465
+public_art,Carmine Liotti and Lloyd Ikefugi,Plaque,St. George-New Brighton,Staten Island,SI0101,40.638834,-74.084205
+public_art,Frank D. Paulo,Statue,St. George-New Brighton,Staten Island,SI0101,40.642915,-74.076245
+public_art,Gene Farmer,Plaque,St. George-New Brighton,Staten Island,SI0101,40.643492,-74.079775
+public_art,Lt. Nick Lia Memorial,Plaque,St. George-New Brighton,Staten Island,SI0101,40.643241,-74.079562
+public_art,Major Clarence T. Barrett Memorial,Statue,St. George-New Brighton,Staten Island,SI0101,40.641828,-74.075896
+public_art,New Brighton War Memorial,"Flagstaff base, plaque",St. George-New Brighton,Staten Island,SI0101,40.647986,-74.08318
+public_art,Staten Island War Memorial,Bas-relief,St. George-New Brighton,Staten Island,SI0101,40.642303,-74.076161
+public_art,The Passage: A Moving Memorial,Installation,St. George-New Brighton,Staten Island,SI0101,40.641635,-74.077248
+public_art,Gretta Moulton Gate,Ornamental gates,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.584694,-74.124861
+public_art,Korean War Veterans Memorial,"Stele, plaque",Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.609816,-74.103233
+public_art,Daniel D. Tompkins,Plaque,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.637535,-74.076197
+public_art,Joseph H. Lyons Plaque,Plaque,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.637658,-74.07472
+public_art,The Hiker,Statue,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63762,-74.07637
+public_art,The Watering Place,Plaque,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.637523,-74.076235
+public_art,Dreyfus Plaque,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.630269,-74.087585
+public_art,General Kazimierz Pulaski,Stele,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.630653,-74.091548
+public_art,Hero Park Memorial Plaque,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63021,-74.087535
+public_art,Hero Park World War Honor Roll Plaque,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63021,-74.087535
+public_art,Irish Hunger Monument,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.622096,-74.098389
+public_art,Livingston Honor Roll,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.64537,-74.106858
+public_art,Python,Sculpture,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62511,-74.115742
+public_art,Randolph St. George Walker Jr.,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.643861,-74.108806
+public_art,South American Tropical Forest and African Savannah,Mosaic,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62508,-74.115126
+public_art,Sugar Loaf Rock Plaque,Plaque,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63021,-74.087535
+public_art,A Bird Named Goldilocks,Sculpture,Westerleigh-Castleton Corners,Staten Island,SI0105,40.617039,-74.104491
+public_art,Anthony R. Gaeta Memorial,Plaque,Westerleigh-Castleton Corners,Staten Island,SI0105,40.609983,-74.148816
+public_art,Blazed and Willowbrook Roads Tablet,"Stele, plaque",Westerleigh-Castleton Corners,Staten Island,SI0105,40.609982,-74.147077
+public_art,Lieutenant George W. Lener Memorial,Plaque,Westerleigh-Castleton Corners,Staten Island,SI0105,40.621972,-74.119778
+public_art,"Private Joseph F. Merrell, Jr.",Plaque,Westerleigh-Castleton Corners,Staten Island,SI0105,40.615476,-74.10717
+restaurant,AMICI PIZZERIA,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52372158501,-74.21584009641
+restaurant,ANNADALE BAKERY,Bakery Products/Desserts,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54201034713,-74.17743055136
+restaurant,ANNADALE TERRACE,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54234249974,-74.17740984911
+restaurant,ARIANAS CUCINA,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52109208115,-74.21728107606
+restaurant,BETTER GOURMET HEALTH KITCHEN,Sandwiches/Salads/Mixed Buffet,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53280507332,-74.19223454555
+restaurant,BREAKING BREAD,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52567800358,-74.20112740128
+restaurant,CHOPSTICKS HOUSE,Chinese,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53253085466,-74.19207906576
+restaurant,CIRO PIZZA CAFE,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53345224354,-74.19259256131
+restaurant,CUCUMBER SUSHI & SALAD BAR,Japanese,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52611017711,-74.2019812076
+restaurant,Country Donuts,Donuts,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53280507332,-74.19223454555
+restaurant,DISTRICT,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.540512101,-74.17716391682
+restaurant,DOMENICO'S PIZZA,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52602733765,-74.20226152589
+restaurant,DOMINO'S,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52154813888,-74.21705956221
+restaurant,DUNKIN,Donuts,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53241842718,-74.19201398839
+restaurant,DUNKIN,Coffee/Tea,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52194370179,-74.21689539758
+restaurant,HOT SHOTZ SPORTS BAR,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52354293633,-74.2159654093
+restaurant,HOUSE OF WINGS NYC,Middle Eastern,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54104614475,-74.17793168121
+restaurant,IL FORNO PIZZA,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.5221002841,-74.21682756773
+restaurant,IL SOGNO ITALIANO RISTORANTE,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54137541832,-74.17799732301
+restaurant,KIDDIE CAKES,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52217994423,-74.21679545556
+restaurant,KUZINA THE GREEK KITCHEN,Greek,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53253085466,-74.19207906576
+restaurant,LA FONTANA SORELLENA,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54010578904,-74.1772168026
+restaurant,MIKE'S PLACE,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52898958015,-74.16227321205
+restaurant,MONA LISA PIZZERIA & RISTORANTE,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54140114968,-74.17733538294
+restaurant,NEW ISLAND CHINESE,Chinese,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52567800358,-74.20112740128
+restaurant,O'SFIZIO,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52924846647,-74.16165512178
+restaurant,OCEAN SUSHI,Japanese,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54104614475,-74.17793168121
+restaurant,PANINO RUSTICO,Italian,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53253085466,-74.19207906576
+restaurant,PIZZA MIA,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53248968287,-74.19207894698
+restaurant,PLAYA BOWLS,"Juice, Smoothies, Fruit Salads",Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54173533392,-74.20713762663
+restaurant,PRIVE,Greek,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54214484165,-74.17743090983
+restaurant,QDOBA MEXICAN EATS,Mexican,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54173533392,-74.20713762663
+restaurant,RALPH'S FAMOUS ITALIAN ICES,Frozen Desserts,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53265421289,-74.19217295412
+restaurant,RALPH'S ICES,Other,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52194370179,-74.21689539758
+restaurant,STARBUCKS COFFEE,Coffee/Tea,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54184961216,-74.20617374469
+restaurant,STARBUCKS COFFEE COMPANY,Coffee/Tea,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52667144503,-74.20122752324
+restaurant,TEJANOS,Tex-Mex,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.53253085466,-74.19207906576
+restaurant,TERRIBLE EDDIES,Sandwiches/Salads/Mixed Buffet,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54187861414,-74.17741940655
+restaurant,THE BAGEL BOX,Bagels/Pretzels,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52602180354,-74.2022866884
+restaurant,THE PIZZA PARLOR,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54053148164,-74.17705603358
+restaurant,THE ROCK HOUSE BAR & GRILL,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.513729418,-74.19666417106
+restaurant,THE SQUARE ON ANNADALE,Pizza,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.54154934024,-74.17735376711
+restaurant,WENDY'S,American,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52135310213,-74.21714165275
+restaurant,YOSUKI SUSHI,Japanese,Annadale-Huguenot-Prince's Bay-Woodrow,Staten Island,SI0304,40.52154813888,-74.21705956221
+restaurant,AMBROSINO'S PIZZERIA,Pizza,Arden Heights-Rossville,Staten Island,SI0303,40.55337766632,-74.19203846815
+restaurant,CARLYLE GREEN POOL STAND,American,Arden Heights-Rossville,Staten Island,SI0303,40.55439564776,-74.19866638806
+restaurant,CARVEL,Frozen Desserts,Arden Heights-Rossville,Staten Island,SI0303,40.55337766632,-74.19203846815
+restaurant,CARVEL,Frozen Desserts,Arden Heights-Rossville,Staten Island,SI0303,40.55124585016,-74.21175159702
+restaurant,CHEN'S GARDEN,Chinese,Arden Heights-Rossville,Staten Island,SI0303,40.56250743365,-74.19169771377
+restaurant,DUNKIN DONUTS,Donuts,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,EAT ITALIAN,Italian,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,EVE ULTRA LOUNGE,American,Arden Heights-Rossville,Staten Island,SI0303,40.55560593032,-74.21398223438
+restaurant,GENKI SUSHI,Japanese,Arden Heights-Rossville,Staten Island,SI0303,40.55307625308,-74.19173172544
+restaurant,"GRAND OAKS COUNTRY CLUB, BOXWOOD CAFE",American,Arden Heights-Rossville,Staten Island,SI0303,40.55106468164,-74.20111055392
+restaurant,HEARTLAND BAGELS II,Bagels/Pretzels,Arden Heights-Rossville,Staten Island,SI0303,40.55215372673,-74.21210353581
+restaurant,Islander Taste,Chinese,Arden Heights-Rossville,Staten Island,SI0303,40.54235091781,-74.20823691024
+restaurant,LA DOLCE PASTRY SHOPPE,Bakery Products/Desserts,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,MAMMA MIA PIZZERIA & CUCINA,Pizza,Arden Heights-Rossville,Staten Island,SI0303,40.55048435593,-74.21090715627
+restaurant,MISAKI SUSHI,Japanese,Arden Heights-Rossville,Staten Island,SI0303,40.54235091781,-74.20823691024
+restaurant,PEKING TASTE,Chinese,Arden Heights-Rossville,Staten Island,SI0303,40.55307625308,-74.19173172544
+restaurant,PIO HOT BAGELS,Bagels/Pretzels,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,SUBWAY,Sandwiches,Arden Heights-Rossville,Staten Island,SI0303,40.55307625308,-74.19173172544
+restaurant,SUNSET PIZZERIA,Pizza,Arden Heights-Rossville,Staten Island,SI0303,40.54235091781,-74.20823691024
+restaurant,THE HISTORIC OLD BERMUDA INN,American,Arden Heights-Rossville,Staten Island,SI0303,40.55348515371,-74.2178402386
+restaurant,WINGSTOP,Chicken,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,WOODROW DINER,American,Arden Heights-Rossville,Staten Island,SI0303,40.54259228846,-74.20833121176
+restaurant,1468 HYLAN CAFE,Asian/Asian Fusion,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59252278198,-74.08724332593
+restaurant,AL-AQSA RESTAURANT,Middle Eastern,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58614532472,-74.09241217749
+restaurant,AVOCADO SUSHI II,Asian/Asian Fusion,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58280155924,-74.09647925488
+restaurant,BAGEL ON THE BLVD,Bagels/Pretzels,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58682102322,-74.09181546212
+restaurant,BASILIO'S INN RESTAURANT,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59770699188,-74.06324643368
+restaurant,BOARDWALK GRILL,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58971738262,-74.067238972
+restaurant,BOCELLI'S,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59758352603,-74.0844448568
+restaurant,BROOKLYNS FINEST PIZZA & RESTAURANT,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59767428432,-74.08420010998
+restaurant,BUONO BAKERY,Bakery Products/Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.5985693861,-74.07995210931
+restaurant,CAFE BELLA VITA,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58280155924,-74.09647925488
+restaurant,CAFE LATTE,Mediterranean,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58800675947,-74.09183150021
+restaurant,CAFE LUNA,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59658632916,-74.08557425883
+restaurant,CAMPANIA,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58516454402,-74.09350888698
+restaurant,CARAVAN RESTAURANT & COFFEE SHOP,Asian/Asian Fusion,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59217078188,-74.06798677901
+restaurant,CARVEL,Frozen Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59855313075,-74.07964600818
+restaurant,CASITA OF BROOKLYN,Coffee/Tea,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59400866759,-74.09953091236
+restaurant,CHINAR ON THE ISLAND,Mediterranean,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59259609103,-74.06821045319
+restaurant,CIELO RISTORANTE,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59332174488,-74.08694191695
+restaurant,CINCO DE MAYO,Latin American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.60315367606,-74.08311227931
+restaurant,CRYSTAL ROOM,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59281417768,-74.07067712127
+restaurant,CUTEST COOKIES,Bakery Products/Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59658632916,-74.08557425883
+restaurant,DOMINO'S,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59658632916,-74.08557425883
+restaurant,DRAGON HOUSE,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59258235636,-74.06822844229
+restaurant,DUNKIN,Donuts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59658632916,-74.08557425883
+restaurant,EL CACTUS MEXICAN RESTAURANT,Mexican,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59269760305,-74.06828617077
+restaurant,EL PATRON RESTAURANT & LOUNGE II,Mexican,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59192144288,-74.08754498775
+restaurant,FUJI SUSHI JAPANESE,Japanese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59856393676,-74.07989448739
+restaurant,GOLDEN STAR,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.60315367606,-74.08311227931
+restaurant,HILLSIDE FARM TO BAGEL,Bakery Products/Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58956878217,-74.10131010471
+restaurant,HKS KITCHEN,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59444573726,-74.09878261278
+restaurant,HYLAN CURRY & GRILL,Indian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.5924294318,-74.08727920978
+restaurant,ISLAND CHATEAU,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.6014581807,-74.08577138631
+restaurant,ITALIANISSIMO RESTAURANT CAFE BAR,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59837822577,-74.06545085327
+restaurant,JAC MAO CHINESE CUISINE,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58583489592,-74.09274297129
+restaurant,KUZINA,Greek,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59263809867,-74.08719666885
+restaurant,L&R PIZZA & PASTA,Soul Food,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59804001945,-74.06648758877
+restaurant,LA VERA PIZZERIA,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.60402882698,-74.08371118153
+restaurant,LITTLE KITCHEN,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58687595937,-74.09176513334
+restaurant,MR WEEK,Russian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59636345034,-74.07025239252
+restaurant,NINOS RESTAURANT,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59855562947,-74.07999890525
+restaurant,NO. 1 KITCHEN,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59767428432,-74.08420010998
+restaurant,NORI,Japanese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59828329007,-74.07267425529
+restaurant,OPERA CAFE,Turkish,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58833446147,-74.0904854003
+restaurant,PERKINS RESTAURANT & BAKERY,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59424703521,-74.08655064711
+restaurant,PHO PLUS VIETNAMESE NOODLE,Asian/Asian Fusion,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59658632916,-74.08557425883
+restaurant,POPEYES,Chicken,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59510917783,-74.08618088922
+restaurant,PRIMO PIZZERIA,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59621927332,-74.09506558489
+restaurant,PRIMO PIZZERIA,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59621927332,-74.09506558489
+restaurant,RAB'S COUNTRY LANE,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58950730595,-74.08944285915
+restaurant,RAN VIET,Chinese,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.597805254,-74.07336871038
+restaurant,RAN VIET,Asian/Asian Fusion,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.597805254,-74.07336871038
+restaurant,ROUND PIE PIZZA COMPANY,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58280155924,-74.09647925488
+restaurant,ROYAL CROWN BAKERY CAFE,Bakery Products/Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59566105036,-74.08595475362
+restaurant,ROYAL CUCINA,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.5956308496,-74.085965517
+restaurant,SAUCY,American,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59859616354,-74.08090639648
+restaurant,SUBWAY,Sandwiches/Salads/Mixed Buffet,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58627442266,-74.09229714736
+restaurant,TERMINAL ONE,Polish,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59191560003,-74.06784609479
+restaurant,THE SCULPT CAFE,Coffee/Tea,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59124894103,-74.10091660138
+restaurant,TIENDA VALENTINA'S RESTAURANTE,Mexican,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.60090383777,-74.09268115839
+restaurant,TIM HORTONS,Coffee/Tea,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59061146559,-74.08847220058
+restaurant,TORINO PIZZA & PASTA,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58889028305,-74.10191394494
+restaurant,TORINO'S PIZZA AND PASTA,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58889028305,-74.10191394494
+restaurant,TRATTORIA OLIVETO,Italian,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58869153658,-74.09016544804
+restaurant,UNCLE LOUIE G'S,Frozen Desserts,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.59298130382,-74.08705669306
+restaurant,VIA PONTE PIZZERIA,Pizza,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.5978942919,-74.06692315488
+restaurant,WENDY'S,Hamburgers,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58814766497,-74.09067596726
+restaurant,ZARA CAFE GRILL,Turkish,Grasmere-Arrochar-South Beach-Dongan Hills,Staten Island,SI0201,40.58138372695,-74.09826641438
+restaurant,ALFONSO'S CANTINA RESTAURANT,Mexican,Great Kills-Eltingville,Staten Island,SI0302,40.56066167921,-74.13487633394
+restaurant,ALFONSO'S PASTRY SHOPPE,Bakery Products/Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.54512540233,-74.16092369038
+restaurant,ALI BABA HOOKAH LOUNGE,Middle Eastern,Great Kills-Eltingville,Staten Island,SI0302,40.54243786527,-74.16504401838
+restaurant,AMBROSINOS PIZZERIA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.56365626016,-74.13251781136
+restaurant,ANDREW'S DINER,American,Great Kills-Eltingville,Staten Island,SI0302,40.53848790887,-74.14920068101
+restaurant,ARIRANG HIBACHI STEAK HOUSE,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54937182635,-74.15068239011
+restaurant,ATRIUM CINEMAS,American,Great Kills-Eltingville,Staten Island,SI0302,40.56024195194,-74.16411287165
+restaurant,AVOCADO,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54532905249,-74.16054278566
+restaurant,BANHMIS,Asian/Asian Fusion,Great Kills-Eltingville,Staten Island,SI0302,40.54172754343,-74.14647714356
+restaurant,BASIL INDIAN AND THAI,Indian,Great Kills-Eltingville,Staten Island,SI0302,40.54279657447,-74.14545408084
+restaurant,BAYA BAR,"Juice, Smoothies, Fruit Salads",Great Kills-Eltingville,Staten Island,SI0302,40.54478668522,-74.16554637372
+restaurant,BIG AL'S CHICAGO STYLE PIZZA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.54062015968,-74.14743532754
+restaurant,BOULEVARD TAVERN,American,Great Kills-Eltingville,Staten Island,SI0302,40.53646752016,-74.15145544949
+restaurant,BOWL ME UP,American,Great Kills-Eltingville,Staten Island,SI0302,40.54408463868,-74.16511646363
+restaurant,BREW BAR,Coffee/Tea,Great Kills-Eltingville,Staten Island,SI0302,40.55104670502,-74.15026157129
+restaurant,BURGER KING,Hamburgers,Great Kills-Eltingville,Staten Island,SI0302,40.54298569209,-74.16392281342
+restaurant,CAMPANIA COAL FIRED PIZZA,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54292809797,-74.16389029
+restaurant,CARVEL,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.56365626016,-74.13251781136
+restaurant,CARVEL,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.54541436297,-74.16038467546
+restaurant,CHINA CHALET,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.54546664505,-74.16029125102
+restaurant,COCINA MI ENCANTO,Other,Great Kills-Eltingville,Staten Island,SI0302,40.55168313609,-74.15053648858
+restaurant,COLES DOCKSIDE,Other,Great Kills-Eltingville,Staten Island,SI0302,40.54250385999,-74.14249594166
+restaurant,COUNTRY DONUTS,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.54522167226,-74.16077999994
+restaurant,COUNTRY DONUTS,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.56036820762,-74.16975985529
+restaurant,CUCUMBER,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.5373664663,-74.15039618657
+restaurant,DOMENICO PIZZERIA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.56066167921,-74.13487633394
+restaurant,DOMINO'S,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.54287875881,-74.16384339514
+restaurant,DUNKIN,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.56024195194,-74.16411287165
+restaurant,DUNKIN,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.54206002181,-74.14619723834
+restaurant,DUNKIN,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.56099408669,-74.13463228035
+restaurant,DUNKIN,Donuts,Great Kills-Eltingville,Staten Island,SI0302,40.54405727909,-74.16505522948
+restaurant,DUNKIN DONUTS,Other,Great Kills-Eltingville,Staten Island,SI0302,40.55350648141,-74.14350549345
+restaurant,ELTINGVILLE DINER,American,Great Kills-Eltingville,Staten Island,SI0302,40.54180973049,-74.16283335336
+restaurant,EMPIRE SZECHUAN VILLAGE,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.54508957326,-74.16102794787
+restaurant,FIORE DI MARE,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54293521255,-74.14215865727
+restaurant,FRANK & DANNY'S PIZZERIA,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.5451225968,-74.16096686049
+restaurant,GENKI SUSHI,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.55350648141,-74.14350549345
+restaurant,GIULIANA RISTORANTE,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.53972162831,-74.14819606722
+restaurant,GIUSEPPE PIZZERIA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.546041798,-74.15922399324
+restaurant,GOLDEN DOVE DINER,American,Great Kills-Eltingville,Staten Island,SI0302,40.55901275311,-74.1694397012
+restaurant,GOOD TASTE,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.5373664663,-74.15039618657
+restaurant,GOODFELLAS BRICK OVEN PIZZA,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54154066273,-74.14666022422
+restaurant,GRAND PLAZA,American,Great Kills-Eltingville,Staten Island,SI0302,40.54937182635,-74.15068239011
+restaurant,GREAT KILLS LITTLE LEAGUE INC,American,Great Kills-Eltingville,Staten Island,SI0302,40.55961005848,-74.14847068073
+restaurant,HO WOK,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.56020873559,-74.1643071298
+restaurant,HONG KONG KEI ONE,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.53751765659,-74.15022384033
+restaurant,INTOXX FITNESS,"Juice, Smoothies, Fruit Salads",Great Kills-Eltingville,Staten Island,SI0302,40.56066167921,-74.13487633394
+restaurant,ISLAND SOCIAL BAR & GRILL,American,Great Kills-Eltingville,Staten Island,SI0302,40.54058172337,-74.14744243807
+restaurant,JD'S TAVERN,American,Great Kills-Eltingville,Staten Island,SI0302,40.55140742203,-74.14938437283
+restaurant,JOYCE'S TAVERN,Irish,Great Kills-Eltingville,Staten Island,SI0302,40.54499521609,-74.16559726526
+restaurant,JUICEBAR NUTRITION,"Juice, Smoothies, Fruit Salads",Great Kills-Eltingville,Staten Island,SI0302,40.56039290535,-74.16976351719
+restaurant,KIKU JAPANESE CUISINE,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54450960752,-74.1654449395
+restaurant,KINGDOM PIZZA CAFE,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.54526299573,-74.16067215729
+restaurant,KRAVE IT CAFE,"Juice, Smoothies, Fruit Salads",Great Kills-Eltingville,Staten Island,SI0302,40.54412300856,-74.16515613703
+restaurant,KUNG FU TEA,Coffee/Tea,Great Kills-Eltingville,Staten Island,SI0302,40.54405727909,-74.16505522948
+restaurant,LA CANDELA ESPANOLA,Spanish,Great Kills-Eltingville,Staten Island,SI0302,40.55152570146,-74.14919032364
+restaurant,LA IGUANA AZUL RESTAURANT,Mexican,Great Kills-Eltingville,Staten Island,SI0302,40.55097534529,-74.15025781181
+restaurant,LE MALT IMPERIALE,American,Great Kills-Eltingville,Staten Island,SI0302,40.54393832898,-74.16378843488
+restaurant,LUCKY FORTUNE,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.55105276096,-74.1498297777
+restaurant,MARINA CAFE,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54430092593,-74.14090586193
+restaurant,MCDONALD'S,American,Great Kills-Eltingville,Staten Island,SI0302,40.55951213878,-74.16955253705
+restaurant,MIKE'S OAKWOOD DINER,American,Great Kills-Eltingville,Staten Island,SI0302,40.56365626016,-74.13251781136
+restaurant,MIMMOS BRICK OVEN PIZZA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.5508988171,-74.15000935045
+restaurant,NATURE'S GRILL CAFE,American,Great Kills-Eltingville,Staten Island,SI0302,40.53954028109,-74.14834317216
+restaurant,NEW FOO SING,Chinese,Great Kills-Eltingville,Staten Island,SI0302,40.55053045804,-74.15043312743
+restaurant,NONNA'S OLD FASHIONED PIZZERIA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.55096588776,-74.15118617489
+restaurant,OHKAMI RAMEN,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54489919543,-74.16556464383
+restaurant,OISHII SUSHI,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54220896553,-74.14562909478
+restaurant,PACIFIC KITCHEN,Asian/Asian Fusion,Great Kills-Eltingville,Staten Island,SI0302,40.54695712038,-74.15828346133
+restaurant,PATRIZIA'S,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54695712038,-74.15828346133
+restaurant,PICCOLINO,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.55132763046,-74.14953172851
+restaurant,PIZZAIOLI,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.5602031995,-74.16433950614
+restaurant,PLANET WINGS,Chicken,Great Kills-Eltingville,Staten Island,SI0302,40.56019212729,-74.16440425881
+restaurant,PRONTO RESTAURANT,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.55829933797,-74.16928313707
+restaurant,RALPH'S FAMOUS ITALIAN ICES,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.56000054519,-74.16966534661
+restaurant,RALPHS ICES,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.53737750222,-74.15035303964
+restaurant,RICHMOND BAGEL & GOURMET DELI,Sandwiches,Great Kills-Eltingville,Staten Island,SI0302,40.53674246053,-74.15110710577
+restaurant,RICHMOND COUNTY YACHT CLUB,American,Great Kills-Eltingville,Staten Island,SI0302,40.54447959846,-74.14069395589
+restaurant,RICHMOND REPUBLIC,American,Great Kills-Eltingville,Staten Island,SI0302,40.54437955172,-74.16234670881
+restaurant,RIVA CAFE NYC,Turkish,Great Kills-Eltingville,Staten Island,SI0302,40.54553544112,-74.1601654833
+restaurant,ROPPONGI ROBATA SUSHI,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.56021427167,-74.16427475346
+restaurant,SALVATORE AND LLOYD'S PIZZA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.54404627398,-74.16507319227
+restaurant,SAPORI RISTORANTE,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.54527501758,-74.16571309997
+restaurant,SOFIA'S TAQUERIA,Mexican,Great Kills-Eltingville,Staten Island,SI0302,40.54509237376,-74.16098837584
+restaurant,STARBUCKS CORPORATION,Coffee/Tea,Great Kills-Eltingville,Staten Island,SI0302,40.56438162413,-74.1318786136
+restaurant,SUBWAY,Sandwiches,Great Kills-Eltingville,Staten Island,SI0302,40.54527950994,-74.16063981441
+restaurant,TALK OF THE TOWN,Bottled Beverages,Great Kills-Eltingville,Staten Island,SI0302,40.55145817716,-74.15044961782
+restaurant,TERIYAKI ONE,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.55936396836,-74.16951976996
+restaurant,THE SANDWICH SHOP,Sandwiches,Great Kills-Eltingville,Staten Island,SI0302,40.55250340078,-74.15086220627
+restaurant,THE VINTAGE TEA,Sandwiches,Great Kills-Eltingville,Staten Island,SI0302,40.54937182635,-74.15068239011
+restaurant,TOMO JAPANESE RESTAURANT,Japanese,Great Kills-Eltingville,Staten Island,SI0302,40.54243786527,-74.16504401838
+restaurant,TRATTORIA TOSCANA,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.53756167712,-74.15014479103
+restaurant,UNCLE LOUIE G'S,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.54031794061,-74.14766132047
+restaurant,VILLA PARADISIO,Italian,Great Kills-Eltingville,Staten Island,SI0302,40.55347630229,-74.14349463281
+restaurant,VILLAGE MARIA,Pizza,Great Kills-Eltingville,Staten Island,SI0302,40.55034358999,-74.15060182781
+restaurant,WENDY'S #108,Hamburgers,Great Kills-Eltingville,Staten Island,SI0302,40.54382597297,-74.16366222828
+restaurant,YOGURT CITY,Frozen Desserts,Great Kills-Eltingville,Staten Island,SI0302,40.5602364159,-74.16414524803
+restaurant,ZARA ARTHUR MEDITERRANEAN CUISINE,Mediterranean,Great Kills-Eltingville,Staten Island,SI0302,40.56090182547,-74.16899824374
+restaurant,BELLA MAMA ROSE,Italian,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.63156143673,-74.14678676107
+restaurant,BIG ALI'S SOUL FOOD KITCHEN,Soul Food,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6353419054,-74.16621864976
+restaurant,BURGER KING #27012,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62778738193,-74.16868912342
+restaurant,CARVEL # 1429,Frozen Desserts,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62502986721,-74.14812324001
+restaurant,CAST IRON POT,Korean,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62365895995,-74.14909281318
+restaurant,CHENG'S,Chinese,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62600953944,-74.15654074798
+restaurant,CON YAPA PERUVIAN RESTAURANT,Peruvian,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.63079256124,-74.14704806124
+restaurant,DI FARINA PIZZA,Pizza,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62496759728,-74.14745665836
+restaurant,DOCK & DINE CAFE,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.63363709394,-74.18263625025
+restaurant,DOMINICAN FOOD,Latin American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62670424577,-74.16225953387
+restaurant,DUNKIN' / BASKIN ROBBINS,Donuts,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62681264961,-74.16323607464
+restaurant,EL SABOR A MI PERU,Peruvian,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6268072268,-74.16318922889
+restaurant,GREAT CHINA,Chinese,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62659309897,-74.16127578468
+restaurant,HEAT FLAMES,Pakistani,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62691020027,-74.16411892679
+restaurant,IHOP#4691,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62373583723,-74.14907497393
+restaurant,JJ FISH & CHICKEN,Other,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62691561238,-74.16417297766
+restaurant,JOE BROADWAY'S BILLIARDS AND SPORTS PUB,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62669882256,-74.16221268828
+restaurant,KPOT,Korean,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62496759728,-74.14745665836
+restaurant,LA CRIOLLA,Peruvian,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62832266674,-74.16865445583
+restaurant,LITTLE CAESARS,Pizza,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62600953944,-74.15654074798
+restaurant,LUK & BART HOMEMADE FOOD,Polish,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.63680988243,-74.15882168242
+restaurant,MAMA ROSARIA'S PIZZERIA RESTAURANT,Pizza,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62656060254,-74.16096228997
+restaurant,MARINO'S PIZZA HOUSE,Pizza,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6268072268,-74.16318922889
+restaurant,MCDONALD'S,Hamburgers,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62517921122,-74.14937000509
+restaurant,MIKE'S DAKOTA DINER,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62399941112,-74.14901792743
+restaurant,MY FOOD,Indian,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62507068914,-74.14839351094
+restaurant,NAZ'S HALAL FOOD,Middle Eastern,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62832266674,-74.16865445583
+restaurant,PARIS BAGUETTE,Bakery Products/Desserts,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62306032103,-74.14930400597
+restaurant,POLLO CAMPERO,Chicken,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62594441678,-74.15598942015
+restaurant,POPEYES,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62756124167,-74.16754654566
+restaurant,POPPY SEEDS BAGELS,Sandwiches/Salads/Mixed Buffet,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6268072268,-74.16318922889
+restaurant,REAL MADRID,Spanish,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62628974067,-74.15836785822
+restaurant,RINCONCITO PAISA-COLOMBIAN BAKERY & RESTAURANT,Latin American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62579743158,-74.1550812605
+restaurant,SAIKAI RAMEN,Asian/Asian Fusion,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62306032103,-74.14930400597
+restaurant,SALON ROMANCE,Latin American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.63239302787,-74.15517590805
+restaurant,SOUL FOOD STATION,Soul Food,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6268072268,-74.16318922889
+restaurant,STARBUCKS COFFEE,Coffee/Tea,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62600953944,-74.15654074798
+restaurant,SUBWAY,Sandwiches,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62691020027,-74.16411892679
+restaurant,SWEETIE HOUSE,American,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62772470264,-74.16838274805
+restaurant,TERIYAKI ONE,Japanese,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62772470264,-74.16838274805
+restaurant,UMI SUSHI & SEAFOOD BUFFET,Asian/Asian Fusion,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62207668828,-74.16972648882
+restaurant,VERDES ON FOREST,Pizza,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.6268072268,-74.16318922889
+restaurant,WENDY'S,Hamburgers,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62499759031,-74.1476116279
+restaurant,WINGSTOP,Chicken,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62496759728,-74.14745665836
+restaurant,YUM YUM CHINESE FOOD,Chinese,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.62502444752,-74.14806919198
+restaurant,ZARA FOREST,Turkish,Mariner's Harbor-Arlington-Graniteville,Staten Island,SI0107,40.624954295,-74.14712881106
+restaurant,98 K FRIED CHICKEN & SANDWICHES,Hamburgers,New Dorp-Midland Beach,Staten Island,SI0202,40.57096415008,-74.11067639028
+restaurant,ALAMO DRAFTHOUSE CINEMA,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,AMALFI COAST,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57235484755,-74.0932137206
+restaurant,APPLEBEES NEIGHBORHOOD BAR & GRILL,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,ARIELLA'S RESTAURANT,American,New Dorp-Midland Beach,Staten Island,SI0202,40.5658024535,-74.10038492323
+restaurant,AVANTI'S PIZZERIA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57329561436,-74.11508977153
+restaurant,BAYA BAR,"Juice, Smoothies, Fruit Salads",New Dorp-Midland Beach,Staten Island,SI0202,40.58150034808,-74.11176312908
+restaurant,BETTER GOURMET HEALTH KITCHEN,American,New Dorp-Midland Beach,Staten Island,SI0202,40.57399038754,-74.10622148014
+restaurant,BONCHON HYLAN BLVD,Korean,New Dorp-Midland Beach,Staten Island,SI0202,40.57684758356,-74.1033678113
+restaurant,BORA BORA,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.58491453866,-74.09378935291
+restaurant,BOULEVARD LOUNGE,Mediterranean,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,BRAVO PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57016957952,-74.10919930436
+restaurant,BRIOSO RISTORANTE,Italian,New Dorp-Midland Beach,Staten Island,SI0202,40.57323534121,-74.11497807995
+restaurant,CAFE CON PAN BAKERY,Mexican,New Dorp-Midland Beach,Staten Island,SI0202,40.57380194282,-74.11653049613
+restaurant,CAFE GOURMAND,Eastern European,New Dorp-Midland Beach,Staten Island,SI0202,40.5720569273,-74.09501666606
+restaurant,CANTINA MEXICANA,Mexican,New Dorp-Midland Beach,Staten Island,SI0202,40.57373393735,-74.11592564115
+restaurant,CARVEL,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.56891866893,-74.11130647511
+restaurant,CHICK'N GO,Korean,New Dorp-Midland Beach,Staten Island,SI0202,40.57597123579,-74.10420518897
+restaurant,CHINA WOK,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57567077971,-74.11954673755
+restaurant,CHIPOTLE MEXICAN GRILL #2308,Tex-Mex,New Dorp-Midland Beach,Staten Island,SI0202,40.56925111684,-74.1109686899
+restaurant,CLARKE'S CAKES & COOKIES,Other,New Dorp-Midland Beach,Staten Island,SI0202,40.57597123579,-74.10420518897
+restaurant,COLD STONE CREAMERY,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57027592663,-74.10993016336
+restaurant,COLONNADE DINER,American,New Dorp-Midland Beach,Staten Island,SI0202,40.58116390566,-74.0985432912
+restaurant,CORNER CAFE,Eastern European,New Dorp-Midland Beach,Staten Island,SI0202,40.57131063287,-74.09129013223
+restaurant,CREPE STOP,American,New Dorp-Midland Beach,Staten Island,SI0202,40.57613332562,-74.10404345419
+restaurant,DOMINOS,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57326547961,-74.11503212592
+restaurant,DUMPLING TOWN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57610585484,-74.10406860945
+restaurant,DUNKIN,Donuts,New Dorp-Midland Beach,Staten Island,SI0202,40.571894134,-74.10833105106
+restaurant,DUNKIN,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.58404353918,-74.09488257823
+restaurant,DUNKIN DONUTS,Donuts,New Dorp-Midland Beach,Staten Island,SI0202,40.56734711318,-74.11287312932
+restaurant,EL DORADO RESTAURANTE BAR AND GRILL,Latin American,New Dorp-Midland Beach,Staten Island,SI0202,40.58060612916,-74.09921926304
+restaurant,FISH NOODLE HOUSE,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57618552566,-74.10398953956
+restaurant,FRESH TORTILLAS,Tex-Mex,New Dorp-Midland Beach,Staten Island,SI0202,40.57185728434,-74.11238764622
+restaurant,FUSHIMI JAPANESE CUISINE,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.58150034808,-74.11176312908
+restaurant,GRAND SAHARA MEDITERRANEAN GRILL,Turkish,New Dorp-Midland Beach,Staten Island,SI0202,40.58458757198,-74.09419931528
+restaurant,GRANDE CAFFE,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.57359237478,-74.11747322713
+restaurant,GREEK XPRESS,Greek,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,GRIFF'S PLACE,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56589835041,-74.10057942435
+restaurant,HALAL EXPRESS ASIAN FUSION RESTAURANT,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57618552566,-74.10398953956
+restaurant,HARVEST CAFE,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56607369674,-74.1009432089
+restaurant,HAWAII POKE BOWL,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.56718501082,-74.11303482125
+restaurant,HI SUSHI,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.5721531756,-74.11294247402
+restaurant,HIP WO,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.58101331661,-74.09810746679
+restaurant,HO BRAH TACOS,Mexican,New Dorp-Midland Beach,Staten Island,SI0202,40.57403491201,-74.11686207053
+restaurant,HOME FRITE,American,New Dorp-Midland Beach,Staten Island,SI0202,40.57123809485,-74.11122756684
+restaurant,HYLAN DINER,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56911371677,-74.1111340317
+restaurant,INCA'S GRILL PERUVIAN KITCHEN,Peruvian,New Dorp-Midland Beach,Staten Island,SI0202,40.57909934321,-74.10819158667
+restaurant,INTOXX FITNESS NYC,"Juice, Smoothies, Fruit Salads",New Dorp-Midland Beach,Staten Island,SI0202,40.56901758277,-74.11120225904
+restaurant,LA STRADA RESTAURANT,Italian,New Dorp-Midland Beach,Staten Island,SI0202,40.57371754154,-74.11585362023
+restaurant,LORENZO'S  PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.58295270743,-74.09625986699
+restaurant,MCDONALD'S,Hamburgers,New Dorp-Midland Beach,Staten Island,SI0202,40.5778283399,-74.1024045781
+restaurant,MENCHIE'S,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.56718501082,-74.11303482125
+restaurant,MIKADO,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.5714901595,-74.11169592276
+restaurant,MISS AM BAKERY,Bakery Products/Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57624047045,-74.10393562913
+restaurant,MOCA & CO,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.57304908563,-74.11458900333
+restaurant,MR. BBQ FLAVOR,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57197235309,-74.11260381194
+restaurant,MUZI SUSHI,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.57399038754,-74.10622148014
+restaurant,NAPOLI PIZZERIA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57979532099,-74.10945269951
+restaurant,NEW CHINA BUFFET,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,NEW EVERYBODY KITCHEN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57223154291,-74.09295438128
+restaurant,NORI SUSHI RESTAURANT,Japanese,New Dorp-Midland Beach,Staten Island,SI0202,40.57370232504,-74.11731863773
+restaurant,NYC BREAKFAST CAFFE,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.57564886653,-74.11950350151
+restaurant,OLD BUKHARA,Middle Eastern,New Dorp-Midland Beach,Staten Island,SI0202,40.56901758277,-74.11120225904
+restaurant,ON A ROLL,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56718501082,-74.11303482125
+restaurant,PANDA GARDEN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57910756055,-74.10820959958
+restaurant,PANERA BREAD,American,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,PANINO RUSTICO OF STATEN ISLAND,Italian,New Dorp-Midland Beach,Staten Island,SI0202,40.58150034808,-74.11176312908
+restaurant,PAPA JOHNS PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57761953293,-74.10263104588
+restaurant,PATRIZIA'S TAVERNA / PATRIZIA'S PIZZERIA,Italian,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,PHO 60,Asian/Asian Fusion,New Dorp-Midland Beach,Staten Island,SI0202,40.56925111684,-74.1109686899
+restaurant,PHO RAINBOW III,Asian/Asian Fusion,New Dorp-Midland Beach,Staten Island,SI0202,40.57367825868,-74.11669586183
+restaurant,PHO TODAY,Korean,New Dorp-Midland Beach,Staten Island,SI0202,40.57001217083,-74.11019608447
+restaurant,"PIECE-A-CAKE , COOKIE JAR",Bakery Products/Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57325181717,-74.11497090924
+restaurant,PIZZERIA GIOVE,Italian,New Dorp-Midland Beach,Staten Island,SI0202,40.5721531756,-74.11294247402
+restaurant,PLAZA PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57358205525,-74.11682887868
+restaurant,POKEBOWL STATION,Hawaiian,New Dorp-Midland Beach,Staten Island,SI0202,40.57130937182,-74.11131767315
+restaurant,PRECIOUS ISLAND TEA SHOP,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57076958303,-74.11035211546
+restaurant,PRIME PIZZA KITCHEN,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.58557667271,-74.09300543014
+restaurant,PRONTO PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.57122991645,-74.11116996144
+restaurant,RALPH'S  ICES,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57361949315,-74.10659524766
+restaurant,RONNIE'S SANDWICH SHOPPE,Sandwiches,New Dorp-Midland Beach,Staten Island,SI0202,40.57470747287,-74.10547029377
+restaurant,SCHUAN KITCHEN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57188194499,-74.11243088208
+restaurant,SEA BAR,Mediterranean,New Dorp-Midland Beach,Staten Island,SI0202,40.56745426636,-74.11276533272
+restaurant,SEABASS TAVERNA,Mediterranean,New Dorp-Midland Beach,Staten Island,SI0202,40.57085729467,-74.11047824211
+restaurant,SHAGHF,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.58150034808,-74.11176312908
+restaurant,SHAKE SHACK 1692,Hamburgers,New Dorp-Midland Beach,Staten Island,SI0202,40.57001217083,-74.11019608447
+restaurant,SI CHINA COOK RESTAURANT,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.58494201307,-74.09375698963
+restaurant,SIAM THAI RESTAURANT,Thai,New Dorp-Midland Beach,Staten Island,SI0202,40.56718501082,-74.11303482125
+restaurant,SIU KITCHEN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57130937182,-74.11131767315
+restaurant,SNOOZE KITCHEN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57188194499,-74.11243088208
+restaurant,SOBOL,"Juice, Smoothies, Fruit Salads",New Dorp-Midland Beach,Staten Island,SI0202,40.57208468019,-74.11281637424
+restaurant,SOMETHING SWEET,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57174495644,-74.11217508537
+restaurant,STARBUCKS,Coffee/Tea,New Dorp-Midland Beach,Staten Island,SI0202,40.57001217083,-74.11019608447
+restaurant,TACO BELL,Tex-Mex,New Dorp-Midland Beach,Staten Island,SI0202,40.57095176837,-74.10927977628
+restaurant,TEX'S CHICKEN & BURGERS,Chicken,New Dorp-Midland Beach,Staten Island,SI0202,40.57629267044,-74.10388171433
+restaurant,THE ALCHEMIST COCKTAIL LOUNGE,Mediterranean,New Dorp-Midland Beach,Staten Island,SI0202,40.57492271053,-74.11565053675
+restaurant,TRACKSIDE BAR&GRILL,American,New Dorp-Midland Beach,Staten Island,SI0202,40.57361986329,-74.11743367993
+restaurant,TROPICAL SMOOTHIE CAFE,"Juice, Smoothies, Fruit Salads",New Dorp-Midland Beach,Staten Island,SI0202,40.56734711318,-74.11287312932
+restaurant,VALDUCCI'S PIZZA,Pizza,New Dorp-Midland Beach,Staten Island,SI0202,40.56718501082,-74.11303482125
+restaurant,VIOLETTE'S CELLAR,American,New Dorp-Midland Beach,Staten Island,SI0202,40.57536955534,-74.10483059555
+restaurant,VIVI BUBBLE TEA,Frozen Desserts,New Dorp-Midland Beach,Staten Island,SI0202,40.57122991645,-74.11116996144
+restaurant,WESTERN YUNNAN,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57122991645,-74.11116996144
+restaurant,WHITE CASTLE,Hamburgers,New Dorp-Midland Beach,Staten Island,SI0202,40.57630363325,-74.10389973023
+restaurant,WINGSTOP,Chicken,New Dorp-Midland Beach,Staten Island,SI0202,40.56810816245,-74.11211856432
+restaurant,YA YA ROASTED,Chinese,New Dorp-Midland Beach,Staten Island,SI0202,40.57254251875,-74.1076805875
+restaurant,YEMEN CAFE & RESTAURANT,Middle Eastern,New Dorp-Midland Beach,Staten Island,SI0202,40.58488706424,-74.09382171617
+restaurant,1001 NIGHTS CAFE,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.5982815732,-74.16252148432
+restaurant,ABOVE BALLROOM,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61246680779,-74.1754358979
+restaurant,ABOVE BALLROOM,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61246680779,-74.1754358979
+restaurant,AMC STATEN ISLAND 11,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,ANGELINA'S KITCHEN,Italian,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57714172198,-74.16406456097
+restaurant,APPLEBEES NEIGHBORHOOD GRILL AND BAR,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,APPLEBEES NEIGHBORHOOD GRILL AND BAR,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61288902167,-74.15884378973
+restaurant,AUNTIE ANNE'S PRETZELS,Bagels/Pretzels,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,AUNTIE ANNE'S PRETZELS,Bagels/Pretzels,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,AVANTI'S PIZZA,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,AVOCADO SUSHI,Asian/Asian Fusion,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61335619827,-74.15843790611
+restaurant,BARIOS PIZZA & RESTAURANT,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58982504689,-74.16431907258
+restaurant,BARNES & NOBLE,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,BETTER GOURMET,Sandwiches/Salads/Mixed Buffet,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59222854724,-74.18977061546
+restaurant,BISTRO THAI,Thai,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,BORA BORA SMOOTHIE CAFE,"Juice, Smoothies, Fruit Salads",New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61311163352,-74.15863902157
+restaurant,BUBBAKOO'S BURRITOS,Tex-Mex,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,BUFFALO WILD WINGS,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61308414579,-74.15866777001
+restaurant,BURGER KING,Hamburgers,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,CAMPUS CENTER CAFETERIA (1C),American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60884522194,-74.15333460783
+restaurant,CAROUSEL FOR ALL CHILDREN,Hotdogs/Pretzels,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6043687551,-74.16112105647
+restaurant,CARVEL,Frozen Desserts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57714172198,-74.16406456097
+restaurant,CHARLEY'S PHILLY STEAKS,Sandwiches,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,CHARM KHAO,Thai,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6004027216,-74.16292638555
+restaurant,CHICK-FIL-A,Chicken,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,CHILI'S GRILL & BAR,Tex-Mex,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61162267618,-74.15956109932
+restaurant,CHIPOTLE MEXICAN GRILL #2918,Tex-Mex,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,CHUCK E. CHEESE,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60162137249,-74.19297001386
+restaurant,CINNABON,Bakery Products/Desserts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,COLD STONE CREAMERY,Frozen Desserts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59128157365,-74.16498517557
+restaurant,COMMONS CAFE,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60371321298,-74.17927334242
+restaurant,CYBER CAFE,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60884522194,-74.15333460783
+restaurant,DAVE & BUSTERS,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,DOMINOS,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61335619827,-74.15843790611
+restaurant,DUCHESS COOKIES,Other,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59128157365,-74.16498517557
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58783042469,-74.16563908718
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61311163352,-74.15863902157
+restaurant,DUNKIN,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57854997544,-74.16959385295
+restaurant,DUNKIN DONUTS,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.5880252398,-74.19366145536
+restaurant,DYNASTY TASTE,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58783042469,-74.16563908718
+restaurant,EAST PACIFIC,Asian/Asian Fusion,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,EL POLLO II RESTAURANT,Spanish,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59079718794,-74.19220770306
+restaurant,EMPIRE EAST,Asian/Asian Fusion,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61311163352,-74.15863902157
+restaurant,ESPLANADE STATEN ISLAND,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61375748874,-74.1580390638
+restaurant,FAIRFIELD INN & SUITES BY MARRIOTT,Continental,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58700805051,-74.19135787554
+restaurant,FIVE GUYS BURGERS AND FRIES,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57620291302,-74.16977145803
+restaurant,FRANCESCO'S,Italian,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60111559683,-74.17641066487
+restaurant,FROZEN D LITE,Frozen Desserts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,GINO'S VILLA MONTE,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57812445926,-74.16964316635
+restaurant,GINZA JAPANESE RESTAURANT,Japanese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61173073916,-74.15883021799
+restaurant,GLORIA JEANS COFFEE,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,GONG CHA,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,HAAGEN-DAZS,Frozen Desserts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,HAMPTON INN & SUITES,Continental,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61239536073,-74.17548973514
+restaurant,HAWAII POKE BOWL,Asian/Asian Fusion,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61335619827,-74.15843790611
+restaurant,HEARTLAND BAGELS,Bagels/Pretzels,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59155384107,-74.16461499051
+restaurant,HILLSIDE SWIMMING CLUB,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60219556828,-74.16827490192
+restaurant,HOLY SCHNITZEL,Jewish/Kosher,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58974290489,-74.16417845065
+restaurant,IL SAPORE CAFE,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61173073916,-74.15883021799
+restaurant,ISLAND KITCHEN,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58998659076,-74.16459671019
+restaurant,ISLAND KITCHEN CHINESE RESTAURANT,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58998659076,-74.16459671019
+restaurant,JADE ISLAND RESTAURANT,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57654604306,-74.16975073491
+restaurant,JAMNJ ENTERPRISES LLC,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60154854616,-74.18213400583
+restaurant,JERSEY MIKE'S SUBS,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57854997544,-74.16959385295
+restaurant,KAJIKEN,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,KONG DOG,Korean,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,KRISPY KREME DOUGHNUTS,Donuts,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58225623757,-74.16905968821
+restaurant,LA COCINA RD,Spanish,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59730019197,-74.18176588381
+restaurant,LA PIAZZA PIZZA,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61311163352,-74.15863902157
+restaurant,LE ROI LOUNGE,Middle Eastern,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61173073916,-74.15883021799
+restaurant,LORENZOS BAR & GRILL (HILTON GARDEN),American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61246680779,-74.1754358979
+restaurant,MASTER WOK,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,MAYNILA ORIENTAL FOOD MARKET,Filipino,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60111559683,-74.17641066487
+restaurant,MCDONALD'S,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60794074603,-74.16234340679
+restaurant,MELT SHOP,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,MIKE'S UNICORN DINER,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60738865238,-74.160674591
+restaurant,MILLER'S ALE HOUSE,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57592016823,-74.16979233502
+restaurant,MOON FLOWER HOUSE,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59021932711,-74.16499334256
+restaurant,MR. PIZZA,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59142733239,-74.16478750524
+restaurant,NANSEN LODGE SOCIAL CLUB,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60342564319,-74.17351780248
+restaurant,NICOTRA BALLROOM + EMPLOYEE CAFETERIA + TEA-ROOM,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61246680779,-74.1754358979
+restaurant,ORIENTAL PLAZA,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60304592084,-74.16295086662
+restaurant,OUTBACK STEAKHOUSE,Steakhouse,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57714172198,-74.16406456097
+restaurant,PANERA BREAD,Sandwiches,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.57714172198,-74.16406456097
+restaurant,PARMA PIZZERIA RESTAURANT,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59213221715,-74.18992876789
+restaurant,PEKING TASTE SI,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59126232384,-74.16501033182
+restaurant,PERK UP COFFEEHOUSE,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59150465777,-74.19097834702
+restaurant,PHO MAC,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61403498979,-74.15783802236
+restaurant,PIENZA BRICK OVEN PIZZA CAFE,Other,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60587930773,-74.1807305305
+restaurant,POKE ISLAND GRILL,Japanese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,POPEYES,Chicken,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,POPEYES,Chicken,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58427410495,-74.16875879966
+restaurant,QDOBA MEXICAN EAT,Mexican,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59133657307,-74.1649133005
+restaurant,QUICK GRILL JAPAN,Japanese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61311163352,-74.15863902157
+restaurant,RANDIWA,Indian,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.61410641366,-74.15779497022
+restaurant,REAL FRUIT BUBBLE TEA,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,RED GINGER,Chinese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,SANDWICH AND PICKLE,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6004027216,-74.16292638555
+restaurant,SAPPORO SUSHI,Japanese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,SARKU JAPAN,Japanese,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,SHAKE SHACK,Hamburgers,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,SHOWPLACE PIZZA,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58877640567,-74.19257270944
+restaurant,SOFIA'S GUAC BAR,Mexican,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,STARBUCKS,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58711021331,-74.1682583455
+restaurant,SUBWAY,Sandwiches,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58986287178,-74.16663428392
+restaurant,SUBWAY,Sandwiches,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,SWEET MOMENT,Other,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,TACO BELL,Tex-Mex,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59227438354,-74.16363380304
+restaurant,"TACO BELL, PIATTINO, GREEN LEAFS",Tex-Mex,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,TASTE OF HONEY,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60289223167,-74.17412501371
+restaurant,THE BETTERED BAGEL,Sandwiches,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60161585258,-74.19298800351
+restaurant,THE MIGHTY CRAB,Seafood,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,THE WEST SHORE INN RESTAURANT,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.59414149664,-74.18653541785
+restaurant,TI AMO PIZZA,Pizza,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60111559683,-74.17641066487
+restaurant,TOMMY'S TAVERN & TAP,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,TROPICAL SMOOTHIE CAFE,"Juice, Smoothies, Fruit Salads",New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.6080781025,-74.16226090804
+restaurant,URBAN ZONE ADVENTURE PARK,American,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.60275455032,-74.19158684176
+restaurant,WENDY'S,Hamburgers,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58836974131,-74.16660894131
+restaurant,YUMMY BOBA AND DESSERTS,Coffee/Tea,New Springville-Willowbrook-Bulls Head-Travis,Staten Island,SI0204,40.58229741996,-74.16905259269
+restaurant,CANLON'S RESTAURANT,Italian,Oakwood-Richmondtown,Staten Island,SI0301,40.56512856481,-74.12670451088
+restaurant,CASA VERDE,Italian,Oakwood-Richmondtown,Staten Island,SI0301,40.57297843822,-74.13645631831
+restaurant,DUNKIN',Donuts,Oakwood-Richmondtown,Staten Island,SI0301,40.56636074302,-74.11387203926
+restaurant,EMPIRE EAST,Chinese,Oakwood-Richmondtown,Staten Island,SI0301,40.56584970275,-74.11438225001
+restaurant,JERSEY MIKE'S,Sandwiches,Oakwood-Richmondtown,Staten Island,SI0301,40.56625908554,-74.11397264329
+restaurant,JUSTINOS PIZZERIA,Pizza,Oakwood-Richmondtown,Staten Island,SI0301,40.5647923794,-74.12789158546
+restaurant,LA FONTANA,Italian,Oakwood-Richmondtown,Staten Island,SI0301,40.56816221065,-74.12611639977
+restaurant,LA ROSA CHICKEN & GRILL,Chicken,Oakwood-Richmondtown,Staten Island,SI0301,40.56479767172,-74.12806795328
+restaurant,MARK'S BAKE SHOPPE,Bakery Products/Desserts,Oakwood-Richmondtown,Staten Island,SI0301,40.57294516995,-74.13673341751
+restaurant,PARIS BAGUETTE,Bakery Products/Desserts,Oakwood-Richmondtown,Staten Island,SI0301,40.56574804122,-74.11448645168
+restaurant,QDOBA MEXICAN RESTAURANT,Mexican,Oakwood-Richmondtown,Staten Island,SI0301,40.56527270214,-74.11497511975
+restaurant,SERENA'S CATERING HALL,American,Oakwood-Richmondtown,Staten Island,SI0301,40.56131113026,-74.10439457197
+restaurant,STARBUCKS COFFEE COMPANY,Coffee/Tea,Oakwood-Richmondtown,Staten Island,SI0301,40.56431104949,-74.11594161852
+restaurant,SUBWAY,Sandwiches,Oakwood-Richmondtown,Staten Island,SI0301,40.56477590263,-74.12789875206
+restaurant,TASTE OF CHINA,Chinese,Oakwood-Richmondtown,Staten Island,SI0301,40.56476229933,-74.1277907519
+restaurant,UNCLE LOUIE G'S,Frozen Desserts,Oakwood-Richmondtown,Staten Island,SI0301,40.56018940177,-74.13502293117
+restaurant,WENDY'S,Other,Oakwood-Richmondtown,Staten Island,SI0301,40.56619863925,-74.11403372635
+restaurant,8 BIT BITES,American,Port Richmond,Staten Island,SI0106,40.62492683129,-74.1360405892
+restaurant,BROTHER PIZZA,Pizza,Port Richmond,Staten Island,SI0106,40.62539479805,-74.14391642977
+restaurant,BUDDY'S WONDER BAR,American,Port Richmond,Staten Island,SI0106,40.63675542082,-74.13493704723
+restaurant,CAFE CON PAN BAKERY II,Bakery Products/Desserts,Port Richmond,Staten Island,SI0106,40.63775893282,-74.13351586514
+restaurant,CHINA BELL,Chinese,Port Richmond,Staten Island,SI0106,40.63447110652,-74.11813565447
+restaurant,COFFEE VIBES,Mexican,Port Richmond,Staten Island,SI0106,40.63714686722,-74.12870095689
+restaurant,DENINO'S PIZZERIA TAVERN,Pizza,Port Richmond,Staten Island,SI0106,40.63002441202,-74.14016886924
+restaurant,DI DI,Chinese,Port Richmond,Staten Island,SI0106,40.63683040602,-74.13419137096
+restaurant,DRIFT876,Caribbean,Port Richmond,Staten Island,SI0106,40.62980729203,-74.14039898145
+restaurant,EL ENCANTO MEXICANO,Mexican,Port Richmond,Staten Island,SI0106,40.63689633979,-74.13414106151
+restaurant,EL REY DE OROS,Mexican,Port Richmond,Staten Island,SI0106,40.63743474204,-74.13377823801
+restaurant,EL REY DE OROS,Mexican,Port Richmond,Staten Island,SI0106,40.63743474204,-74.13377823801
+restaurant,EL TACONAZO RESTAURANT,Mexican,Port Richmond,Staten Island,SI0106,40.63573706962,-74.13496740691
+restaurant,EMPIRE SZECHUAN GARDEN,Chinese,Port Richmond,Staten Island,SI0106,40.62422448083,-74.1380708793
+restaurant,EVA'S TAQUERIA LINDO CAFETAL,Mexican,Port Richmond,Staten Island,SI0106,40.63604140435,-74.13525266129
+restaurant,FOREST THAI CUISINE,Thai,Port Richmond,Staten Island,SI0106,40.62638543985,-74.13035167116
+restaurant,FUNKY MONKEY,Irish,Port Richmond,Staten Island,SI0106,40.62639928671,-74.13024362419
+restaurant,GOODY'S SPANISH FOOD,Spanish,Port Richmond,Staten Island,SI0106,40.63681941846,-74.13419855485
+restaurant,HOUSE OF WINGS,Chicken,Port Richmond,Staten Island,SI0106,40.62664558218,-74.12846447965
+restaurant,JERSEY MIKE'S,Sandwiches,Port Richmond,Staten Island,SI0106,40.62422184459,-74.137980815
+restaurant,JOHN'S FAMOUS DELI,Sandwiches,Port Richmond,Staten Island,SI0106,40.63357137143,-74.14183366354
+restaurant,KFC,Chicken,Port Richmond,Staten Island,SI0106,40.62452804455,-74.13670621161
+restaurant,LA BELLA PIZZA,Pizza,Port Richmond,Staten Island,SI0106,40.62428694497,-74.13862216958
+restaurant,LA BOTTIGLIA BAR & RESTAURANT,Italian,Port Richmond,Staten Island,SI0106,40.63435816837,-74.13582930389
+restaurant,LA FORTUNA MEXICAN RESTAURANT,Mexican,Port Richmond,Staten Island,SI0106,40.64036641722,-74.13119341751
+restaurant,LA TUNA RESTAURANT,Spanish,Port Richmond,Staten Island,SI0106,40.6261141566,-74.14373786411
+restaurant,LACEY'S BRIDGE TAVERN,American,Port Richmond,Staten Island,SI0106,40.6338880893,-74.14318181534
+restaurant,LAS CAZUELAS RESTAURANT,Spanish,Port Richmond,Staten Island,SI0106,40.63397589059,-74.12441099247
+restaurant,LATINOS BAR,Spanish,Port Richmond,Staten Island,SI0106,40.64020491207,-74.13081115756
+restaurant,LOS CHARROS MEXICAN RESTAURANT,Mexican,Port Richmond,Staten Island,SI0106,40.63525911255,-74.1352762903
+restaurant,LOS DOS MIXTECAS,Mexican,Port Richmond,Staten Island,SI0106,40.63389514051,-74.12546648415
+restaurant,MANDARIN HOUSE,Chinese,Port Richmond,Staten Island,SI0106,40.62563191432,-74.14306676959
+restaurant,MAY FLOWER,Chinese,Port Richmond,Staten Island,SI0106,40.63431563229,-74.11983594646
+restaurant,MEXICAN TAMALES MARTITA,Mexican,Port Richmond,Staten Island,SI0106,40.63853363931,-74.13293371439
+restaurant,MIA'S ROSTISERIA & PARRILADAS,Latin American,Port Richmond,Staten Island,SI0106,40.63574806147,-74.1349566203
+restaurant,MIKES OLYMPIC GRILL,American,Port Richmond,Staten Island,SI0106,40.62487684312,-74.143270481
+restaurant,MISHKI,Peruvian,Port Richmond,Staten Island,SI0106,40.63090895242,-74.13025966456
+restaurant,MR. RICE CHINESE RESTAURANT,Chinese,Port Richmond,Staten Island,SI0106,40.62978196963,-74.14090329961
+restaurant,No. 1 CHINESE,Chinese,Port Richmond,Staten Island,SI0106,40.63620408062,-74.13462967289
+restaurant,OAXACA DELI AND TAQUERIA,Mexican,Port Richmond,Staten Island,SI0106,40.63400398255,-74.12381656947
+restaurant,PANAJACHEL SOLOLA,Latin American,Port Richmond,Staten Island,SI0106,40.63091778298,-74.13908993803
+restaurant,PICCOLO PINOS PIZZERIA,Pizza,Port Richmond,Staten Island,SI0106,40.63463835786,-74.13564252468
+restaurant,RECUERDOS MEXICANOS,Mexican,Port Richmond,Staten Island,SI0106,40.63578376907,-74.13493507491
+restaurant,REYES DELI MEXICANA,Mexican,Port Richmond,Staten Island,SI0106,40.63644853525,-74.13448604736
+restaurant,RUTA DEL SABOR,Mexican,Port Richmond,Staten Island,SI0106,40.6338870324,-74.12535117682
+restaurant,SAN JERONIMO RESTAURANT & BAKERY,Mexican,Port Richmond,Staten Island,SI0106,40.63122838436,-74.13872671185
+restaurant,SUBWAY,Sandwiches,Port Richmond,Staten Island,SI0106,40.62511334415,-74.14509380593
+restaurant,TACOS BROTHERS,Mexican,Port Richmond,Staten Island,SI0106,40.63295506036,-74.13394215901
+restaurant,THE NEW DINETTE,American,Port Richmond,Staten Island,SI0106,40.63676172322,-74.1342452778
+restaurant,TROPICAL SMOOTHIE CAFE,"Juice, Smoothies, Fruit Salads",Port Richmond,Staten Island,SI0106,40.6249955834,-74.13592905563
+restaurant,TU TIPICO DOMINICANO,Spanish,Port Richmond,Staten Island,SI0106,40.6341318297,-74.12233962303
+restaurant,VIKINGOS,Mexican,Port Richmond,Staten Island,SI0106,40.63295506036,-74.13394215901
+restaurant,1847 INTERNATIONAL,African,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.62642924977,-74.07549333257
+restaurant,7 CAFETERIA,Bangladeshi,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.6190280866,-74.06871664301
+restaurant,AVOCADO MEXICAN GRILL & COFFEE,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61464482574,-74.07289383919
+restaurant,AVOCADO SUSHI,Japanese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61930218279,-74.06935089291
+restaurant,BAY STREET TAVERN-DANNY BLAINE'S,American,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.60983084703,-74.06300945567
+restaurant,BELLA BEANS CAFE,Coffee/Tea,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61025887456,-74.06329798867
+restaurant,BUBBAKOOS BURRITOS,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61530441605,-74.0670235196
+restaurant,CANELO'S DELI & RESTAURANT,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61318257238,-74.0717576845
+restaurant,CASA DEL MOLCAJETE,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.62649509605,-74.07553663701
+restaurant,DON CHEECH,Italian,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61245653968,-74.06492085103
+restaurant,DUNKIN,Coffee/Tea,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61530441605,-74.0670235196
+restaurant,EL PASO COFFEE SHOP,Spanish,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61205132713,-74.0880541147
+restaurant,GOLDEN DRAGON FUSION,Chinese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.62547716041,-74.07495909364
+restaurant,GOOD WOK RESTAURANT,Chinese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61625799824,-74.07408063874
+restaurant,ISLAND GARDEN,Chinese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61037134896,-74.06340974531
+restaurant,LA CUEVA (entrance on Dock Street),American,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.6251067419,-74.07476414654
+restaurant,MAIZAL RESTAURANT,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61842934594,-74.0693427785
+restaurant,MELLO BISTRO,Italian,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61318908956,-74.06546182898
+restaurant,MEXICAN CANTINA II,Mexican,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61437707749,-74.06633823983
+restaurant,MY PIZZA,Pizza,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.60910348153,-74.08798178246
+restaurant,NEW WIN HING,Chinese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61443467829,-74.06640673186
+restaurant,PIZZA MIA TOMPKINS,Pizza,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.6128122067,-74.0714691463
+restaurant,PRONTO PIZZA PASTA,Pizza,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61710146825,-74.0683472517
+restaurant,RALPH'S ICES BAY STREET,Frozen Desserts,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61683808492,-74.06815247569
+restaurant,RISPOLI PASTRY SHOP,Bakery Products/Desserts,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61438529306,-74.06637066437
+restaurant,ROSEBANK PIZZA,Pizza,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61016008818,-74.063251074
+restaurant,SALMON SUSHI,Other,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61710146825,-74.0683472517
+restaurant,SOFIA'S TAQUERIA,Tex-Mex,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61869274254,-74.06951234954
+restaurant,TACO BELL,Other,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61504813212,-74.07317162396
+restaurant,VIVA JUICE & SALAD BAR,"Juice, Smoothies, Fruit Salads",Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61008053713,-74.06316456034
+restaurant,WING ME UP,Middle Eastern,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61180416626,-74.08822306628
+restaurant,YUMMY WING,Chinese,Rosebank-Shore Acres-Park Hill,Staten Island,SI0103,40.61658291636,-74.06799012705
+restaurant,120 BAY CAFE/CARGO,American,St. George-New Brighton,Staten Island,SI0101,40.63915670971,-74.07564831041
+restaurant,A & S PIZZERIA,Pizza,St. George-New Brighton,Staten Island,SI0101,40.64382155689,-74.07756703142
+restaurant,ABEY AFRICAN FOOD,African,St. George-New Brighton,Staten Island,SI0101,40.64413509717,-74.07662329886
+restaurant,BAKE CULTURE,Bakery Products/Desserts,St. George-New Brighton,Staten Island,SI0101,40.64411316544,-74.07658363587
+restaurant,BESO,Spanish,St. George-New Brighton,Staten Island,SI0101,40.64038362668,-74.07564970671
+restaurant,BESOS RESTAURANT BAR & LOUNGE,Latin American,St. George-New Brighton,Staten Island,SI0101,40.63813828928,-74.07984837088
+restaurant,BOTA,Other,St. George-New Brighton,Staten Island,SI0101,40.63978404351,-74.07747584336
+restaurant,BUBBA'S CHICKEN,Chicken,St. George-New Brighton,Staten Island,SI0101,40.63866245259,-74.08748764206
+restaurant,CAFE ST. MARKS,Other,St. George-New Brighton,Staten Island,SI0101,40.63929006334,-74.07735636311
+restaurant,CASA BLANCA RESTAURANT,Spanish,St. George-New Brighton,Staten Island,SI0101,40.64121470507,-74.09488131107
+restaurant,CHANG NOI THAI,Thai,St. George-New Brighton,Staten Island,SI0101,40.64360481433,-74.07742624587
+restaurant,CHARMAINE'S CAKE BOUTIQUE,Bakery Products/Desserts,St. George-New Brighton,Staten Island,SI0101,40.64277916983,-74.0949556114
+restaurant,CLUCKIES HOT CHICKEN,Other,St. George-New Brighton,Staten Island,SI0101,40.6382293173,-74.07919992058
+restaurant,CRISPY PIZZA,Pizza,St. George-New Brighton,Staten Island,SI0101,40.64465415477,-74.09786267729
+restaurant,CURRY LEAF,Asian/Asian Fusion,St. George-New Brighton,Staten Island,SI0101,40.63820724184,-74.07936924035
+restaurant,D & B RESTAURANT II,Chinese,St. George-New Brighton,Staten Island,SI0101,40.64572324567,-74.08588616449
+restaurant,DUNKIN,Coffee/Tea,St. George-New Brighton,Staten Island,SI0101,40.64364872594,-74.07743350383
+restaurant,DUNKIN DONUTS,Other,St. George-New Brighton,Staten Island,SI0101,40.64372588042,-74.07278880213
+restaurant,DUNKIN',Donuts,St. George-New Brighton,Staten Island,SI0101,40.64488126368,-74.09544868645
+restaurant,Empire Beer Garden,American,St. George-New Brighton,Staten Island,SI0101,40.64411316544,-74.07658363587
+restaurant,FAMOUS NEW YORK PIZZA,Pizza,St. George-New Brighton,Staten Island,SI0101,40.63769927085,-74.08717650946
+restaurant,FERRIS WHEEL YOGURT SMOOTHIES,American,St. George-New Brighton,Staten Island,SI0101,40.64386030362,-74.07290065518
+restaurant,FRITURA DOMINICANA,Spanish,St. George-New Brighton,Staten Island,SI0101,40.63815870755,-74.07810088933
+restaurant,GOLDEN PASTRY SHOP,Bakery Products/Desserts,St. George-New Brighton,Staten Island,SI0101,40.63825965668,-74.07898737319
+restaurant,GREEN TEA,Other,St. George-New Brighton,Staten Island,SI0101,40.64407474093,-74.07657998817
+restaurant,HAAGEN-DAZS,Frozen Desserts,St. George-New Brighton,Staten Island,SI0101,40.64411316544,-74.07658363587
+restaurant,HYATT BAGEL CAFE,Bagels/Pretzels,St. George-New Brighton,Staten Island,SI0101,40.64211761379,-74.07672546948
+restaurant,ISLAND SOFT PRETZEL STOP,American,St. George-New Brighton,Staten Island,SI0101,40.64376977171,-74.0728284877
+restaurant,KILLS BORO,Other,St. George-New Brighton,Staten Island,SI0101,40.6447187016,-74.09940505395
+restaurant,LA CABANA RESTAURANT,Spanish,St. George-New Brighton,Staten Island,SI0101,40.63789420935,-74.07955262423
+restaurant,M & K SPANISH RESTAURANT II,Latin American,St. George-New Brighton,Staten Island,SI0101,40.64410491905,-74.07660164351
+restaurant,MAVI CAFE,Mediterranean,St. George-New Brighton,Staten Island,SI0101,40.64368164625,-74.07745876601
+restaurant,MONTGOMERY DELI,Latin American,St. George-New Brighton,Staten Island,SI0101,40.63888059964,-74.07808011863
+restaurant,NAGO CAFE,Japanese,St. George-New Brighton,Staten Island,SI0101,40.63812722313,-74.08748333453
+restaurant,NEW CHEF HONG KITCHEN,Chinese,St. George-New Brighton,Staten Island,SI0101,40.6379998482,-74.07760347534
+restaurant,NONNAS OF THE WORLD COMMUNITY,Fusion,St. George-New Brighton,Staten Island,SI0101,40.64188121884,-74.07723686621
+restaurant,PIER 76,Pizza,St. George-New Brighton,Staten Island,SI0101,40.64028482886,-74.07562797494
+restaurant,RISPOLI BAKERY,Coffee/Tea,St. George-New Brighton,Staten Island,SI0101,40.64187297478,-74.07725126985
+restaurant,RIVER DOCK CAFE,American,St. George-New Brighton,Staten Island,SI0101,40.64372588042,-74.07278880213
+restaurant,RUDDY AND DEAN,American,St. George-New Brighton,Staten Island,SI0101,40.64392385264,-74.07646810838
+restaurant,SAKURA,Japanese,St. George-New Brighton,Staten Island,SI0101,40.64411316544,-74.07658363587
+restaurant,SHAKE SHACK,Hamburgers,St. George-New Brighton,Staten Island,SI0101,40.64381138877,-74.07635987665
+restaurant,SI FISH & MORE,Soul Food,St. George-New Brighton,Staten Island,SI0101,40.63785024029,-74.07962823647
+restaurant,STATEN ISLAND FERRY HAWKS - Frankie's Tenders & Tots (Including Bud Light Stand),American,St. George-New Brighton,Staten Island,SI0101,40.6446673308,-74.07700227552
+restaurant,STATEN ISLAND FERRY HAWKS/ANGELINA'S KITCHEN,Other,St. George-New Brighton,Staten Island,SI0101,40.6446673308,-74.07700227552
+restaurant,STATEN ISLAND FERRY HAWKS/FRANKIE'S DAWG HOUSE,Other,St. George-New Brighton,Staten Island,SI0101,40.6446673308,-74.07700227552
+restaurant,STATEN ISLAND FERRY HAWKS/TASTE OF SHAOLIN,Other,St. George-New Brighton,Staten Island,SI0101,40.6446673308,-74.07700227552
+restaurant,STATUE OF LIBERTY DELI,American,St. George-New Brighton,Staten Island,SI0101,40.64368198683,-74.07275272002
+restaurant,STEINY'S PUB,American,St. George-New Brighton,Staten Island,SI0101,40.64220007292,-74.07655260509
+restaurant,SUBWAY,Sandwiches,St. George-New Brighton,Staten Island,SI0101,40.64386030362,-74.07290065518
+restaurant,"Staten Island Ferry Hawks - Hawk City Burger w/ Taste of NY, Dippin' Dots, & Hawk City Creamery",American,St. George-New Brighton,Staten Island,SI0101,40.6446673308,-74.07700227552
+restaurant,TALAY THAI RESTAURANT,Thai,St. George-New Brighton,Staten Island,SI0101,40.64263640381,-74.07668643149
+restaurant,TAQUERIA EL GALLO AZTECA,Mexican,St. George-New Brighton,Staten Island,SI0101,40.63828734495,-74.0786379042
+restaurant,THE BURRITO SHOPPE AND SALAD JUNKIE,Mexican,St. George-New Brighton,Staten Island,SI0101,40.64360481433,-74.07742624587
+restaurant,VELOCCI,Coffee/Tea,St. George-New Brighton,Staten Island,SI0101,40.64190596315,-74.07717563872
+restaurant,WETZLE'S PRETZELS,Bagels/Pretzels,St. George-New Brighton,Staten Island,SI0101,40.64411316544,-74.07658363587
+restaurant,ZZ'S PIZZA & GRILL,Pizza,St. George-New Brighton,Staten Island,SI0101,40.64372588042,-74.07278880213
+restaurant,AMERICAN GRILL,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60504694143,-74.12081318405
+restaurant,B & Y CATERING (Jewish Community Center),Jewish/Kosher,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.59444681818,-74.12567653443
+restaurant,BACI,Italian,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58977200461,-74.1011879977
+restaurant,CARVEL,Frozen Desserts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60819489598,-74.12111422442
+restaurant,DELAFIELD PIZZA,Pizza,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60353922364,-74.13152771197
+restaurant,DONUT WORLD,Donuts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.6045140614,-74.12118314836
+restaurant,DUNKIN,Donuts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60809334662,-74.12110683652
+restaurant,DUNKIN,Donuts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60201692038,-74.12059881345
+restaurant,DUNKIN',Donuts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58717856638,-74.10381950559
+restaurant,GYRO KING,Indian,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58795337334,-74.10296022225
+restaurant,HAPPY FORTUNE II,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.607939654,-74.12109215076
+restaurant,HOLTERMANN'S BAKERY,Bakery Products/Desserts,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.56419263626,-74.15559273523
+restaurant,ITALIAN TOUCH PIZZERIA,Other,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.6045140614,-74.12118314836
+restaurant,JOYFUL CANTONESE RESTAURANT,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58776104703,-74.10317234681
+restaurant,LA TOURETTE GOLF,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.57591440889,-74.14825868082
+restaurant,LUCKY GOURMET CHEF,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.57542614122,-74.12750165786
+restaurant,MAIN STREET COFFEE,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.57189436665,-74.14527651957
+restaurant,MANOR SUSHI,Japanese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60537626985,-74.12085699827
+restaurant,MAX'S ES-CA RESTAURANT AND BAR,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.59152338151,-74.10096022468
+restaurant,NAKATA,Japanese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58721978062,-74.10377276539
+restaurant,NEW GARDEN RESTAURANT,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58744782934,-74.10351749558
+restaurant,PEKING KITCHEN CHINESE CUISINE,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60358313604,-74.13153140005
+restaurant,PIZZA MIA,Pizza,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.57542614122,-74.12750165786
+restaurant,RALPH'S SPORTS BAR,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.59136693825,-74.10094918553
+restaurant,RICHMOND COUNTY COUNTRY CLUB,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58273198807,-74.11255002101
+restaurant,RICHMOND COUNTY COUNTRY CLUB,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58793589848,-74.10407271454
+restaurant,RICHMOND COUNTY COUNTRY CLUB - POOL SNACK BAR,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58793589848,-74.10407271454
+restaurant,RICHMOND COUNTY COUNTRY CLUB(10TH HOLE),American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58857428934,-74.11113053831
+restaurant,RUSTIC PIZZA AND PASTERIA,Pizza,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58712087034,-74.10388062136
+restaurant,SAKANA SUSHI & HIBACHI STEAKHOUSE,Steakhouse,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58977200461,-74.1011879977
+restaurant,SILK SPOON,Jewish/Kosher,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.59964220916,-74.13101586265
+restaurant,STARBUCKS COFFEE,Coffee/Tea,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58826384455,-74.102615064
+restaurant,STATEN ISLAND FUN PARK,American,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60895628208,-74.12008917639
+restaurant,TACK'S CHINESE TAKE OUT,Chinese,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.6045140614,-74.12118314836
+restaurant,THE KOVA,Coffee/Tea,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.58721978062,-74.10377276539
+restaurant,THE MANOR RESTAURANT,Italian,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60423454627,-74.120754088
+restaurant,VILLAGE MARIA PIZZA II,Pizza,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.60799180107,-74.12109584719
+restaurant,WING WORLD,Chicken,Todt Hill-Emerson Hill-Lighthouse Hill-Manor Heights,Staten Island,SI0203,40.6054174378,-74.12086067441
+restaurant,ADDICCION,Bottled Beverages,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62933930921,-74.07459598024
+restaurant,AMERICANO CAFE,Coffee/Tea,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62882068127,-74.07438644758
+restaurant,ANTOJITOS,Spanish,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62696152817,-74.07581095682
+restaurant,"BAGELS BY DAY, TACOS BY NIGHT",Tex-Mex,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62796576435,-74.07634527976
+restaurant,BARI'S PIZZA,Pizza,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62726332052,-74.07601304178
+restaurant,BEST COFFEE SHOP,American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62696844606,-74.07777432655
+restaurant,BLUE PEARL,Seafood,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62882068127,-74.07438644758
+restaurant,BORIKEN,Latin American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62488722743,-74.0746594305
+restaurant,CAFFEINATED NEW YORKER CAFE,Coffee/Tea,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62909921754,-74.0765591356
+restaurant,CAMPO BELLO,Spanish,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62472225623,-74.07916942137
+restaurant,CHEN'S BROTHER CUISINE,Chinese,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62707051183,-74.07702152254
+restaurant,CHIENG GARDEN KITCHEN,Chinese,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62422157624,-74.08078628038
+restaurant,CRAFT HOUSE,Barbecue,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63669071688,-74.07741098669
+restaurant,DOMINOS,Pizza,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63322819835,-74.0753137059
+restaurant,DUNKIN,Donuts,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63114415715,-74.07644620334
+restaurant,EL PASO PIZZERIA & DELI,Other,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.6185067071,-74.08489286742
+restaurant,EL PATRON RESTAURANT & LOUNGE,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.6292556388,-74.07660614982
+restaurant,EVERYTHING GOES BOOK CAFE,American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63703713561,-74.07655386553
+restaurant,FRANK'S BAY PIZZA,Pizza,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62497179687,-74.07950834324
+restaurant,FRIED DAY,Chicken,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62377867432,-74.08217984244
+restaurant,FRIED DAY,Chicken,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62377867432,-74.08217984244
+restaurant,GELATERRA,Frozen Desserts,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62880421491,-74.07438282656
+restaurant,GEORGIES BISTRO,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63244292475,-74.07571632935
+restaurant,HOLLAND BAY RESTAURANT,Caribbean,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.6379464502,-74.07942297537
+restaurant,KUM FUNG KITCHEN,Chinese,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62194094204,-74.07214176828
+restaurant,LAKRUWANA SRI LANKA UNDER ONE ROOF,Indian,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62565275099,-74.07507456929
+restaurant,LOS PASTORCITOS G'S,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63753972576,-74.08013589764
+restaurant,M & K SPANISH RESTAURANT,Spanish,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63736640086,-74.07671638252
+restaurant,MARBELLA,Latin American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62881249136,-74.07431798904
+restaurant,MARIACHI MEXICAN CANTINA,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63735903263,-74.07541206562
+restaurant,MCDONALD'S #11112,Hamburgers,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62983473237,-74.07668967814
+restaurant,MONA'S CUISINE,Caribbean,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.61846278522,-74.08490001542
+restaurant,NEW ASHA SRI LANKAN RESTAURANT,Indian,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63437946159,-74.08534548528
+restaurant,NEW CHOI HEE,Chinese,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63174000513,-74.07610102381
+restaurant,NEW LAKRUWANA RESTAURANT,Indian,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62565275099,-74.07507456929
+restaurant,PANADERIA LA MIXTECA POBLANA & DELI,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63761667281,-74.08000267659
+restaurant,PASTAVINO,Italian,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62882077711,-74.07423874113
+restaurant,RAVAL STEAKHOUSE,American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63732334573,-74.07541923125
+restaurant,RITA RESTAURANT,Mexican,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63756445903,-74.08009269058
+restaurant,SEAFOOD HIBACHI,Chinese,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63322819835,-74.0753137059
+restaurant,SEPPE PIZZA BAR,Pizza,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62882068127,-74.07438644758
+restaurant,SUBWAY,Sandwiches,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62727705399,-74.07599864741
+restaurant,THE COUPE,Tapas,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62883623995,-74.07981558321
+restaurant,THE HOP SHOPPE,American,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.62913560167,-74.07955655423
+restaurant,WENDY'S,Hamburgers,Tompkinsville-Stapleton-Clifton-Fox Hills,Staten Island,SI0102,40.63437557622,-74.07522493328
+restaurant,ALOYSIA'S LOUNGE,American,Tottenville-Charleston,Staten Island,SI0305,40.51435828268,-74.23569794172
+restaurant,ARIANA'S,Italian,Tottenville-Charleston,Staten Island,SI0305,40.52507483998,-74.23661713965
+restaurant,AUNT BUTCHIES OF BROOKLYN,Italian,Tottenville-Charleston,Staten Island,SI0305,40.52356530354,-74.23920515246
+restaurant,AVOCADO SUSHI,Japanese,Tottenville-Charleston,Staten Island,SI0305,40.52271432314,-74.23924885485
+restaurant,BAYA BAR,"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.51904745113,-74.22979081977
+restaurant,BEANS AND LEAVES CAFE,American,Tottenville-Charleston,Staten Island,SI0305,40.52251391639,-74.23926611911
+restaurant,BITTERSWEET BAKE SHOPPE,Bakery Products/Desserts,Tottenville-Charleston,Staten Island,SI0305,40.53775172971,-74.23727020409
+restaurant,BOARD AND BRUSH STATEN ISLAND,American,Tottenville-Charleston,Staten Island,SI0305,40.52784278091,-74.23337155765
+restaurant,CAMPANIA COAL FIRE PIZZA,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.51812114247,-74.23449200482
+restaurant,CARVEL 102664,Frozen Desserts,Tottenville-Charleston,Staten Island,SI0305,40.51812114247,-74.23449200482
+restaurant,CHEF'S HONG II LI FAMILY RESTAURANT,Chinese,Tottenville-Charleston,Staten Island,SI0305,40.51230356534,-74.23911435551
+restaurant,CHIPOTLE MEXICAN GRILL #3056,Mexican,Tottenville-Charleston,Staten Island,SI0305,40.52952109691,-74.23140975114
+restaurant,COFFEE & FLOWERS,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.52202048232,-74.2349913085
+restaurant,COOKIES N' CREAM,Bakery Products/Desserts,Tottenville-Charleston,Staten Island,SI0305,40.51110755353,-74.24138288774
+restaurant,CORAL BAY CAFE,Italian,Tottenville-Charleston,Staten Island,SI0305,40.49956271029,-74.23886367011
+restaurant,CRUMBL SOUTH SHORE COMMONS,Bakery Products/Desserts,Tottenville-Charleston,Staten Island,SI0305,40.52780035222,-74.23264118855
+restaurant,DANI'S,Italian,Tottenville-Charleston,Staten Island,SI0305,40.51101106836,-74.24158033119
+restaurant,DELUCA ITALIAN RESTAURANT,Italian,Tottenville-Charleston,Staten Island,SI0305,40.51111866931,-74.24131819562
+restaurant,DUNKIN,Donuts,Tottenville-Charleston,Staten Island,SI0305,40.52797356856,-74.23518138466
+restaurant,DUNKIN,Donuts,Tottenville-Charleston,Staten Island,SI0305,40.51120412939,-74.24114228905
+restaurant,DUNKIN,Donuts,Tottenville-Charleston,Staten Island,SI0305,40.52775250953,-74.23187123298
+restaurant,DUNKIN,Donuts,Tottenville-Charleston,Staten Island,SI0305,40.54847748128,-74.2213033683
+restaurant,E SQUARED CAFE,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.51812114247,-74.23449200482
+restaurant,EXPRESS CAFFE,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.54927970197,-74.22092101692
+restaurant,FILONCINO CAFE,American,Tottenville-Charleston,Staten Island,SI0305,40.52772857896,-74.23148985272
+restaurant,FINA'S FARM HOUSE,American,Tottenville-Charleston,Staten Island,SI0305,40.51730840473,-74.24122193817
+restaurant,FUEL GRILL & JUICE BAR,"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.53207996415,-74.23907026421
+restaurant,HO BRAH,Mexican,Tottenville-Charleston,Staten Island,SI0305,40.52314252426,-74.23924319956
+restaurant,INTOXX FITNESS,"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.52109224956,-74.23655982693
+restaurant,JOE'S LOBSTER HOUSE,Seafood,Tottenville-Charleston,Staten Island,SI0305,40.52789077194,-74.23936817499
+restaurant,KILLMEYER'S OLD BAVARIA INN.,German,Tottenville-Charleston,Staten Island,SI0305,40.53857487311,-74.23741344918
+restaurant,KIM'S ISLAND CHINESE RESTAURANT,Chinese,Tottenville-Charleston,Staten Island,SI0305,40.51062322181,-74.24837218094
+restaurant,KNIGHTS OF COLUMBUS HOUSE,American,Tottenville-Charleston,Staten Island,SI0305,40.5355511724,-74.23953242456
+restaurant,LA ROSA GRILL,Chicken,Tottenville-Charleston,Staten Island,SI0305,40.52111406642,-74.23662824333
+restaurant,LAILA RESTAURANT & LOUNGE,Mediterranean,Tottenville-Charleston,Staten Island,SI0305,40.5227754602,-74.23491484158
+restaurant,LOON CHUAN RESTAURANT,Chinese,Tottenville-Charleston,Staten Island,SI0305,40.52217148233,-74.23497385717
+restaurant,MAIN STREET COFFEE,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.51075743481,-74.24850214559
+restaurant,MANGIA,Italian,Tottenville-Charleston,Staten Island,SI0305,40.50917534893,-74.24646442327
+restaurant,MCDONALD'S,Hamburgers,Tottenville-Charleston,Staten Island,SI0305,40.51766854083,-74.23435014381
+restaurant,MIKEY BAGELS,American,Tottenville-Charleston,Staten Island,SI0305,40.50992190069,-74.24392109008
+restaurant,MILLIE'S OF STATEN ISLAND,Italian,Tottenville-Charleston,Staten Island,SI0305,40.52952109691,-74.23140975114
+restaurant,MIZU HIBACHI JAPANESE FUSION,Japanese,Tottenville-Charleston,Staten Island,SI0305,40.51812114247,-74.23449200482
+restaurant,NONNA'S PIZZERIA,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.51664700172,-74.23323881392
+restaurant,OISHI SUSHI & IZAKAYA,Asian/Asian Fusion,Tottenville-Charleston,Staten Island,SI0305,40.52320099021,-74.23487318002
+restaurant,PAGE PLAZA DINER,American,Tottenville-Charleston,Staten Island,SI0305,40.52232247496,-74.23496000257
+restaurant,PALERMO PIZZERIA AND RESTAURANT,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.52202048232,-74.2349913085
+restaurant,PARADISE ISLAND RESTAURANT AND TIKI BAR,American,Tottenville-Charleston,Staten Island,SI0305,40.51478969949,-74.24843447346
+restaurant,PATRIZIAS OF TOTTENVILLE,Italian,Tottenville-Charleston,Staten Island,SI0305,40.52251391639,-74.23926611911
+restaurant,PEKING TASTE,Chinese,Tottenville-Charleston,Staten Island,SI0305,40.51812114247,-74.23449200482
+restaurant,REGAL CINEMAS,American,Tottenville-Charleston,Staten Island,SI0305,40.52951854862,-74.23131261687
+restaurant,RETRO FITNESS,"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.52784278091,-74.23337155765
+restaurant,ROSSVILLE PIZZERIA,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.54927970197,-74.22092101692
+restaurant,SAL'S BAKERY,Bakery Products/Desserts,Tottenville-Charleston,Staten Island,SI0305,40.52111406642,-74.23662824333
+restaurant,SERENA BISTRO,New American,Tottenville-Charleston,Staten Island,SI0305,40.52189141099,-74.23502322445
+restaurant,SOUTH SHORE HOT BAGELS,Sandwiches,Tottenville-Charleston,Staten Island,SI0305,40.52320021737,-74.23921822856
+restaurant,SOUTH SHORE LITTLE LEAGUE,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.50999020758,-74.23085280989
+restaurant,SOUTH SHORE SWIMMING CLUB,American,Tottenville-Charleston,Staten Island,SI0305,40.5080685179,-74.22828214507
+restaurant,STARBUCKS,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.52172394227,-74.23504061747
+restaurant,SUBWAY,Sandwiches,Tottenville-Charleston,Staten Island,SI0305,40.51675648482,-74.2333902524
+restaurant,TACO BELL,Tex-Mex,Tottenville-Charleston,Staten Island,SI0305,40.51823364907,-74.23450678749
+restaurant,TAQUERIA OAXACA,Spanish,Tottenville-Charleston,Staten Island,SI0305,40.5109683373,-74.24870791805
+restaurant,TAQUERIA RESTAURANT TRES AMIGOS,Mexican,Tottenville-Charleston,Staten Island,SI0305,40.50911464577,-74.24661164026
+restaurant,TEN'S CABARET,American,Tottenville-Charleston,Staten Island,SI0305,40.54650525979,-74.22901485338
+restaurant,THE GRIND COFFEE BAR,Coffee/Tea,Tottenville-Charleston,Staten Island,SI0305,40.50989689066,-74.24406484565
+restaurant,THE JUICE HOUSE (Near Dunkin'),"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.52780035222,-74.23264118855
+restaurant,THE SNACK BOX,American,Tottenville-Charleston,Staten Island,SI0305,40.54425188921,-74.23303689864
+restaurant,TOWNE DELI & PIZZA,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.51336880809,-74.2480119945
+restaurant,TROPICAL SMOOTHIE CAFE,"Juice, Smoothies, Fruit Salads",Tottenville-Charleston,Staten Island,SI0305,40.51584223701,-74.23350213633
+restaurant,TUTTO APPOSTO,Other,Tottenville-Charleston,Staten Island,SI0305,40.52298685282,-74.23489400602
+restaurant,UNCLE SAL'S BURGERS AND WINGS/UNCLE LOUIE G ITALIAN ICES AND ICE CREAM,American,Tottenville-Charleston,Staten Island,SI0305,40.5227754602,-74.23491484158
+restaurant,VILLA MONTE,Pizza,Tottenville-Charleston,Staten Island,SI0305,40.51584223701,-74.23350213633
+restaurant,VINCENZO SALVATORE CAKES,Bakery Products/Desserts,Tottenville-Charleston,Staten Island,SI0305,40.53682875419,-74.24024575498
+restaurant,W'S BAR AND RESTAURANT,American,Tottenville-Charleston,Staten Island,SI0305,40.51584223701,-74.23350213633
+restaurant,YAHO SUSHI,Japanese,Tottenville-Charleston,Staten Island,SI0305,40.5226848602,-74.23492531256
+restaurant,Z-TWO DINER & LOUNGE,American,Tottenville-Charleston,Staten Island,SI0305,40.52769671072,-74.23096096249
+restaurant,3 GUYS SUSHI,Japanese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63027895376,-74.10788578646
+restaurant,ASA BOWLS,Japanese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63082935111,-74.10334726599
+restaurant,BAYA BAR,"Juice, Smoothies, Fruit Salads",West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63083488617,-74.10329683667
+restaurant,BEAN & BEAN COFFEE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63954390437,-74.11771228807
+restaurant,BEANS & LEAVES,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63087900065,-74.10307713979
+restaurant,BETTER GOURMET HEALTH KITCHEN,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63088188799,-74.10291862494
+restaurant,BIBIMBAP HOUSE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63026791353,-74.10795061676
+restaurant,BLUE,Mediterranean,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.64521327413,-74.10793885512
+restaurant,CAFE MILANO,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63090388831,-74.10287182373
+restaurant,CARVEL,Frozen Desserts,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63052184619,-74.10644150087
+restaurant,CRUMBL COOKIES,Bakery Products/Desserts,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63083750414,-74.10343734641
+restaurant,DIAMOND FOREST CHINESE FOOD,Chinese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63110576247,-74.10118245852
+restaurant,DON ROBERTTOS,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62995612071,-74.10966858031
+restaurant,DOUGH BY LICASTRI,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62062027192,-74.09850450919
+restaurant,DUFFY'S,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62974366987,-74.11081387276
+restaurant,DUNKIN,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63469781958,-74.10813795633
+restaurant,"DUNKIN',' BASKIN ROBBINS",Donuts,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62907536757,-74.11493775252
+restaurant,EL TABLON RESTAURANT,Spanish,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63399276154,-74.0986252047
+restaurant,EMPEROR'S HOUSE,Chinese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62912226721,-74.11470006086
+restaurant,FILONCINO CAFE,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62954776427,-74.11186911976
+restaurant,GARDEN GOURMET CAFE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62891975719,-74.11681804398
+restaurant,GOLD GRILL PIZZERIA,Pizza,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62893628832,-74.11675682871
+restaurant,HO'BRAH A TACO JOINT,Tex-Mex,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63084869451,-74.10320318766
+restaurant,INSOMNIA COOKIES,Other,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63081828742,-74.10344091922
+restaurant,JODY'S CLUB,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63100906274,-74.10189564967
+restaurant,KING'S ARMS RESTAURANT,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63043624775,-74.10698897239
+restaurant,LA ROSA CHICKEN AND GRILL,Chicken,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.61666663932,-74.10292183674
+restaurant,LA TORRETTA PIZZERIA,Pizza,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63473929245,-74.11069609795
+restaurant,LIFESTYLES ZOO CAFE,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62558432735,-74.11461110153
+restaurant,LIGRECI'S STAATEN,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62947594156,-74.11233734162
+restaurant,LION DANCE,Chinese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.61603233511,-74.10320900757
+restaurant,MASALA HARBOR,Indian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63440965419,-74.08534552404
+restaurant,MCDONALD'S,Hamburgers,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62901155592,-74.11561493311
+restaurant,MEXICANO ARROLITO,Mexican,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62933606618,-74.12292162917
+restaurant,MI ARMADILLO DELI,Mexican,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63423332437,-74.0862316093
+restaurant,MORELOS DELI & FRUIT,Spanish,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63435394538,-74.08642992523
+restaurant,MORETTI BAKERY,Bakery Products/Desserts,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62979057834,-74.11055816256
+restaurant,NEW ISLAND GARDEN,Chinese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63473185942,-74.10986381082
+restaurant,NORTHSIDE COFFEE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63002224697,-74.10940569479
+restaurant,ODA CAFE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63472763921,-74.11139144226
+restaurant,PANINI GRILL,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63023204105,-74.10815230843
+restaurant,PRIMO'S FAMOUS PIZZERIA,Pizza,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63704969327,-74.11693321626
+restaurant,PRONTO PIZZA,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.6291832928,-74.1140588997
+restaurant,RANDALL MANOR,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63098141599,-74.10211897577
+restaurant,REDEMPTION COFFEE,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63013271395,-74.10869615026
+restaurant,S & T BAGELS & DELI,Bagels/Pretzels,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63065768054,-74.10498983027
+restaurant,SALLY'S SOUTHERN,Barbecue,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63082368584,-74.10354180346
+restaurant,SHAH'S HALAL FOOD,Middle Eastern,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63081275555,-74.10348774582
+restaurant,SILVER LAKE GOLF COURSE- THE VERANDA CAFE,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62222764457,-74.09654006595
+restaurant,SOBOL,"Juice, Smoothies, Fruit Salads",West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63052184619,-74.10644150087
+restaurant,STARBUCKS,Coffee/Tea,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63055773905,-74.10621458858
+restaurant,SUBWAY,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.6299726756,-74.10957854104
+restaurant,SUPREME BURGER,Hamburgers,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62976298437,-74.11070942805
+restaurant,SUSHI WEN,Japanese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63472277501,-74.11074651133
+restaurant,THE BELVEDERE CLUB,Italian,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62878041249,-74.08855181453
+restaurant,THE BURRITO BAR RESTAURANT,Mexican,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.6301326216,-74.10879342224
+restaurant,THE KETTLE BLACK,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.63085964766,-74.10323202635
+restaurant,THE POINT TAVERN,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62881347344,-74.11874524858
+restaurant,WAGNER COLLEGE - HAWK'S NEST,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.6161298109,-74.09524893217
+restaurant,WAGNER COLLEGE - MAIN DINING   HALL,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.6161298109,-74.09524893217
+restaurant,WONDER,American,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62897572457,-74.11576257778
+restaurant,YAO'S KITCHEN,Chinese,West New Brighton-Silver Lake-Grymes Hill,Staten Island,SI0104,40.62913624699,-74.1144442991
+restaurant,ALFONSO'S PASTRY SHOPPE,Bakery Products/Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61274188234,-74.12721663353
+restaurant,AQUI ES EL PARCHE,Latin American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6131880342,-74.13076161376
+restaurant,AVOCADO SUSHI IIII,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62634596699,-74.13364064686
+restaurant,BAGEL BISTRO & DINER,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61299828894,-74.12366940591
+restaurant,BAGELS N BUNS,Sandwiches,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61026786383,-74.14640121029
+restaurant,BANH MI HOUSE,Sandwiches,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61363356886,-74.12252162
+restaurant,BASIL CUCINA & CATERING,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.624945803,-74.14517989774
+restaurant,BEANIE CAFE,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61204412031,-74.13723160702
+restaurant,BOBA LE TEA CAFE,"Juice, Smoothies, Fruit Salads",Westerleigh-Castleton Corners,Staten Island,SI0105,40.62515237331,-74.13564478632
+restaurant,BUN & BEYOND,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62634596699,-74.13364064686
+restaurant,BURGER KING,Hamburgers,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62441742534,-74.14409803475
+restaurant,BURGER KING,Hamburgers,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61291356009,-74.1307574723
+restaurant,CAFE JULIET,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61279750838,-74.12655762271
+restaurant,CALL IT A WRAP,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62643266996,-74.1298510201
+restaurant,CHARCOAL GARDENIA,Middle Eastern,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61705788803,-74.1236157227
+restaurant,CHINA KING,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61205539235,-74.13231891993
+restaurant,CHINA NEW STAR RESTAURANT,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62486853215,-74.14333170369
+restaurant,COFFEE & COLLECTIBLES,Bakery Products/Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61370493706,-74.12251814971
+restaurant,COOKIE JAR,Bakery Products/Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62633575062,-74.13060014397
+restaurant,COOL ICE,Frozen Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61279775895,-74.12633071398
+restaurant,CROWN PALACE,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6263479634,-74.13191867119
+restaurant,DILEO'S PIZZERIA,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61026786383,-74.14640121029
+restaurant,DOC HENNIGANS,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62670384352,-74.12790980924
+restaurant,DOMINOS,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61303996542,-74.12320125638
+restaurant,DUNKIN,Donuts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61634756868,-74.10367054319
+restaurant,DUNKIN,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61291736502,-74.12489024523
+restaurant,DUNKIN,Donuts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62594976993,-74.13445040093
+restaurant,DUNKIN,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61256936992,-74.1293017001
+restaurant,DUNKIN,Donuts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61256936992,-74.1293017001
+restaurant,EGGER'S ICE CREAM PARLOR,Frozen Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62644650002,-74.12975738281
+restaurant,FOREST BBQ,Barbecue,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62694179695,-74.12619547714
+restaurant,FORTUNE COOKIE,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62594976993,-74.13445040093
+restaurant,GINO'S PIZZA,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62594976993,-74.13445040093
+restaurant,GUAC TIME MEXICAN GRILL,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61299043044,-74.13074321648
+restaurant,HAPPY HOME CUISINE,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61253897381,-74.12948172698
+restaurant,HERBAL DISPENSE,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61310412993,-74.12223610629
+restaurant,HITTO RAMEN,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6130932661,-74.12212803385
+restaurant,ISLAND COFFEE SHOP,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61777701702,-74.1236206616
+restaurant,JIMMY MAX RESTAURANT,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61613757268,-74.13870243248
+restaurant,JOE & PAT'S,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61309047521,-74.12217124971
+restaurant,KNOCK KNOCK,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62594976993,-74.13445040093
+restaurant,KUNGFU TEA,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6263479634,-74.13191867119
+restaurant,LA CASA DEL TACO,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62551258677,-74.13509795295
+restaurant,LEBANESE EATERY,Mediterranean,Westerleigh-Castleton Corners,Staten Island,SI0105,40.624945803,-74.14517989774
+restaurant,LIL M BUBBLE TEA HOUSE,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61308210245,-74.12230089728
+restaurant,LUCKY WOK,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61253897381,-74.12948172698
+restaurant,MEAT UP KOSHER,Jewish/Kosher,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61259000446,-74.1304686983
+restaurant,METRO PIZZERIA & RESTAURANT,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62635514063,-74.13044527592
+restaurant,MEXICAN CANTINA,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.613126656,-74.12170308854
+restaurant,MEZCALEROS MEXICAN RESTAURANT,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61191266368,-74.13231863593
+restaurant,MOTHER PUGS SALOON,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62554004732,-74.13508720148
+restaurant,MOUNTAIN FUSION,Asian/Asian Fusion,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61309298922,-74.12238735928
+restaurant,MR HIBACHI EXPRESS,Asian/Asian Fusion,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61629259146,-74.10376050551
+restaurant,NAPOLI PIZZA,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61627059076,-74.10380729615
+restaurant,NEW GYRO KING,Mediterranean,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6263479634,-74.13191867119
+restaurant,NEW MIYABI,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62586455905,-74.13455469942
+restaurant,NEW YUNG HONG,Chinese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61026786383,-74.14640121029
+restaurant,NOODLEPAN THAI FUSION,Thai,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61301759575,-74.12358299993
+restaurant,NORTH SHORE PIZZERIA & RESTAURANT,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62539710189,-74.13527063428
+restaurant,O'NEILL'S RESTAURANT & BAR,Irish,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62474060626,-74.14246685635
+restaurant,OSTERIA SANTINA,Italian,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62469565529,-74.13187216427
+restaurant,PAESANO'S PIZZA,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61210480259,-74.13231541654
+restaurant,PAPA JOHNS PIZZA,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62646033,-74.12966374548
+restaurant,POKE CAFE,Hawaiian,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61264559735,-74.12237933244
+restaurant,POPEYES,Chicken,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62594976993,-74.13445040093
+restaurant,QUE RICO NYC,Spanish,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61272245261,-74.12741108975
+restaurant,RED SEA RESTAURANT,Turkish,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62473243017,-74.14242000787
+restaurant,RENATO'S PASTRY SHOP,Bakery Products/Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62489577244,-74.14349747235
+restaurant,ROADHOUSE RESTAURANT,Italian,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61336684985,-74.10045672544
+restaurant,ROBERTO'S GOURMET KITCHEN,Italian,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61246221414,-74.13180468407
+restaurant,ROUND PIE PIZZA COMPANY,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6125665926,-74.12933050847
+restaurant,RUMI CAFE,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61280032082,-74.12649639859
+restaurant,SALDA,Turkish,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61312944672,-74.12165987264
+restaurant,SAYORI,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62462985064,-74.13649748318
+restaurant,SING BO,Asian/Asian Fusion,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61312921307,-74.12187957903
+restaurant,STARBUCKS,Coffee/Tea,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61241481724,-74.13244209335
+restaurant,STATEN ISLAND DINER,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61281144312,-74.12636675731
+restaurant,SUBWAY,Sandwiches,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61316840069,-74.12116290195
+restaurant,SUGAR HOUSE ICE CREAM,Jewish/Kosher,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61257363833,-74.13037862315
+restaurant,SUMAC,Mediterranean,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62643266996,-74.1298510201
+restaurant,TACO BELL,Tex-Mex,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62636381255,-74.13245547048
+restaurant,THE BUTTERY,Hamburgers,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61309858653,-74.1222865206
+restaurant,THE CAKE CHEF,Bakery Products/Desserts,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61305629699,-74.13075054947
+restaurant,THE PIZZA PARLOR,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.6129245639,-74.1307358835
+restaurant,THE STONE HOUSE AT CLOVE LAKES,American,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61823187799,-74.10516111802
+restaurant,TOKYO SUSHI JAPANESE RESTAURANT,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61321288382,-74.12062632141
+restaurant,TOYAMA CUISINE,Japanese,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62646033,-74.12966374548
+restaurant,UNGARO COAL FIRED PIZZA CAFE,Pizza,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62637128673,-74.13311113477
+restaurant,VERONICA'S BAKERY,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.63106187132,-74.13095168704
+restaurant,WILD CRAB HOUSE,Cajun,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62638822563,-74.13031565192
+restaurant,YALLAH HABIBI,"Juice, Smoothies, Fruit Salads",Westerleigh-Castleton Corners,Staten Island,SI0105,40.6131880342,-74.13076161376
+restaurant,YOLPAQUI TAQUERIA,Mexican,Westerleigh-Castleton Corners,Staten Island,SI0105,40.62473983066,-74.1363392042
+restaurant,ZINGER HALAL EXPRESS,Chicken,Westerleigh-Castleton Corners,Staten Island,SI0105,40.61253897381,-74.12948172698
