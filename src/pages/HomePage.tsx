@@ -45,7 +45,7 @@ export function HomePage() {
   }
 
   return (
-    <section className="relative overflow-hidden px-4 py-8 sm:px-6 lg:py-14">
+    <section className="relative overflow-hidden px-4 pb-8 pt-28 sm:px-6 sm:pt-36 lg:pb-14 lg:pt-44">
       <div className="content-max relative">
         <div className="animate-fade-up">
           <h1 className="text-3xl font-semibold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-[2.75rem]">
@@ -73,7 +73,7 @@ export function HomePage() {
                 rows={4}
                 aria-invalid={error ? true : undefined}
                 aria-describedby={error ? 'memory-input-error' : 'memory-input-count'}
-                className="glass w-full resize-none rounded-2xl border border-[var(--color-border-strong)] px-4 py-3 text-base leading-relaxed text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] transition focus-visible:border-white"
+                className="glass w-full resize-none rounded-3xl border border-white/25 px-4 py-3 text-base leading-relaxed text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] transition focus-visible:border-white"
               />
               <div className="mt-1.5 flex items-center justify-between text-xs text-[var(--color-text-muted)]">
                 <span id="memory-input-count">
@@ -91,7 +91,7 @@ export function HomePage() {
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)] disabled:cursor-not-allowed disabled:opacity-60"
+              className="glass-button inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Sparkles size={16} aria-hidden="true" />
               {submitting ? 'Understanding…' : 'Find my connection'}
@@ -111,7 +111,7 @@ export function HomePage() {
                     setText(prompt)
                     setError(null)
                   }}
-                  className="glass rounded-full border border-[var(--color-border-strong)] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-white hover:text-[var(--color-text)]"
+                  className="glass rounded-full border border-white/25 px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-white hover:text-[var(--color-text)]"
                 >
                   {prompt}
                 </button>

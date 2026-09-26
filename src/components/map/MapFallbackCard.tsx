@@ -22,7 +22,7 @@ export function MapFallbackCard({
 }: MapFallbackCardProps) {
   return (
     <div
-      className={`glass flex flex-col items-center justify-center rounded-2xl border border-[var(--color-border)] p-6 text-center ${heightClassName ?? 'h-full'}`}
+      className={`glass flex flex-col items-center justify-center rounded-3xl border border-white/20 p-6 text-center ${heightClassName ?? 'h-full'}`}
     >
       <MapPinOff size={22} aria-hidden="true" className="text-[var(--color-text-muted)]" />
       <p className="mt-3 text-sm font-medium text-[var(--color-text)]">{placeName}</p>

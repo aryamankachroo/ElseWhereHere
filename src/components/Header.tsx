@@ -28,7 +28,7 @@ export function Header() {
   }, [flow, navigate])
 
   return (
-    <header className="glass sticky top-0 z-30 border-b border-white/10">
+    <header className="glass-bar sticky top-0 z-30 border-b border-white/15">
       <div className="content-max flex items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           to="/"

@@ -18,7 +18,7 @@ export function AboutDialog() {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm" />
         <Dialog.Content
-          className="glass fixed left-1/2 top-1/2 z-50 w-[min(92vw,480px)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-[var(--color-border-strong)] p-6 shadow-2xl focus:outline-none"
+          className="glass fixed left-1/2 top-1/2 z-50 w-[min(92vw,480px)] -translate-x-1/2 -translate-y-1/2 rounded-3xl border border-white/25 p-6 focus:outline-none"
           aria-describedby="about-description"
         >
           <div className="flex items-start justify-between gap-4">

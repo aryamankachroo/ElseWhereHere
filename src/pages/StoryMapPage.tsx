@@ -142,7 +142,7 @@ export function StoryMapPage() {
   )
 
   const storyBlock: ReactNode = (
-    <div className="glass rounded-2xl border border-[var(--color-border)] p-5 sm:p-6">
+    <div className="glass rounded-3xl border border-white/20 p-5 sm:p-6">
       <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
         {activeNode.text}
       </p>
@@ -179,7 +179,7 @@ export function StoryMapPage() {
           <button
             type="button"
             onClick={() => goToNode(activeNode.choices![0].nextNodeId)}
-            className="rounded-full bg-[var(--color-lavender)] px-5 py-2 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
+            className="glass-button rounded-full border border-white/40 px-5 py-2 text-sm font-semibold transition"
           >
             {activeNode.choices[0].label}
           </button>

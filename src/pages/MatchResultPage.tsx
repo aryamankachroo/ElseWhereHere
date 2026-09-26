@@ -143,7 +143,7 @@ export function MatchResultPage() {
             <button
               type="button"
               onClick={() => navigate(`/story/${place.id}`)}
-              className="rounded-full bg-[var(--color-lavender)] px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
+              className="glass-button rounded-full border border-white/40 px-6 py-2.5 text-sm font-semibold transition"
             >
               Meet this place
             </button>

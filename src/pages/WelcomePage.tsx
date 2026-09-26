@@ -66,7 +66,7 @@ export function WelcomePage() {
           initial={reduceMotion ? undefined : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.85 }}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
+          className="glass-button mt-8 inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold transition"
         >
           Enter
           <ArrowRight size={16} aria-hidden="true" />
