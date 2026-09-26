@@ -110,7 +110,7 @@ export function StoryMapPage() {
         </p>
         <button
           type="button"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/start')}
           className="mt-5 rounded-full border border-[var(--color-border-strong)] px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
         >
           Start over

@@ -1,76 +1,44 @@
 import { ArrowRight } from 'lucide-react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
 
-const SESSION_KEY = 'eh:introShown'
 const EXIT_MS = 500
 
-type Phase = 'visible' | 'exiting' | 'hidden'
-
-function prefersReducedMotion(): boolean {
-  return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-}
-
-function alreadyShownThisSession(): boolean {
-  try {
-    return sessionStorage.getItem(SESSION_KEY) === '1'
-  } catch {
-    return false
-  }
-}
-
-function markShown(): void {
-  try {
-    sessionStorage.setItem(SESSION_KEY, '1')
-  } catch {
-    // ignore — worst case it plays again next time
-  }
-}
-
 /**
- * A once-per-tab-session entrance that waits for the person to act — there
- * is no auto-advance timer. It renders on top of the already-mounted
- * homepage, respects `prefers-reduced-motion` by never appearing at all,
- * and never replays after it's been dismissed once in a given tab.
+ * The app's landing screen, at `/`. A real route (not an overlay) so it's
+ * reachable via the logo, the browser back/forward buttons, and a direct
+ * link — it just sits ahead of the "what do you miss" screen in the flow.
+ * Waits for an explicit action (click the button, click anywhere, or press
+ * a key) before moving on; there is no auto-advance timer.
  */
-export function IntroSplash() {
+export function WelcomePage() {
+  const navigate = useNavigate()
   const reduceMotion = useReducedMotion()
-  const [phase, setPhase] = useState<Phase>(() => {
-    if (prefersReducedMotion() || alreadyShownThisSession()) return 'hidden'
-    return 'visible'
-  })
+  const [exiting, setExiting] = useState(false)
 
   function enter() {
-    setPhase((current) => (current === 'visible' ? 'exiting' : current))
+    if (exiting) return
+    setExiting(true)
+    window.setTimeout(() => navigate('/start'), EXIT_MS)
   }
 
   useEffect(() => {
-    if (phase !== 'exiting') return
-    const timer = setTimeout(() => {
-      setPhase('hidden')
-      markShown()
-    }, EXIT_MS)
-    return () => clearTimeout(timer)
-  }, [phase])
-
-  useEffect(() => {
-    if (phase !== 'visible') return
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === 'Tab') return // don't hijack keyboard focus navigation
       enter()
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [phase])
-
-  if (phase === 'hidden') return null
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [exiting])
 
   return (
-    <div
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden bg-[var(--color-bg)] transition-opacity"
-      style={{ opacity: phase === 'exiting' ? 0 : 1, transitionDuration: `${EXIT_MS}ms` }}
+    <section
+      className="relative flex min-h-[75vh] flex-col items-center justify-center overflow-hidden px-4 py-8 transition-opacity sm:px-6"
+      style={{ opacity: exiting ? 0 : 1, transitionDuration: `${EXIT_MS}ms` }}
       onClick={enter}
     >
       <motion.div
@@ -115,6 +83,6 @@ export function IntroSplash() {
           <ArrowRight size={16} aria-hidden="true" />
         </motion.button>
       </div>
-    </div>
+    </section>
   )
 }

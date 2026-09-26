@@ -18,7 +18,7 @@ export function ConfirmQualitiesPage() {
 
   const hasEntryContext = flow.interpretResult !== null || flow.preferences.length > 0
   if (!hasEntryContext) {
-    return <Navigate to="/" replace />
+    return <Navigate to="/start" replace />
   }
 
   const needsClarification = flow.interpretResult?.needsClarification ?? false
@@ -153,7 +153,7 @@ export function ConfirmQualitiesPage() {
         <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:items-center">
           <button
             type="button"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/start')}
             className="rounded-full border border-[var(--color-border-strong)] px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
           >
             Edit my description

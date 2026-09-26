@@ -6,11 +6,11 @@ import { AboutDialog } from '@/components/AboutDialog'
 import { useFlow } from '@/context/FlowContext'
 
 function getBackTarget(pathname: string, hasMatch: boolean): string | null {
-  if (pathname === '/') return null
-  if (pathname === '/confirm') return '/'
+  if (pathname === '/' || pathname === '/start') return null
+  if (pathname === '/confirm') return '/start'
   if (pathname === '/matching') return '/confirm'
   if (pathname === '/result') return '/confirm'
-  if (pathname.startsWith('/story/')) return hasMatch ? '/result' : '/'
+  if (pathname.startsWith('/story/')) return hasMatch ? '/result' : '/start'
   return null
 }
 
@@ -20,11 +20,11 @@ export function Header() {
   const flow = useFlow()
 
   const backTarget = getBackTarget(location.pathname, Boolean(flow.matchResult))
-  const showStartOver = location.pathname !== '/'
+  const showStartOver = location.pathname !== '/' && location.pathname !== '/start'
 
   const handleStartOver = useCallback(() => {
     flow.startOver()
-    navigate('/')
+    navigate('/start')
   }, [flow, navigate])
 
   return (
