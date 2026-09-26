@@ -71,7 +71,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
   const remainingSuggestions = suggestedQuestions.filter((q) => !askedQuestions.has(q.toLowerCase()))
 
   return (
-    <div className="rounded-2xl border border-[var(--color-border)] bg-white/[0.02] p-4 sm:p-5">
+    <div className="glass rounded-2xl border border-[var(--color-border)] p-4 sm:p-5">
       <h3 className="text-sm font-semibold text-[var(--color-text)]">Ask one question deeper</h3>
 
       {entries.length > 0 && (
@@ -162,7 +162,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
         <button
           type="submit"
           aria-label="Ask this question"
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-lavender)] text-[#100c16] transition hover:bg-[var(--color-lavender-strong)]"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-lavender)] text-black transition hover:bg-[var(--color-lavender-strong)]"
         >
           <Send size={15} aria-hidden="true" />
         </button>

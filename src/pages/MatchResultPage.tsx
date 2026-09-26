@@ -115,7 +115,7 @@ export function MatchResultPage() {
             ))}
           </ul>
 
-          <div className="mt-5 rounded-xl border border-[var(--color-border)] bg-white/[0.02] p-4">
+          <div className="glass mt-5 rounded-xl border border-[var(--color-border)] p-4">
             <p className="text-sm font-medium text-[var(--color-text)]">What&rsquo;s different here</p>
             <p className="mt-1.5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
               {place.differenceNote}
@@ -143,7 +143,7 @@ export function MatchResultPage() {
             <button
               type="button"
               onClick={() => navigate(`/story/${place.id}`)}
-              className="rounded-full bg-[var(--color-lavender)] px-6 py-2.5 text-sm font-semibold text-[#100c16] transition hover:bg-[var(--color-lavender-strong)]"
+              className="rounded-full bg-[var(--color-lavender)] px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
             >
               Meet this place
             </button>

@@ -2,8 +2,6 @@ import { Sparkles } from 'lucide-react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { HomeRingsDesktop, HomeRingsMobile } from '@/components/HomeRings'
-import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
 import { useFlow } from '@/context/FlowContext'
 import { api } from '@/lib/api'
 
@@ -48,14 +46,7 @@ export function HomePage() {
 
   return (
     <section className="relative overflow-hidden px-4 py-8 sm:px-6 lg:py-14">
-      <NYCSkylineBackdrop
-        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40 w-full opacity-[0.18] lg:h-56"
-      />
-
       <div className="content-max relative">
-        <HomeRingsMobile />
-
-      <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div className="animate-fade-up">
           <h1 className="text-3xl font-semibold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-[2.75rem]">
             What do you miss about a place you love?
@@ -82,7 +73,7 @@ export function HomePage() {
                 rows={4}
                 aria-invalid={error ? true : undefined}
                 aria-describedby={error ? 'memory-input-error' : 'memory-input-count'}
-                className="w-full resize-none rounded-2xl border border-[var(--color-border-strong)] bg-[var(--color-surface)] px-4 py-3 text-base leading-relaxed text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] transition focus-visible:border-[var(--color-lavender)]"
+                className="glass w-full resize-none rounded-2xl border border-[var(--color-border-strong)] px-4 py-3 text-base leading-relaxed text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] transition focus-visible:border-white"
               />
               <div className="mt-1.5 flex items-center justify-between text-xs text-[var(--color-text-muted)]">
                 <span id="memory-input-count">
@@ -100,7 +91,7 @@ export function HomePage() {
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-[#100c16] transition hover:bg-[var(--color-lavender-strong)] disabled:cursor-not-allowed disabled:opacity-60"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)] disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Sparkles size={16} aria-hidden="true" />
               {submitting ? 'Understanding…' : 'Find my connection'}
@@ -120,16 +111,13 @@ export function HomePage() {
                     setText(prompt)
                     setError(null)
                   }}
-                  className="rounded-full border border-[var(--color-border-strong)] bg-white/[0.02] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-[var(--color-lavender)] hover:text-[var(--color-text)]"
+                  className="glass rounded-full border border-[var(--color-border-strong)] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-white hover:text-[var(--color-text)]"
                 >
                   {prompt}
                 </button>
               ))}
             </div>
           </div>
-        </div>
-
-        <HomeRingsDesktop />
         </div>
       </div>
     </section>

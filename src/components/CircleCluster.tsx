@@ -11,7 +11,7 @@ interface CircleClusterProps {
   phase: ClusterPhase
 }
 
-const ACCENT_COLORS = ['#bba0ed', '#e3a9b8', '#8fb4e0', '#cbb8f2']
+const ACCENT_COLORS = ['#f5f5f7', '#d1d1d6', '#a1a1a6', '#ffffff']
 
 const SIZE_BY_RANK = [168, 144, 124, 108]
 

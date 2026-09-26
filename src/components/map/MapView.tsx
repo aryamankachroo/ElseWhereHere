@@ -123,7 +123,7 @@ export function MapView({
             map.flyTo({ center: target, zoom: PLACE_ZOOM, essential: true, duration: 2200 })
           }
 
-          const marker = new mapboxgl.Marker({ color: '#bba0ed' }).setLngLat(target).addTo(map)
+          const marker = new mapboxgl.Marker({ color: '#f5f5f7' }).setLngLat(target).addTo(map)
           placeMarkerRef.current = marker
 
           for (const node of verifiedNodeLocations) {

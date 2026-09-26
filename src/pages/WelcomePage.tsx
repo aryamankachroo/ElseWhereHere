@@ -3,8 +3,6 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
-
 const EXIT_MS = 500
 
 /**
@@ -41,15 +39,6 @@ export function WelcomePage() {
       style={{ opacity: exiting ? 0 : 1, transitionDuration: `${EXIT_MS}ms` }}
       onClick={enter}
     >
-      <motion.div
-        className="absolute inset-x-0 bottom-0 h-[58%] w-full opacity-80 sm:h-1/2"
-        initial={reduceMotion ? undefined : { opacity: 0, y: 36, scale: 1.04 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-      >
-        <NYCSkylineBackdrop className="h-full w-full" />
-      </motion.div>
-
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         <motion.p
           className="text-2xl font-semibold tracking-tight text-[var(--color-text)] sm:text-3xl"
@@ -77,7 +66,7 @@ export function WelcomePage() {
           initial={reduceMotion ? undefined : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.85 }}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-[#100c16] transition hover:bg-[var(--color-lavender-strong)]"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
         >
           Enter
           <ArrowRight size={16} aria-hidden="true" />

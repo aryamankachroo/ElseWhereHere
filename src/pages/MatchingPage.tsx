@@ -78,7 +78,7 @@ export function MatchingPage() {
           <button
             type="button"
             onClick={runMatch}
-            className="rounded-full bg-[var(--color-lavender)] px-6 py-2.5 text-sm font-semibold text-[#100c16] transition hover:bg-[var(--color-lavender-strong)]"
+            className="rounded-full bg-[var(--color-lavender)] px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-[var(--color-lavender-strong)]"
           >
             Retry
           </button>
