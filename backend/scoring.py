@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import csv
 import math
+import os
 import re
 from datetime import datetime, timedelta
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 PLACES_PATH = Path(__file__).resolve().parents[1] / "data" / "places.csv"
 # clean and shade are unknown in this file. 0.5 keeps them neutral when the sentence asks.
@@ -97,10 +100,64 @@ def _read_places() -> list[dict]:
 _PLACES: list[dict] | None = None
 
 
+def _service_url() -> str | None:
+    load_dotenv(Path(__file__).resolve().parent / ".env")
+    return os.environ.get("TIMESCALE_SERVICE_URL") or None
+
+
+def _read_database(url: str) -> list[dict]:
+    import psycopg
+
+    places = []
+    with psycopg.connect(url) as conn:
+        rows = conn.execute(
+            """
+            SELECT id, name, neighborhood, borough, lat, lng, tags, free, all_day, clean, shade, localness, blurb
+            FROM places
+            """
+        ).fetchall()
+    for row in rows:
+        places.append(
+            {
+                "id": row[0],
+                "name": row[1],
+                "neighborhood": row[2] or "",
+                "borough": row[3] or "",
+                "lat": row[4],
+                "lng": row[5],
+                "tags": list(row[6] or []),
+                "free": row[7],
+                "allDay": row[8],
+                "clean": row[9],
+                "shade": row[10],
+                "local": row[11],
+                "blurb": row[12],
+            }
+        )
+    return places
+
+
+def record_match(place_id: str, place_name: str, score: int, lat: float, lng: float) -> None:
+    url = _service_url()
+    if not url:
+        return
+    import psycopg
+
+    with psycopg.connect(url) as conn:
+        conn.execute(
+            """
+            INSERT INTO matches (time, place_id, place_name, score, lat, lng)
+            VALUES (NOW(), %s, %s, %s, %s, %s)
+            """,
+            (place_id, place_name, score, lat, lng),
+        )
+
+
 def load_places() -> list[dict]:
     global _PLACES
     if _PLACES is None:
-        _PLACES = _read_places()
+        url = _service_url()
+        _PLACES = _read_database(url) if url else _read_places()
     return _PLACES
 
 

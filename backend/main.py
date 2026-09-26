@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from backend.scoring import explain_score, load_places, rank_places
+from backend.scoring import explain_score, load_places, rank_places, record_match
 
 app = FastAPI(title="Elsewhere Here")
 app.add_middleware(
@@ -115,6 +115,7 @@ def match(body: MatchBody):
         )
     winner = ranked[0]
     score = winner["score"]
+    record_match(winner["place"]["id"], winner["place"]["name"], score, body.lat, body.lng)
     suggestions = [
         {
             "placeId": row["place"]["id"],
