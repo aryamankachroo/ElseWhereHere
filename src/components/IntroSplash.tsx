@@ -1,13 +1,13 @@
+import { ArrowRight } from 'lucide-react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 import { NYCSkylineBackdrop } from '@/components/NYCSkylineBackdrop'
 
 const SESSION_KEY = 'eh:introShown'
-const VISIBLE_MS = 2400
 const EXIT_MS = 500
 
-type Phase = 'hidden' | 'visible' | 'exiting'
+type Phase = 'visible' | 'exiting' | 'hidden'
 
 function prefersReducedMotion(): boolean {
   return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -30,10 +30,10 @@ function markShown(): void {
 }
 
 /**
- * A short, skippable, once-per-tab-session entrance. Deliberately not a
- * blocking route or a required step: it renders on top of the already-
- * mounted homepage, respects `prefers-reduced-motion` by never appearing at
- * all, and never replays after the first time in a given tab.
+ * A once-per-tab-session entrance that waits for the person to act — there
+ * is no auto-advance timer. It renders on top of the already-mounted
+ * homepage, respects `prefers-reduced-motion` by never appearing at all,
+ * and never replays after it's been dismissed once in a given tab.
  */
 export function IntroSplash() {
   const reduceMotion = useReducedMotion()
@@ -42,11 +42,9 @@ export function IntroSplash() {
     return 'visible'
   })
 
-  useEffect(() => {
-    if (phase !== 'visible') return
-    const timer = setTimeout(() => setPhase('exiting'), VISIBLE_MS)
-    return () => clearTimeout(timer)
-  }, [phase])
+  function enter() {
+    setPhase((current) => (current === 'visible' ? 'exiting' : current))
+  }
 
   useEffect(() => {
     if (phase !== 'exiting') return
@@ -59,11 +57,12 @@ export function IntroSplash() {
 
   useEffect(() => {
     if (phase !== 'visible') return
-    function skip() {
-      setPhase('exiting')
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Tab') return // don't hijack keyboard focus navigation
+      enter()
     }
-    window.addEventListener('keydown', skip)
-    return () => window.removeEventListener('keydown', skip)
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
   }, [phase])
 
   if (phase === 'hidden') return null
@@ -72,7 +71,7 @@ export function IntroSplash() {
     <div
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden bg-[var(--color-bg)] transition-opacity"
       style={{ opacity: phase === 'exiting' ? 0 : 1, transitionDuration: `${EXIT_MS}ms` }}
-      onClick={() => setPhase('exiting')}
+      onClick={enter}
     >
       <motion.div
         className="absolute inset-x-0 bottom-0 h-[58%] w-full opacity-80 sm:h-1/2"
@@ -100,18 +99,22 @@ export function IntroSplash() {
         >
           Find a familiar feeling in New York.
         </motion.p>
-      </div>
 
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation()
-          setPhase('exiting')
-        }}
-        className="absolute bottom-6 right-6 z-10 text-xs text-[var(--color-text-muted)] underline underline-offset-2 transition hover:text-[var(--color-text-secondary)]"
-      >
-        Skip
-      </button>
+        <motion.button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation()
+            enter()
+          }}
+          initial={reduceMotion ? undefined : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.85 }}
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender)] px-6 py-3 text-sm font-semibold text-[#100c16] transition hover:bg-[var(--color-lavender-strong)]"
+        >
+          Enter
+          <ArrowRight size={16} aria-hidden="true" />
+        </motion.button>
+      </div>
     </div>
   )
 }
