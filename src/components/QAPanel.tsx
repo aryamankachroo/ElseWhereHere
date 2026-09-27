@@ -2,8 +2,8 @@ import { AlertCircle, Send } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 import { SourceDrawer } from '@/components/SourceDrawer'
-import { api } from '@/lib/api'
-import type { AskClaim, AskStatus, Citation } from '@/types/api'
+import { api, isGrokEnabled } from '@/lib/api'
+import type { AskClaim, AskStatus, ChatTurn, Citation, PlaceContext } from '@/types/api'
 
 interface QAEntry {
   id: string
@@ -11,6 +11,7 @@ interface QAEntry {
   status: AskStatus | 'error'
   claims: AskClaim[]
   citationIds: string[]
+  citations: Citation[]
   message?: string
 }
 
@@ -19,16 +20,30 @@ interface QAPanelProps {
   activeStoryNodeId: string
   suggestedQuestions: string[]
   citations: Citation[]
+  place: PlaceContext
 }
 
-export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citations }: QAPanelProps) {
+const GROK_SUGGESTIONS = ['What is this place known for?', 'When is it open?', 'How do I get there by subway?']
+
+function historyFrom(entries: QAEntry[]): ChatTurn[] {
+  return entries
+    .filter((entry) => entry.status === 'answered')
+    .flatMap((entry) => [
+      { role: 'user' as const, content: entry.question },
+      { role: 'assistant' as const, content: entry.claims.map((claim) => claim.text).join(' ') },
+    ])
+}
+
+export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citations, place }: QAPanelProps) {
   const [entries, setEntries] = useState<QAEntry[]>([])
   const [inputValue, setInputValue] = useState('')
   const requestCounterRef = useRef(0)
   const entryRequestIdsRef = useRef(new Map<string, number>())
 
-  function resolveCitations(ids: string[]): Citation[] {
-    return citations.filter((c) => ids.includes(c.id))
+  function resolveCitations(entry: QAEntry): Citation[] {
+    const fromPlace = citations.filter((c) => entry.citationIds.includes(c.id))
+    const known = new Set(fromPlace.map((c) => c.id))
+    return [...fromPlace, ...entry.citations.filter((c) => !known.has(c.id))]
   }
 
   function submitQuestion(question: string, existingEntryId?: string) {
@@ -37,10 +52,18 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
 
     const requestId = ++requestCounterRef.current
     const entryId = existingEntryId ?? `qa-${requestId}`
-    const previousQuestion = entries.length > 0 ? entries[entries.length - 1].question : undefined
+    const earlier = existingEntryId ? entries.slice(0, entries.findIndex((e) => e.id === existingEntryId)) : entries
+    const previousQuestion = earlier.length > 0 ? earlier[earlier.length - 1].question : undefined
 
     setEntries((prev) => {
-      const pendingEntry: QAEntry = { id: entryId, question: trimmed, status: 'pending', claims: [], citationIds: [] }
+      const pendingEntry: QAEntry = {
+        id: entryId,
+        question: trimmed,
+        status: 'pending',
+        claims: [],
+        citationIds: [],
+        citations: [],
+      }
       if (existingEntryId) {
         return prev.map((e) => (e.id === existingEntryId ? pendingEntry : e))
       }
@@ -50,13 +73,20 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
     if (!existingEntryId) setInputValue('')
 
     api
-      .ask(placeId, activeStoryNodeId, trimmed, previousQuestion)
+      .ask(placeId, activeStoryNodeId, trimmed, previousQuestion, { history: historyFrom(earlier), place })
       .then((res) => {
         if (entryRequestIdsRef.current.get(entryId) !== requestId) return // superseded
         setEntries((prev) =>
           prev.map((e) =>
             e.id === entryId
-              ? { ...e, status: res.status, claims: res.claims, citationIds: res.citationIds, message: res.message }
+              ? {
+                  ...e,
+                  status: res.status,
+                  claims: res.claims,
+                  citationIds: res.citationIds,
+                  citations: res.citations ?? [],
+                  message: res.message,
+                }
               : e,
           ),
         )
@@ -68,11 +98,19 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
   }
 
   const askedQuestions = new Set(entries.map((e) => e.question.toLowerCase()))
-  const remainingSuggestions = suggestedQuestions.filter((q) => !askedQuestions.has(q.toLowerCase()))
+  const baseSuggestions = suggestedQuestions.length > 0 || !isGrokEnabled ? suggestedQuestions : GROK_SUGGESTIONS
+  const remainingSuggestions = baseSuggestions.filter((q) => !askedQuestions.has(q.toLowerCase()))
 
   return (
     <div className="glass rounded-3xl border border-white/20 p-4 sm:p-5">
-      <h3 className="text-sm font-semibold text-[var(--color-text)]">Ask one question deeper</h3>
+      <h3 className="text-sm font-semibold text-[var(--color-text)]">
+        {isGrokEnabled ? 'Ask Grok about this place' : 'Ask one question deeper'}
+      </h3>
+      {isGrokEnabled && (
+        <p className="mt-1 text-xs text-[var(--color-text-muted)]">
+          Grok searches the web and shows where each answer came from.
+        </p>
+      )}
 
       {entries.length > 0 && (
         <ul className="mt-3 space-y-4">
@@ -81,7 +119,9 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
               <p className="font-medium text-[var(--color-text)]">{entry.question}</p>
 
               {entry.status === 'pending' && (
-                <p className="mt-1 text-[var(--color-text-muted)]">Thinking…</p>
+                <p className="mt-1 text-[var(--color-text-muted)]">
+                  {isGrokEnabled ? 'Searching the web…' : 'Thinking…'}
+                </p>
               )}
 
               {entry.status === 'answered' && (
@@ -97,7 +137,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
                     <p className="mt-1.5 text-xs italic text-[var(--color-text-muted)]">{entry.message}</p>
                   )}
                   <div className="mt-2">
-                    <SourceDrawer citations={resolveCitations(entry.citationIds)} triggerLabel="Citations" />
+                    <SourceDrawer citations={resolveCitations(entry)} triggerLabel="Citations" />
                   </div>
                 </div>
               )}
@@ -111,7 +151,11 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
 
               {entry.status === 'error' && (
                 <div className="mt-1.5 flex items-center gap-2">
-                  <p className="text-[var(--color-rose)]">Something went wrong answering that.</p>
+                  <p className="text-[var(--color-rose)]">
+                    {isGrokEnabled
+                      ? "Couldn't reach Grok. Check that the API server is running."
+                      : 'Something went wrong answering that.'}
+                  </p>
                   <button
                     type="button"
                     onClick={() => submitQuestion(entry.question, entry.id)}
@@ -156,7 +200,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder="What would you like to understand about this place?"
+          placeholder={isGrokEnabled ? 'Ask anything about this place' : 'What would you like to understand about this place?'}
           className="glass-chip flex-1 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus-visible:border-white"
         />
         <button

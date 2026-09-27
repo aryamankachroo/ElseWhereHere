@@ -1,12 +1,15 @@
 import type {
+  AskOptions,
   AskResponse,
   ElsewhereHereApi,
   InterpretResponse,
   MatchContext,
   MatchResponse,
+  PlaceContext,
   PlaceProfile,
   PlaceSummary,
   Preference,
+  SourcesResponse,
 } from '@/types/api'
 import { ApiError, NotFoundError } from '@/types/api'
 
@@ -99,10 +102,25 @@ async function ask(
   storyNodeId: string,
   question: string,
   previousQuestion?: string,
+  options?: AskOptions,
 ): Promise<AskResponse> {
   return request<AskResponse>('/api/v1/ask', {
     method: 'POST',
-    body: JSON.stringify({ placeId, storyNodeId, question, previousQuestion }),
+    body: JSON.stringify({
+      placeId,
+      storyNodeId,
+      question,
+      previousQuestion,
+      history: options?.history ?? [],
+      place: options?.place,
+    }),
+  })
+}
+
+async function findSources(placeId: string, place?: PlaceContext): Promise<SourcesResponse> {
+  return request<SourcesResponse>('/api/v1/sources', {
+    method: 'POST',
+    body: JSON.stringify({ placeId, place }),
   })
 }
 
@@ -112,4 +130,5 @@ export const liveApi: ElsewhereHereApi = {
   listPlaces,
   getPlace,
   ask,
+  findSources,
 }

@@ -6,7 +6,7 @@ import { QAPanel } from '@/components/QAPanel'
 import { SourceDrawer } from '@/components/SourceDrawer'
 import { MapView } from '@/components/map/MapView'
 import { useFlow } from '@/context/FlowContext'
-import { api } from '@/lib/api'
+import { api, isGrokEnabled } from '@/lib/api'
 import { useMediaQuery } from '@/lib/useMediaQuery'
 import { NotFoundError, type Citation, type PlaceProfile, type StoryChoice } from '@/types/api'
 
@@ -27,12 +27,18 @@ export function StoryMapPage() {
   const [activeNodeId, setActiveNodeId] = useState<string | null>(null)
   const [history, setHistory] = useState<string[]>([])
   const [mapExpanded, setMapExpanded] = useState(false)
+  const [foundSources, setFoundSources] = useState<Citation[]>([])
+  const [sourceNote, setSourceNote] = useState<string | null>(null)
+  const [findingSources, setFindingSources] = useState(false)
   const requestIdRef = useRef(0)
 
   useEffect(() => {
     if (!placeId) return
     const requestId = ++requestIdRef.current
     setLoadState('loading')
+    setFoundSources([])
+    setSourceNote(null)
+    setFindingSources(false)
 
     api
       .getPlace(placeId)
@@ -79,6 +85,27 @@ export function StoryMapPage() {
     setHistory((prev) => [...prev, activeNodeId])
     setActiveNodeId(nodeId)
     flow.setActiveStoryNode(nodeId)
+  }
+
+  function findSources() {
+    if (!place) return
+    const requestId = requestIdRef.current
+    setFindingSources(true)
+    setSourceNote(null)
+    api
+      .findSources(place.id, { name: place.name, neighborhood: place.neighborhood, borough: place.borough })
+      .then((res) => {
+        if (requestIdRef.current !== requestId) return
+        setFoundSources(res.citations)
+        setSourceNote([res.summary, res.message].filter(Boolean).join(' ') || null)
+      })
+      .catch(() => {
+        if (requestIdRef.current !== requestId) return
+        setSourceNote("Couldn't reach Grok. Check that the API server is running, then try again.")
+      })
+      .finally(() => {
+        if (requestIdRef.current === requestId) setFindingSources(false)
+      })
   }
 
   function handleBack() {
@@ -132,6 +159,8 @@ export function StoryMapPage() {
     </div>
   )
 
+  const nodeCitations = resolveCitations(place.citations, activeNode.citationIds)
+
   const storyBlock: ReactNode = (
     <div className="glass rounded-3xl border border-white/20 p-5 sm:p-6">
       <p className="text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
@@ -140,8 +169,11 @@ export function StoryMapPage() {
 
       <div className="mt-3">
         <SourceDrawer
-          citations={resolveCitations(place.citations, activeNode.citationIds)}
+          citations={nodeCitations.length > 0 ? nodeCitations : foundSources}
           triggerLabel="Sources for this part"
+          onFindSources={isGrokEnabled && nodeCitations.length === 0 ? findSources : undefined}
+          finding={findingSources}
+          note={nodeCitations.length > 0 ? null : sourceNote}
         />
       </div>
 
@@ -215,6 +247,7 @@ export function StoryMapPage() {
       activeStoryNodeId={activeNode.id}
       suggestedQuestions={place.suggestedQuestions}
       citations={place.citations}
+      place={{ name: place.name, neighborhood: place.neighborhood, borough: place.borough }}
     />
   )
 
@@ -241,7 +274,7 @@ export function StoryMapPage() {
             {storyBlock}
             {qaBlock}
           </div>
-          <div className="sticky top-20">{mapEl}</div>
+          <div className="sticky top-[calc(5rem+env(safe-area-inset-top))]">{mapEl}</div>
         </div>
       ) : (
         <div className="space-y-5">

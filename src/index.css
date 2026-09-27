@@ -48,8 +48,23 @@
 
   #root {
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
+  }
+
+  /* Set by the iOS app shell (ios/ElsewhereHere/DemoWebView.swift). */
+  .native-app body {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .native-app input,
+  .native-app textarea {
+    -webkit-user-select: text;
+    user-select: text;
   }
 
   ::selection {

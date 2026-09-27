@@ -13,7 +13,7 @@ export function Layout({ children }: { children: ReactNode }) {
         Skip to main content
       </a>
       <Header />
-      <main id="main-content" className="relative z-10 flex-1">
+      <main id="main-content" className="relative z-10 flex-1 pb-[env(safe-area-inset-bottom)]">
         {children}
       </main>
     </>

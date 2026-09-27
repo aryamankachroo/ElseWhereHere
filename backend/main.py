@@ -5,14 +5,17 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 try:
+    from backend import grok
     from backend.scoring import explain_score, load_places, rank_places, record_match
 except ImportError:
+    import grok
     from scoring import explain_score, load_places, rank_places, record_match
 
 app = FastAPI(title="Elsewhere Here")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    # elsewhere://localhost is the iOS app, which serves the bundled frontend from a custom scheme.
+    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "elsewhere://localhost"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -34,6 +37,40 @@ class MatchBody(BaseModel):
 
 class InterpretBody(BaseModel):
     text: str
+
+
+class ChatTurn(BaseModel):
+    role: str
+    content: str
+
+
+class PlaceContext(BaseModel):
+    name: str
+    neighborhood: str | None = None
+    borough: str | None = None
+
+
+class AskBody(BaseModel):
+    placeId: str
+    storyNodeId: str = ""
+    question: str
+    previousQuestion: str | None = None
+    history: list[ChatTurn] = []
+    place: PlaceContext | None = None
+
+
+class SourcesBody(BaseModel):
+    placeId: str
+    place: PlaceContext | None = None
+
+
+def place_for(place_id: str, context: PlaceContext | None) -> dict:
+    place = next((row for row in load_places() if row["id"] == place_id), None)
+    if place is not None:
+        return place
+    if context is not None:
+        return {"id": place_id, **context.model_dump()}
+    raise HTTPException(status_code=404, detail=f'No place found for id "{place_id}".')
 
 
 def illustration_for(place: dict) -> str:
@@ -177,11 +214,44 @@ def interpret(body: InterpretBody):
     }
 
 
+GROK_MISSING_MESSAGE = "Grok isn't set up yet. Add XAI_API_KEY to backend/.env and restart the API."
+
+_SOURCES_CACHE: dict[str, dict] = {}
+
+
 @app.post("/api/v1/ask")
-def ask():
+def ask(body: AskBody):
+    place = place_for(body.placeId, body.place)
+    if not grok.is_configured():
+        return {"status": "insufficient-evidence", "claims": [], "citationIds": [], "message": GROK_MISSING_MESSAGE}
+    try:
+        result = grok.ask(place, body.question, [turn.model_dump() for turn in body.history])
+    except grok.GrokError as error:
+        raise HTTPException(status_code=502, detail=str(error)) from error
+    citation_ids = [citation["id"] for citation in result["citations"]]
     return {
-        "status": "insufficient-evidence",
-        "claims": [],
-        "citationIds": [],
-        "message": "This prototype does not answer questions from outside sources yet.",
+        "status": "answered",
+        "claims": [{"text": result["answer"], "citationIds": citation_ids}],
+        "citationIds": citation_ids,
+        "citations": result["citations"],
+        "message": "Answered by Grok with live web search. Check the sources before relying on it.",
+    }
+
+
+@app.post("/api/v1/sources")
+def sources(body: SourcesBody):
+    place = place_for(body.placeId, body.place)
+    if not grok.is_configured():
+        return {"summary": "", "citations": [], "message": GROK_MISSING_MESSAGE}
+    if body.placeId not in _SOURCES_CACHE:
+        try:
+            _SOURCES_CACHE[body.placeId] = grok.find_sources(place)
+        except grok.GrokError as error:
+            raise HTTPException(status_code=502, detail=str(error)) from error
+    found = _SOURCES_CACHE[body.placeId]
+    return {
+        **found,
+        "message": "Found by Grok with live web search. Not reviewed by the Elsewhere Here team."
+        if found["citations"]
+        else "Grok couldn't find reliable sources for this place.",
     }

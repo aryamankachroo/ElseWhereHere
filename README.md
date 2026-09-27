@@ -17,6 +17,10 @@ npm run build    # type-checks (tsc -b) and produces dist/
 npm run lint      # oxlint
 ```
 
+## iOS app (Xcode)
+
+`ios/ElsewhereHere.xcodeproj` wraps the frontend in a web view. Run `npm install` once, then open the project in Xcode and press Run. The "Build Web App" build phase runs `ios/build-web.sh`, which builds the frontend into the app bundle. The app therefore needs no dev server and uses the in-browser scorer. `VITE_MAPBOX_ACCESS_TOKEN` is read from `.env.local` at build time. To run on a physical iPhone, choose your team under Signing & Capabilities.
+
 ## Environment variables
 
 Copy `.env.example` to `.env.local` (gitignored) and adjust as needed:
@@ -25,6 +29,7 @@ Copy `.env.example` to `.env.local` (gitignored) and adjust as needed:
 | --- | --- | --- |
 | `VITE_USE_MOCK_API` | `"false"` switches to the live adapter (`src/lib/liveApi.ts`). Anything else (including unset) uses the mock adapter. | mock |
 | `VITE_API_BASE_URL` | Public origin for the live adapter's `/api/v1/*` calls. Leave unset to use relative URLs against the same origin the frontend is served from. | unset |
+| `VITE_ENABLE_GROK` | `"true"` sends place questions and source lookups to FastAPI, which calls Grok with live web search. Works in mock mode too. | off |
 | `VITE_MAPBOX_ACCESS_TOKEN` | A **public**, browser-restricted Mapbox token (see [Mapbox's token guidance](https://docs.mapbox.com/help/dive-deeper/access-tokens/)). Never put a secret token here. | unset |
 
 ## Matching
@@ -42,6 +47,12 @@ Start the API before `npm run dev` when mock mode is off:
 ```
 
 Add `?simulateError=1` while mock mode is on to force the in-browser adapter to fail.
+
+## Grok answers and sources
+
+`backend/grok.py` calls the xAI Responses API with the `web_search` tool. `POST /api/v1/ask` answers chat questions about a place, with earlier turns as context. `POST /api/v1/sources` looks up sources for a place and caches them in memory. Links are kept only when they came back from the search.
+
+Copy `backend/.env.example` to `backend/.env`, set `XAI_API_KEY`, and restart the API. The key stays on the server. Set `VITE_ENABLE_GROK=true` in `.env.local` so the frontend uses these endpoints. The iOS build turns Grok on and calls the API at `http://127.0.0.1:8000`, which the Simulator can reach; a physical iPhone needs the API hosted somewhere it can reach.
 
 ## Adding real place content later
 

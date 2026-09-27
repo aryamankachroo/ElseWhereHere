@@ -36,6 +36,7 @@ export function HomePage() {
       const result = await api.interpret(trimmed)
       flow.setRawMemoryText(trimmed)
       flow.setInterpretResult(result)
+      flow.setPreferences(result.preferences)
       navigate('/confirm')
     } catch {
       setError('Something went wrong understanding that. Please try again.')

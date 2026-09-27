@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { ChevronDown, ChevronUp, Search } from 'lucide-react'
 import { useId, useState } from 'react'
 
 import type { Citation } from '@/types/api'
@@ -6,9 +6,14 @@ import type { Citation } from '@/types/api'
 interface SourceDrawerProps {
   citations: Citation[]
   triggerLabel?: string
+  /** When set, an empty drawer offers a button to look sources up. */
+  onFindSources?: () => void
+  finding?: boolean
+  /** Short note shown above the list, e.g. a summary or where the sources came from. */
+  note?: string | null
 }
 
-export function SourceDrawer({ citations, triggerLabel = 'Sources' }: SourceDrawerProps) {
+export function SourceDrawer({ citations, triggerLabel = 'Sources', onFindSources, finding, note }: SourceDrawerProps) {
   const [open, setOpen] = useState(false)
   const panelId = useId()
 
@@ -29,10 +34,25 @@ export function SourceDrawer({ citations, triggerLabel = 'Sources' }: SourceDraw
           id={panelId}
           className="glass mt-2 rounded-xl border border-white/20 p-3.5"
         >
+          {note && <p className="mb-3 text-xs italic text-[var(--color-text-muted)]">{note}</p>}
           {citations.length === 0 ? (
-            <p className="text-sm text-[var(--color-text-muted)]">
-              Sources pending — this sample profile doesn&rsquo;t have verified sources attached yet.
-            </p>
+            <div>
+              <p className="text-sm text-[var(--color-text-muted)]">
+                {finding
+                  ? 'Grok is searching the web for sources…'
+                  : 'Sources pending — this sample profile doesn\u2019t have verified sources attached yet.'}
+              </p>
+              {onFindSources && !finding && (
+                <button
+                  type="button"
+                  onClick={onFindSources}
+                  className="glass-chip mt-2.5 flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-xs text-[var(--color-text)] transition hover:border-white/60"
+                >
+                  <Search size={13} aria-hidden="true" />
+                  Find sources with Grok
+                </button>
+              )}
+            </div>
           ) : (
             <ul className="space-y-3">
               {citations.map((citation) => (

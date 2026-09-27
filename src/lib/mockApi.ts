@@ -9,6 +9,7 @@ import type {
   PlaceProfile,
   PlaceSummary,
   Preference,
+  SourcesResponse,
 } from '@/types/api'
 import { NotFoundError } from '@/types/api'
 import { SCORE_PLACES, explainScore, rankPlaces, type ScorePlace } from '@/lib/rankPlaces'
@@ -296,7 +297,12 @@ async function ask(
 
   const fixture = getFixtureById(placeId)
   if (!fixture) {
-    throw new NotFoundError(`No sample place found for id "${placeId}".`)
+    return {
+      status: 'insufficient-evidence',
+      claims: [],
+      citationIds: [],
+      message: 'Only the sample stories have answers offline. Turn on Grok to ask about any place.',
+    }
   }
 
   const questionWords = significantWords(question)
@@ -325,10 +331,21 @@ async function ask(
   }
 }
 
+async function findSources(placeId: string): Promise<SourcesResponse> {
+  await delay(300)
+  const fixture = getFixtureById(placeId)
+  return {
+    summary: '',
+    citations: fixture?.citations ?? [],
+    message: 'Source search needs Grok, which is off in this build.',
+  }
+}
+
 export const mockApi: ElsewhereHereApi = {
   interpret,
   match,
   listPlaces,
   getPlace,
   ask,
+  findSources,
 }

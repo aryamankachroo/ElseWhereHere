@@ -142,6 +142,32 @@ export interface AskResponse {
   status: AskStatus
   claims: AskClaim[]
   citationIds: string[]
+  /** Sources found for this answer that aren't part of the place profile (e.g. Grok web search). */
+  citations?: Citation[]
+  message?: string
+}
+
+/** One earlier turn of the place chat, sent so follow-up questions keep context. */
+export interface ChatTurn {
+  role: 'user' | 'assistant'
+  content: string
+}
+
+/** Name and area of the place, so the answer service can work for places it doesn't store. */
+export interface PlaceContext {
+  name: string
+  neighborhood?: string
+  borough?: string
+}
+
+export interface AskOptions {
+  history?: ChatTurn[]
+  place?: PlaceContext
+}
+
+export interface SourcesResponse {
+  summary: string
+  citations: Citation[]
   message?: string
 }
 
@@ -165,7 +191,9 @@ export interface ElsewhereHereApi {
     storyNodeId: string,
     question: string,
     previousQuestion?: string,
+    options?: AskOptions,
   ): Promise<AskResponse>
+  findSources(placeId: string, place?: PlaceContext): Promise<SourcesResponse>
 }
 
 export class ApiError extends Error {

@@ -10,7 +10,7 @@ export function AboutDialog() {
       <Dialog.Trigger asChild>
         <button
           type="button"
-          className="rounded-full px-3 py-1.5 text-sm text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)] hover:bg-white/5"
+          className="whitespace-nowrap rounded-full px-2.5 py-1.5 text-sm sm:px-3 text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)] hover:bg-white/5"
         >
           About
         </button>

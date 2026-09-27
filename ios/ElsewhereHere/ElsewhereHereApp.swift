@@ -6,6 +6,8 @@ struct ElsewhereHereApp: App {
         WindowGroup {
             DemoWebView()
                 .ignoresSafeArea()
+                .background(Color.black)
+                .preferredColorScheme(.dark)
         }
     }
 }
