@@ -109,8 +109,8 @@ export function scorePlace(user: PinUser, place: ScorePlace): number | null {
   const terms: Array<[number, number]> = []
 
   const walk = distanceMeters(user, place) / 80
-  const D = 1 - Math.min(walk / user.maxMinutes, 1)
-  if (D === 0) return null
+  // Closer places score higher. Distance never removes a place from the list.
+  const D = 1 / (1 + walk / user.maxMinutes)
   terms.push([D, 3])
 
   if (user.cost === 'free' && !place.free) return null

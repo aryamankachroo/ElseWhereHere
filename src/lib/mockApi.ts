@@ -122,7 +122,7 @@ async function match(preferences: Preference[], context: MatchContext): Promise<
   })
   const winner = ranked[0]
   if (!winner) {
-    throw new Error('Nothing free in the current list is within a 15-minute walk of you. Mention cheap or paid if a ticket is fine.')
+    throw new Error('Nothing free is in the list. Mention cheap or paid if a ticket is fine.')
   }
 
   const suggestions: MatchSuggestion[] = ranked.map((row) => ({
@@ -140,7 +140,7 @@ async function match(preferences: Preference[], context: MatchContext): Promise<
     limitations:
       winner.score >= 70
         ? 'Distance, cost, and localness all counted. A miss on a requested quality lowers the score and still leaves the place on the list.'
-        : 'This is the closest place within a 15-minute walk. The request did not line up fully, so the score stays partial.',
+        : 'This is the closest place. The request did not line up fully, so the score stays partial.',
     matchLabel: winner.score >= 70 ? 'strong connection' : 'partial connection',
     alternatives: suggestions.slice(1).map((row) => row.placeId),
     suggestions,

@@ -163,7 +163,7 @@ export function MatchResultPage() {
 
           {otherSuggestions.length > 0 && (
             <div className="mt-8">
-              <h2 className="text-lg font-medium text-[var(--color-text)]">Other places within a 15-minute walk</h2>
+              <h2 className="text-lg font-medium text-[var(--color-text)]">Other nearby places</h2>
               <ul className="mt-3 space-y-3">
                 {otherSuggestions.map((item) => (
                   <li key={item.placeId}>

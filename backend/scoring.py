@@ -225,9 +225,8 @@ def time_fit(window, place: dict):
 def score_place(user: dict, place: dict):
     terms = []
     walk = distance_meters(user, place) / 80
-    distance_score = 1 - min(walk / user["maxMinutes"], 1)
-    if distance_score == 0:
-        return None
+    # Closer places score higher. Distance never removes a place from the list.
+    distance_score = 1 / (1 + walk / user["maxMinutes"])
     terms.append((distance_score, 3))
 
     if user["cost"] == "free" and not place.get("free"):
