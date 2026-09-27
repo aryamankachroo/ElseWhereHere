@@ -4,7 +4,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from backend.scoring import explain_score, load_places, rank_places, record_match
+try:
+    from backend.scoring import explain_score, load_places, rank_places, record_match
+except ImportError:
+    from scoring import explain_score, load_places, rank_places, record_match
 
 app = FastAPI(title="Elsewhere Here")
 app.add_middleware(
