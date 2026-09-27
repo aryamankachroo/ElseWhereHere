@@ -384,7 +384,7 @@ export function MapView({
               <button
                 type="button"
                 onClick={() => setLocationAsk('hidden')}
-                className="rounded-full border border-white/20 px-4 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
+                className="glass-chip rounded-full border border-white/30 px-4 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
               >
                 Not now
               </button>
@@ -394,7 +394,7 @@ export function MapView({
         <button
           type="button"
           onClick={handleRecenter}
-          className="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-3 py-1.5 text-xs font-medium text-[var(--color-text-secondary)] backdrop-blur transition hover:text-[var(--color-text)]"
+          className="glass-chip absolute left-3 top-3 rounded-full border border-white/30 px-3 py-1.5 text-xs font-medium text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
         >
           Recenter
         </button>

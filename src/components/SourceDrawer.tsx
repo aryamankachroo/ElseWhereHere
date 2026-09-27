@@ -19,7 +19,7 @@ export function SourceDrawer({ citations, triggerLabel = 'Sources' }: SourceDraw
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1.5 rounded-full border border-[var(--color-border-strong)] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-[var(--color-lavender)] hover:text-[var(--color-text)]"
+        className="glass-chip flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)] transition hover:border-white/60 hover:text-[var(--color-text)]"
       >
         {triggerLabel}
         {open ? <ChevronUp size={13} aria-hidden="true" /> : <ChevronDown size={13} aria-hidden="true" />}
@@ -27,7 +27,7 @@ export function SourceDrawer({ citations, triggerLabel = 'Sources' }: SourceDraw
       {open && (
         <div
           id={panelId}
-          className="mt-2 rounded-xl border border-[var(--color-border)] bg-black/20 p-3.5"
+          className="glass mt-2 rounded-xl border border-white/20 p-3.5"
         >
           {citations.length === 0 ? (
             <p className="text-sm text-[var(--color-text-muted)]">

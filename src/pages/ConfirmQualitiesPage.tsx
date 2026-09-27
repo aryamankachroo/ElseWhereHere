@@ -60,7 +60,7 @@ export function ConfirmQualitiesPage() {
         </p>
 
         {needsClarification && (
-          <div className="mt-5 rounded-xl border border-[var(--color-lavender)]/40 bg-[var(--color-lavender)]/[0.07] px-4 py-3.5">
+          <div className="glass-chip mt-5 rounded-xl border border-white/30 px-4 py-3.5">
             <p className="text-sm font-medium text-[var(--color-text)]">
               {flow.interpretResult?.clarificationQuestion ?? 'What do you love about it?'}
             </p>
@@ -86,10 +86,8 @@ export function ConfirmQualitiesPage() {
                 return (
                   <li
                     key={pref.tag}
-                    className={`flex items-center gap-1 rounded-full border py-1.5 pl-3.5 pr-1.5 text-sm transition ${
-                      starred
-                        ? 'border-[var(--color-lavender)] bg-[var(--color-lavender)]/15 text-[var(--color-text)]'
-                        : 'border-[var(--color-border-strong)] bg-white/[0.03] text-[var(--color-text)]'
+                    className={`glass-chip flex items-center gap-1 rounded-full border py-1.5 pl-3.5 pr-1.5 text-sm text-[var(--color-text)] transition ${
+                      starred ? 'border-white/55' : 'border-white/25'
                     }`}
                   >
                     <span>{getTagLabel(pref.tag)}</span>
@@ -133,7 +131,7 @@ export function ConfirmQualitiesPage() {
                   <button
                     type="button"
                     onClick={() => addTag(tag.id)}
-                    className="flex items-center gap-1 rounded-full border border-dashed border-[var(--color-border-strong)] px-3.5 py-1.5 text-sm text-[var(--color-text-muted)] transition hover:border-[var(--color-lavender)] hover:text-[var(--color-text-secondary)]"
+                    className="glass-chip flex items-center gap-1 rounded-full border border-dashed border-white/30 px-3.5 py-1.5 text-sm text-[var(--color-text-muted)] transition hover:border-white/60 hover:text-[var(--color-text-secondary)]"
                   >
                     <Plus size={13} aria-hidden="true" />
                     {tag.label}
@@ -154,7 +152,7 @@ export function ConfirmQualitiesPage() {
           <button
             type="button"
             onClick={() => navigate('/start')}
-            className="rounded-full border border-[var(--color-border-strong)] px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+            className="glass-chip rounded-full border border-white/30 px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-white/60 hover:text-[var(--color-text)]"
           >
             Edit my description
           </button>

@@ -115,7 +115,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
                   <button
                     type="button"
                     onClick={() => submitQuestion(entry.question, entry.id)}
-                    className="rounded-full border border-[var(--color-border-strong)] px-2.5 py-0.5 text-xs text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
+                    className="glass-chip rounded-full border border-white/30 px-2.5 py-0.5 text-xs text-[var(--color-text-secondary)] transition hover:text-[var(--color-text)]"
                   >
                     Retry
                   </button>
@@ -133,7 +133,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
               key={q}
               type="button"
               onClick={() => submitQuestion(q)}
-              className="rounded-full border border-dashed border-[var(--color-border-strong)] px-3 py-1.5 text-xs text-[var(--color-text-muted)] transition hover:border-[var(--color-lavender)] hover:text-[var(--color-text-secondary)]"
+              className="glass-chip rounded-full border border-dashed border-white/30 px-3 py-1.5 text-xs text-[var(--color-text-muted)] transition hover:border-white/60 hover:text-[var(--color-text-secondary)]"
             >
               {q}
             </button>
@@ -157,7 +157,7 @@ export function QAPanel({ placeId, activeStoryNodeId, suggestedQuestions, citati
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           placeholder="What would you like to understand about this place?"
-          className="flex-1 rounded-full border border-[var(--color-border-strong)] bg-transparent px-4 py-2 text-sm text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus-visible:border-[var(--color-lavender)]"
+          className="glass-chip flex-1 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus-visible:border-white"
         />
         <button
           type="submit"

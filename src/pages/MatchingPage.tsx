@@ -100,7 +100,7 @@ export function MatchingPage() {
           <button
             type="button"
             onClick={() => navigate('/confirm')}
-            className="rounded-full border border-[var(--color-border-strong)] px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+            className="glass-chip rounded-full border border-white/30 px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-white/60 hover:text-[var(--color-text)]"
           >
             Back
           </button>

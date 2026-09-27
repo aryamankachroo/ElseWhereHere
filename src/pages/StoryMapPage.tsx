@@ -110,7 +110,7 @@ export function StoryMapPage() {
         <button
           type="button"
           onClick={() => navigate('/start')}
-          className="mt-5 rounded-full border border-[var(--color-border-strong)] px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
+          className="glass-chip mt-5 rounded-full border border-white/30 px-5 py-2.5 text-sm text-[var(--color-text-secondary)] transition hover:border-white/60 hover:text-[var(--color-text)]"
         >
           Start over
         </button>
@@ -156,7 +156,7 @@ export function StoryMapPage() {
                 key={choice.id}
                 type="button"
                 onClick={() => goToNode(choice.nextNodeId)}
-                className="rounded-full border border-[var(--color-border-strong)] px-4 py-2 text-sm text-[var(--color-text)] transition hover:border-[var(--color-lavender)]"
+                className="glass-chip rounded-full border border-white/30 px-4 py-2 text-sm text-[var(--color-text)] transition hover:border-white/60"
               >
                 {choice.label}
               </button>
@@ -191,7 +191,7 @@ export function StoryMapPage() {
           href={activeNode.externalMapUrl}
           target="_blank"
           rel="noreferrer"
-          className="mt-5 inline-block rounded-full border border-[var(--color-border-strong)] px-4 py-2 text-sm text-[var(--color-text)] transition hover:border-[var(--color-lavender)]"
+          className="glass-chip mt-5 inline-block rounded-full border border-white/30 px-4 py-2 text-sm text-[var(--color-text)] transition hover:border-white/60"
         >
           Open this place in an external map
         </a>
